@@ -1,0 +1,101 @@
+.main-menu {
+  padding: 40px 0;
+  background-color: #FFFFFF;
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-right: 10px;
+  }
+
+  &__nav {
+    margin-right: 10px;
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        &:not(:last-child) {
+          margin-right: 25px;
+        }
+
+        a {
+          @include montserrat-medium;
+          color: $black;
+          font-size: 14px;
+          font-weight: 500;
+          transition: all .3s;
+        }
+
+        &:hover {
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__phone-select-hidden {
+    position: absolute;
+    bottom: -20px;
+    left: 25px;
+    display: none;
+    color: #000000;
+    font-size: 14px;
+    @include montserrat-medium;
+  }
+
+  &__phone-select {
+    margin-right: 5px;
+    position: relative;
+
+    &:hover {
+      .main-menu__phone-select-hidden {
+        display: block;
+      }
+    }
+  }
+
+  &__phone-select-main {
+    display: flex;
+    align-items: center;
+    color: #004D9F;
+    font-size: 14px;
+    @include montserrat-bold;
+
+    svg:first-child {
+      margin-right: 7px;
+    }
+
+    svg:last-child {
+      margin-left: 5px;
+    }
+  }
+
+
+  &__book-link {
+    display: inline-block;
+    padding: 8px 28px;
+    background-color: #fff;
+    border: 1px solid #808995;
+    color: #808995;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+    @include montserrat-medium;
+    transition: all .3s;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $main-blue;
+    }
+  }
+
+}

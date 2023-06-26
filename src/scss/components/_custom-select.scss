@@ -1,0 +1,102 @@
+.choices__list--dropdown .choices__placeholder {
+  display: none;
+}
+
+.choices__placeholder {
+  color: #000000;
+  font-size: 17px;
+  @include montserrat-regular;
+  opacity: 1;
+}
+
+.choices[data-type*=select-one]:hover {
+  .choices__inner {
+    border-color: #ADB9C7;
+  }
+  .choices__placeholder {
+    color: #ADB9C7;
+  }
+}
+
+.choices[data-type*=select-one]:hover {
+
+  &::after {
+   content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.8644 1.13558C12.9074 1.17845 12.9415 1.22937 12.9648 1.28544C12.988 1.3415 13 1.40161 13 1.46231C13 1.52301 12.988 1.58312 12.9648 1.63918C12.9415 1.69525 12.9074 1.74617 12.8644 1.78904L7.32661 7.32685C7.28374 7.36983 7.23282 7.40392 7.17675 7.42719C7.12068 7.45045 7.06058 7.46243 6.99988 7.46243C6.93918 7.46243 6.87907 7.45045 6.82301 7.42719C6.76694 7.40392 6.71602 7.36983 6.67315 7.32685L1.13534 1.78904C1.04868 1.70239 1 1.58486 1 1.46231C1 1.33976 1.04868 1.22223 1.13534 1.13558C1.22199 1.04892 1.33952 1.00024 1.46207 1.00024C1.58461 1.00024 1.70214 1.04892 1.7888 1.13558L6.99988 6.34758L12.211 1.13558C12.2538 1.0926 12.3048 1.0585 12.3608 1.03524C12.4169 1.01197 12.477 1 12.5377 1C12.5984 1 12.6585 1.01197 12.7146 1.03524C12.7706 1.0585 12.8216 1.0926 12.8644 1.13558Z' fill='%23004D9F' stroke='%23004D9F'/%3e%3c/svg%3e ");
+  }
+}
+
+.choices[data-type*="select-one"]::after {
+  border:none;
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.8644 1.13558C12.9074 1.17845 12.9415 1.22937 12.9648 1.28544C12.988 1.3415 13 1.40161 13 1.46231C13 1.52301 12.988 1.58312 12.9648 1.63918C12.9415 1.69525 12.9074 1.74617 12.8644 1.78904L7.32661 7.32685C7.28374 7.36983 7.23282 7.40392 7.17675 7.42719C7.12068 7.45045 7.06058 7.46243 6.99988 7.46243C6.93918 7.46243 6.87907 7.45045 6.82301 7.42719C6.76694 7.40392 6.71602 7.36983 6.67315 7.32685L1.13534 1.78904C1.04868 1.70239 1 1.58486 1 1.46231C1 1.33976 1.04868 1.22223 1.13534 1.13558C1.22199 1.04892 1.33952 1.00024 1.46207 1.00024C1.58461 1.00024 1.70214 1.04892 1.7888 1.13558L6.99988 6.34758L12.211 1.13558C12.2538 1.0926 12.3048 1.0585 12.3608 1.03524C12.4169 1.01197 12.477 1 12.5377 1C12.5984 1 12.6585 1.01197 12.7146 1.03524C12.7706 1.0585 12.8216 1.0926 12.8644 1.13558Z' fill='%23004D9F' stroke='%23004D9F'/%3e%3c/svg%3e ");
+  margin-top: 0;
+  right: 26px;
+  top: 9px;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  margin-top: 0;
+}
+
+.choices__inner {
+  min-height: auto;
+  height: 35px;
+  padding: 3.5px 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #3D3D3D;
+  background: #ffffff;
+  border: 1px solid #D8D8D8;
+  border-radius: 3px;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 0;
+}
+
+.choices__list[aria-expanded] .choices__item {
+  padding: 0 5px 0 37px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background:  transparent;
+}
+
+.choices__item.choices__item--choice.is-selected.choices__item--selectable {
+  color: #FFFFFF;
+  background: #337390;
+  border-radius: 3px;
+}
+
+.choices__item.choices__item--choice.is-selected.choices__item--selectable::before {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='17' height='11' viewBox='0 0 17 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 5.40009L4.47868 8.87877C5.65025 10.0503 7.54975 10.0503 8.72132 8.87877L16 1.6001' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  position: absolute;
+  left: 12px;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  top: 0;
+  padding: 9px 0;
+  background: #F4F7FB;
+  border-radius: 3px;
+  box-shadow: 0 8px 15px rgba(51, 115, 144, 0.3);
+}
+
+
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: #337390;
+  color: #FFFFFF;
+  border-radius: 3px;
+}
+@media(min-width: 640px) {
+  .choices__list--dropdown .choices__item--selectable,
+  .choices__list[aria-expanded] .choices__item--selectable {
+    padding-right: 0;
+  }
+}

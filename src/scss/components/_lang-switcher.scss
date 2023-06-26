@@ -1,0 +1,24 @@
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  color: #004D9F;
+  font-size: 14px;
+  margin-right: 5px;
+  @include montserrat-medium;
+
+  label {
+    color: #ADB9C7;
+    font-size: 14px;
+    @include montserrat-medium;
+    cursor: pointer;
+  }
+
+  input {
+    display: none;
+
+    &:checked + label {
+      color: #004D9F;
+    }
+  }
+
+}
