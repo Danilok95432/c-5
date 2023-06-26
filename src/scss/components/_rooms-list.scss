@@ -1,0 +1,33 @@
+.rooms-list {
+  li {
+    max-width: 380px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 230px;
+
+    img {
+      @media (max-width: 400px) {
+        height: 100%;
+      }
+    }
+  }
+
+  &__content {
+    padding: 26px 33px 44px 33px;
+
+  }
+
+  &__title {
+    margin-bottom: 6px;
+    @include book-bold;
+    font-size: 24px;
+  }
+
+  &__desc {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+

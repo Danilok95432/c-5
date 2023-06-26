@@ -262,7 +262,7 @@ main {
 
 .grid-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr) );
   grid-column-gap: 40px;
   grid-row-gap: 80px;
   justify-items: center;
