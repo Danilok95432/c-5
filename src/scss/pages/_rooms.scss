@@ -1,0 +1,32 @@
+.hotel-rooms {
+  .rooms {
+    &__top-bg {
+      max-width: 1600px;
+      height: 242px;
+      margin: 0 auto;
+      background-image: url("../img/rooms-top-bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .container {
+      padding-top: 74px;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      @include book-bold;
+      font-size: 38px;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    &__desc {
+      max-width: 805px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+  }
+
+}
