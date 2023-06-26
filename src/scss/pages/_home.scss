@@ -1,0 +1,25 @@
+.home-page {
+  &__header-inner {
+    height: 580px;
+    padding: 105px 0 0;
+    background: url("../img/home-header-bg.jpg") #ADB9C7 50% / cover no-repeat;
+
+    h1 {
+      color: #ffffff;
+      font-size: 38px;
+      @include book-bold;
+      line-height: 42px;
+      max-width: 900px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__header-desc {
+    color: #ffffff;
+    font-size: 15px;
+    @include montserrat-semibold;
+    line-height: 23px;
+    max-width: 900px;
+    margin-bottom: 40px;
+  }
+}

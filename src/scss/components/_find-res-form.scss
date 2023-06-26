@@ -1,0 +1,9 @@
+.find-res-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .custom-input {
+    margin-right: 10px;
+  }
+}
