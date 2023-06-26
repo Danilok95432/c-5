@@ -21,8 +21,6 @@ main {
   min-height: calc(100vh - 235px);
 }
 
-
-
 ul,
 li {
   list-style: none;
@@ -232,10 +230,16 @@ main {
   }
 }
 
-
-
 .trim-string {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr) );
+  grid-column-gap: 40px;
+  grid-row-gap: 80px;
+  justify-items: center;
 }
