@@ -49,6 +49,10 @@
       }
     }
   }
+  &__row {
+    display: flex;
+    align-items: center;
+  }
 
   &__title {
     margin-bottom: 6px;

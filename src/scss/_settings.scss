@@ -268,7 +268,7 @@ main {
 
 .grid-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr) );
   grid-column-gap: 40px;
   grid-row-gap: 80px;
   justify-items: center;
@@ -291,4 +291,20 @@ main {
       background: #033E7D;
     }
   }
+}
+
+.section {
+  &__title {
+    @include book-bold;
+    font-size: 38px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__desc {
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+   }
 }

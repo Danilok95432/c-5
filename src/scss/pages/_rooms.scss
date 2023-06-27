@@ -1,4 +1,4 @@
-.hotel-rooms {
+.rooms-page {
   .rooms {
     &__top-bg {
       max-width: 1600px;
@@ -14,18 +14,13 @@
       padding-top: 74px;
     }
 
-    &__title {
+    .section__title {
       margin-bottom: 25px;
-      @include book-bold;
-      font-size: 38px;
-      line-height: 1.2;
-      text-align: center;
     }
 
-    &__desc {
+    .section__desc {
       max-width: 805px;
       margin: 0 auto 50px;
-      text-align: center;
     }
   }
 
