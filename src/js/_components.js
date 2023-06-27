@@ -5,6 +5,8 @@ import './components/customDate'
 import './components/manageModal'
 import './components/inputMask'
 import './components/customInputs'
+import './components/cutStrings'
+import './components/galleryImg'
 
 
 
