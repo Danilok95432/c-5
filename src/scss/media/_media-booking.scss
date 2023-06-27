@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  .booking-page .booking .container {
+    padding-bottom: 100px;
+  }
+
+  .booking-page .booking .booking-form {
+    padding-right: 10px;
+    padding-left: 10px;
+    background-size: contain;
+  }
+  .booking-page .booking .booking-form__inner {
+    width: 100%;
+  }
+  .booking-page .booking .booking-form .custom-input__wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .booking-page .booking .booking-form__row:nth-of-type(n) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

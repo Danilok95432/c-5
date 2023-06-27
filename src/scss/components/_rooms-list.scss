@@ -18,6 +18,10 @@
     padding: 26px 33px 44px 33px;
 
   }
+  &__row {
+    display: flex;
+    align-items: center;
+  }
 
   &__title {
     margin-bottom: 6px;
