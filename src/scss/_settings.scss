@@ -135,6 +135,12 @@ main {
   text-transform: lowercase;
 }
 
+.swiper-button-disabled {
+  cursor: auto !important;
+  pointer-events: none !important;
+  opacity: 0.55 !important;
+}
+
 .air-datepicker-cell.-day- {
   @include montserrat-medium;
   font-size: 16px;
@@ -277,6 +283,14 @@ main {
   background: #033E7D;
   padding: 12px 50px;
   text-transform: uppercase;
+  transition: all .3s;
+  &._gray {
+    background: #99A4B0;
+    padding: 18px 34px;
+    &:hover {
+      background: #033E7D;
+    }
+  }
 }
 
 .section {

@@ -1,17 +1,6 @@
 // Обрезка длинного текста на определенную длину
 import { bigImgModal, infoModal, modalOverlay } from './_vars'
 
-const cutString = (stringArray, stringLength) => {
-  stringArray.forEach(str => {
-    let cutLength = 0
-    stringLength ? cutLength = stringLength : cutLength = +str.dataset.shear
-
-    if (cutLength && cutLength < str.textContent.length) {
-      str.textContent = `${str.textContent.substring(0, cutLength)}...`
-    }
-  })
-}
-
 // Функция показа модалки большой картинки
 
 export const showBigImgModal = (path) => {
@@ -25,7 +14,7 @@ export const showBigImgModal = (path) => {
 }
 
 // Обновление id в изменяемых списках
-const updateChangeableListId = (changeableList) => {
+export const updateChangeableListId = (changeableList) => {
   if (changeableList && changeableList.dataset.changeableId) {
     const changeableElements = Array.from(changeableList.children)
     changeableElements.forEach((el, i) => {
@@ -54,7 +43,7 @@ const updateChangeableListId = (changeableList) => {
 
 // Блокировка/разблокировка добавления/удаления элементов в изменяемых списках при ограничении максимального количества
 
-const limitationChangeableElements = (changeableList, addBtn) => {
+export const limitationChangeableElements = (changeableList, addBtn) => {
   if (changeableList && addBtn && changeableList.dataset.maxElements) {
     const countMaxElements = +changeableList.dataset.maxElements
 
@@ -66,10 +55,8 @@ const limitationChangeableElements = (changeableList, addBtn) => {
   }
 }
 
-
-
 // Фунцкия отправки fetch запросов
-async function sendData (data, url) {
+export async function sendData (data, url) {
   return await fetch(url, {
     method: 'POST',
     headers: {'Content-Type': 'multipart/form-data'},
@@ -79,7 +66,7 @@ async function sendData (data, url) {
 
 // показ/скрытие модалки ошибки
 
-const showInfoModal = (responseText) => {
+export const showInfoModal = (responseText) => {
   infoModal.addEventListener('click', (e) => {
     if (e.target.classList.contains('info-modal')) {
       infoModal.classList.add('hidden')
@@ -91,25 +78,3 @@ const showInfoModal = (responseText) => {
   infoModal.classList.remove('hidden')
 }
 
-
-export {
-  cutString,
-  sendData,
-  showInfoModal,
-  updateChangeableListId,
-  limitationChangeableElements
-}
-
-//Прокрутка вверх
-
-const scrollBtn = document.querySelector('#scrollTop')
-
-if (scrollBtn) {
-  scrollBtn.addEventListener('click', e => {
-    e.preventDefault()
-    window.scrollBy({
-      top: -99999,
-      behavior: 'smooth',
-    })
-  })
-}
