@@ -7,9 +7,12 @@
 @import "pages/rooms";
 @import "pages/booking";
 @import "pages/selection-rooms";
+@import "pages/tariffs";
 
 //Медиа
 @import "./media/media-booking";
+@import "./media/media-selection-rooms";
+@import "./media/media-tariffs";
 
 
 //Компоненты
@@ -18,6 +21,7 @@
 @import "./components/lang-switcher";
 @import "./components/custom-input";
 @import "./components/find-res-form";
+@import "./components/top-row";
 
 
 @import "./components/footer";

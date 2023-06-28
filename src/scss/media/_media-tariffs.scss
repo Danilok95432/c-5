@@ -1,0 +1,85 @@
+@media (max-width: 1024px) {
+  .tariffs-page .tariffs__list-item {
+    flex-direction: column;
+  }
+  .tariffs-page .tariffs__right {
+    width: 100%;
+  }
+
+  .tariffs-page .tariffs__right .blue-btn {
+    width: max-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .tariffs-page .tariffs__titles h2 {
+    font-size: 30px;
+  }
+  .tariffs-page .tariffs__room {
+    flex-direction: column;
+  }
+
+  .tariffs-page .tariffs__images {
+    margin-bottom: 20px;
+  }
+  .tariffs-page .tariffs__left > .tariffs__row,
+  .tariffs-page .tariffs__inner > .tariffs__row {
+    flex-direction: column;
+  }
+
+  .tariffs-page .tariffs__filters {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .tariffs-page .tariffs__left h4 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .tariffs-page .tariffs__information h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tariffs-page .tariffs__titles {
+    flex-direction: column;
+  }
+  .tariffs-page .tariffs__titles h2 {
+    padding-right: 0;
+  }
+  .tariffs-page .tariffs__titles a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .tariffs-page .tariffs__information .tariffs__row:nth-child(1) {
+    flex-direction: column;
+  }
+  .tariffs-page .tariffs__information h3 {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

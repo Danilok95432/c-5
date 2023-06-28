@@ -286,6 +286,9 @@ main {
   grid-column-gap: 40px;
   grid-row-gap: 80px;
   justify-items: center;
+  @media (max-width: 420px) {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr) );
+  }
 }
 
 .main-btn {
@@ -313,6 +316,9 @@ main {
     font-size: 38px;
     line-height: 1.2;
     text-align: center;
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   &__desc {
@@ -321,4 +327,4 @@ main {
     font-size: 15px;
     line-height: 25px;
    }
-}
+
