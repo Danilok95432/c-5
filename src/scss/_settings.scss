@@ -103,6 +103,20 @@ main {
   display: none !important;
 }
 
+
+.sl-overlay {
+  background-color: $black;
+}
+
+.sl-wrapper .sl-close {
+  color: #ffffff;
+}
+
+.sl-wrapper .sl-navigation button {
+  color: #ffffff;
+}
+
+
 .dz-details,
 .dz-progress,
 .dz-error-message,

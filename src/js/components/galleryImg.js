@@ -1,16 +1,11 @@
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
-// Plugins
+import SimpleLightbox from "simplelightbox";
 
-const cafeGallery = document.querySelector('.home-page .cafe__gallery')
+const cafeGallery = document.querySelectorAll('.home-page .cafe__gallery a')
 
 if (cafeGallery) {
-
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: cafeGallery,
-    children: 'a',
-    pswpModule: () => import('photoswipe')
+  const cafeLightbox = new SimpleLightbox(cafeGallery, {
+    overlayOpacity: 0.85,
+    showCounter: false,
   });
-  lightbox.init();
-
 
 }

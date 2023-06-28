@@ -1,6 +1,69 @@
 .footer {
   background-color: $main-blue;
-  padding: 42px 0 30px;
+  padding: 23px 0 62px 0 ;
   color: #FFFFFF;
-  height: 235px;
+
+
+
+  &__top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+
+    .footer__top-logo {
+      min-width: 161px;
+      margin-right: 120px;
+      padding-bottom: 5px
+    }
+
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+      li {
+        margin-bottom: 10px;
+
+        &:not(:last-child) {
+          margin-right: 27px;
+        }
+      }
+
+      a {
+        color: #ffffff;
+        font-size: 14px;
+        @include montserrat-regular;
+      }
+    }
+  }
+
+  &__bottom {
+    color: #ffffff;
+    font-size: 14px;
+
+    max-width: 91.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: #ffffff;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright-link {
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  &__pay {
+    p {
+      text-align: end;
+      margin-bottom: 15px;
+    }
+  }
+
 }
