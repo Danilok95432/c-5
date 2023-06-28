@@ -1,11 +1,15 @@
-import SimpleLightbox from "simplelightbox";
+import SimpleLightbox from "simplelightbox"
 
-const cafeGallery = document.querySelectorAll('.home-page .cafe__gallery a')
 
-if (cafeGallery) {
+const homePage = document.querySelector('.home-page')
+
+
+if (homePage) {
+  const cafeGallery = homePage.querySelectorAll('.home-page .cafe__gallery a')
+
   const cafeLightbox = new SimpleLightbox(cafeGallery, {
     overlayOpacity: 0.85,
     showCounter: false,
-  });
+  })
 
 }
