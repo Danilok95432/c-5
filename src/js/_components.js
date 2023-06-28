@@ -7,6 +7,7 @@ import './components/inputMask'
 import './components/customInputs'
 import './components/cutStrings'
 import './components/galleryImg'
+import './components/fixedNavMenu'
 
 
 
