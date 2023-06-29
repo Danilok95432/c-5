@@ -1,4 +1,7 @@
 .tariffs-page {
+  main {
+    margin-top: 140px;
+  }
   .tariffs {
     border-top: 1px solid #ADB9C7;
 
@@ -114,7 +117,7 @@
 
         &:nth-child(2) {
           margin-bottom: 19px;
-
+          align-items: center;
           svg {
             margin-right: 6px;
           }
