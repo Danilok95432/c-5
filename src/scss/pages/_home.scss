@@ -185,7 +185,6 @@
     }
 
 
-
     .rooms-list {
       margin-bottom: 70px;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -212,6 +211,13 @@
       font-size: 38px;
       @include book-bold;
       margin-bottom: 35px;
+    }
+
+    .rooms-swiper-container {
+      @media (max-width: 1024px) {
+        margin: 0 auto;
+        padding: 0 15px;
+      }
     }
 
     .rooms-swiper {
@@ -245,6 +251,14 @@
         left: -30px;
         bottom: -60px;
         transition: all .3s;
+        @media (max-width: 1024px) {
+          left: 0;
+        }
+        @media (max-width: 768px) {
+          position: static;
+          max-width: 100%;
+          padding: 15px 20px 10px 20px;
+        }
 
 
         h4 {
@@ -253,6 +267,11 @@
           font-size: 30px;
           @include book-bold;
           margin-bottom: 10px;
+          @media (max-width: 768px) {
+            font-size: 25px;
+            max-width: 100%;
+            margin-bottom: 5px;
+          }
         }
 
         p {
@@ -261,6 +280,9 @@
           @include montserrat-regular;
           line-height: 20px;
           max-width: 375px;
+          @media (max-width: 768px) {
+            max-width: 100%;
+          }
         }
       }
 
@@ -270,6 +292,16 @@
         max-width: 1250px;
         padding: 0 15px;
         margin: 0 auto;
+        @media (max-width: 1280px) {
+          padding: 0 90px;
+        }
+        @media (max-width: 1024px) {
+          padding: 0;
+        }
+        @media (max-width: 768px) {
+          padding: 0;
+          margin-top: 30px;
+        }
 
         button:first-child {
           margin-right: 20px;
@@ -339,6 +371,7 @@
       @media (max-width: 768px) {
         width: 100%;
       }
+
       li {
         text-align: center;
 

@@ -7,10 +7,24 @@ const swiperRooms = new Swiper('.rooms-swiper', {
     prevEl: '.rooms-swiper__swiper-button-prev'
   },
 
-  slidesPerView: 1.56,
+  slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 0,
   initialSlide: 1,
+  breakpoints: {
+    1024: {
+      slidesPerView: 1.2,
+      spaceBetween: 0
+    },
+    1280: {
+      spaceBetween: 0,
+      slidesPerView: 1.32,
+    },
+    1600: {
+      spaceBetween: 0,
+      slidesPerView: 1.56,
+    },
+  },
 
 })
 
@@ -35,3 +49,4 @@ const servicesSwiper = new Swiper('.services__swiper', {
         clickable: true,
     },
 })
+

@@ -1,9 +1,11 @@
 .footer {
   background-color: $main-blue;
-  padding: 23px 0 62px 0 ;
+  padding: 23px 0 62px 0;
   color: #FFFFFF;
 
-
+  @media (max-width: 768px) {
+    padding: 20px 0 20px 0;
+  }
 
   &__top {
     display: flex;
@@ -11,10 +13,19 @@
     flex-wrap: wrap;
     margin-bottom: 55px;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
     .footer__top-logo {
       min-width: 161px;
       margin-right: 120px;
-      padding-bottom: 5px
+      padding-bottom: 5px;
+      @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
 
 
@@ -22,11 +33,21 @@
       display: flex;
       flex-wrap: wrap;
       width: 70%;
+      @media (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+      }
+
       li {
         margin-bottom: 10px;
 
         &:not(:last-child) {
           margin-right: 27px;
+        }
+        &:hover {
+          a {
+            text-decoration: underline;
+          }
         }
       }
 
@@ -41,11 +62,22 @@
   &__bottom {
     color: #ffffff;
     font-size: 14px;
-
     max-width: 91.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    p {
+      @media (max-width: 768px) {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    }
 
     a {
       color: #ffffff;
@@ -57,12 +89,19 @@
   &__copyright-link {
     display: block;
     margin-bottom: 22px;
+    @media (max-width: 768px) {
+      text-align: center;
+      margin-bottom: 15px;
+    }
   }
 
   &__pay {
     p {
       text-align: end;
       margin-bottom: 15px;
+      @media (max-width: 768px) {
+        text-align: center;
+      }
     }
   }
 

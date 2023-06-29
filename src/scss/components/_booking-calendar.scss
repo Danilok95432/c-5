@@ -1,0 +1,83 @@
+.booking-calendar {
+  .air-datepicker {
+    width: 493px;
+    height: auto;
+    padding: 20px 25px 20px 25px ;
+  }
+
+  .air-datepicker--navigation {
+    position: relative;
+  }
+
+
+  .air-datepicker-cell.-disabled- {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .air-datepicker-cell {
+    border-radius: 0;
+  }
+
+  .air-datepicker-cell.-day- {
+    color: #000;
+    font-size: 17px;
+    border: 1px solid #E8EFF8;
+    @include montserrat-semibold;
+  }
+
+  .air-datepicker-body--day-names {
+    grid-template-columns: repeat(7, 70px);
+    margin: 8px 0 3px;
+  }
+
+  .air-datepicker-body--cells.-days- {
+    grid-template-columns: repeat(7, 70px);
+    grid-auto-rows: 70px;
+  }
+
+  .air-datepicker-nav--action {
+    width: 36px;
+    border-radius: 0;
+  }
+
+  .air-datepicker-nav {
+    border-bottom: none;
+    min-height: 50px;
+  }
+
+  .air-datepicker-nav--action svg {
+    display: none;
+  }
+
+  .air-datepicker-nav--action[data-action="prev"] {
+    background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='35' height='35' viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M17.0417 12.0216L17.5742 12.4782L12.7048 17.5758L17.5742 22.6735L17.0417 23.2061L11.6396 17.5758L17.0417 12.0216Z' fill='%23808994'/%3e%3cpath d='M17.4985 0.000915885C27.1613 0.000915885 34.998 7.83767 34.998 17.5005C34.998 27.1632 27.1613 35 17.4985 35C7.83571 35 -0.00103724 27.1632 -0.00103724 17.5005C-0.00103724 7.83767 7.9118 0.000915885 17.4985 0.000915885ZM17.4985 34.2392C26.7048 34.2392 34.2372 26.7067 34.2372 17.5005C34.2372 8.29418 26.7048 0.761766 17.4985 0.761766C8.29222 0.761766 0.759812 8.29418 0.759812 17.5005C0.759812 26.7067 8.29222 34.2392 17.4985 34.2392Z' fill='%23808994'/%3e%3cpath d='M12.0968 17.9561H21.6074V17.1952H12.0968V17.9561Z' fill='%23808994'/%3e%3c/svg%3e ") no-repeat;
+  }
+
+  .air-datepicker-nav--action[data-action="next"] {
+    background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='36' height='35' viewBox='0 0 36 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M18.9329 22.9784L18.4004 22.5218L23.2698 17.4242L18.4004 12.3265L18.9329 11.7939L24.3351 17.4242L18.9329 22.9784Z' fill='%23808994'/%3e%3cpath d='M18.4761 34.9991C8.81331 34.9991 0.976562 27.1623 0.976562 17.4995C0.976562 7.83675 8.81331 0 18.4761 0C28.1389 0 35.9756 7.83675 35.9756 17.4995C35.9756 27.1623 28.0628 34.9991 18.4761 34.9991ZM18.4761 0.76085C9.26982 0.76085 1.73741 8.29326 1.73741 17.4995C1.73741 26.7058 9.26982 34.2382 18.4761 34.2382C27.6824 34.2382 35.2148 26.7058 35.2148 17.4995C35.2148 8.29326 27.6824 0.76085 18.4761 0.76085Z' fill='%23808994'/%3e%3cpath d='M23.8778 17.0439H14.3672V17.8048H23.8778V17.0439Z' fill='%23808994'/%3e%3c/svg%3e ") no-repeat;
+  }
+
+  .-selected-.air-datepicker-cell.-day-.-other-month-,
+  .-in-range-.air-datepicker-cell.-day-.-other-month-,
+  .air-datepicker-cell.-selected-,
+  .air-datepicker-cell.-range-from-,
+  .air-datepicker-cell.-in-range-,
+  .air-datepicker-cell.-range-to- {
+    border: 1px solid #E8EFF8;
+    color: #fff;
+    background: #165CA7;
+  }
+
+  .-selected-.air-datepicker-cell.-day-.-other-month-.-range-from-,
+  .air-datepicker-cell.-range-from- {
+    background: #165CA7 url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='68' viewBox='0 0 14 68' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14 34L0.5 67.775L0.5 0.22501L14 34Z' fill='%23072E57'/%3e%3c/svg%3e ") no-repeat;
+  }
+
+  .-selected-.air-datepicker-cell.-day-.-other-month-.-range-to-,
+  .air-datepicker-cell.-range-to- {
+    background: #165CA7 url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='68' viewBox='0 0 14 68' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 34L13.5 0.225006L13.5 67.775L0 34Z' fill='%23072E57'/%3e%3c/svg%3e ") no-repeat right;
+  }
+
+
+}
