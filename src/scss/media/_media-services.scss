@@ -1,0 +1,105 @@
+@media (max-width: 1200px) {
+  .services-page .services__item-bottom,
+  .services-page .services__item._comfort .services__item-bottom {
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-page .services__list-item {
+    flex-direction: column;
+  }
+  .services-page .services__inner > .services__row {
+    flex-direction: column-reverse;
+  }
+
+  .services-page .services .services-booking {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .services-page .services__titles h2 {
+    font-size: 30px;
+  }
+  .services-page .services__room {
+    flex-direction: column;
+  }
+  .services-page .services__swiper {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .services-page .services__btn-change {
+    max-width: max-content;
+  }
+
+  .services-page .services__information h3 {
+    font-size: 26px;
+  }
+  .services-page .services__item .services__information h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-page .services__titles {
+    flex-direction: column;
+  }
+  .services-page .services__titles a {
+    margin-bottom: 20px;
+  }
+  .services-page .services__information .services__row:nth-child(1) {
+    flex-direction: column;
+  }
+  .services-page .services__information .services__row:nth-child(2) {
+    flex-wrap: wrap;
+  }
+
+  .services-page .services__item-bottom, .services-page .services__item._comfort .services__item-bottom {
+    flex-direction: column;
+  }
+  .services-page .services__item._comfort .services__item-bottom p {
+    margin-bottom: 20px;
+  }
+  .services-page .services__guest {
+    margin-bottom: 20px;
+  }
+
+  .services-page .services__swiper,
+  .services-page .services__images,
+  .services-page .services__image {
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .services-page .services .services-booking {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
