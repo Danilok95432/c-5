@@ -118,6 +118,10 @@
         }
       }
 
+      .custom-input__select-wrapper {
+        height: 46px;
+      }
+
       &__btn-add {
         display: flex;
         align-items: center;
@@ -132,6 +136,68 @@
           margin-right: 5px;
         }
       }
+
+      li.booking-form__row {
+        border: none;
+        padding: 0;
+        margin-bottom: 26px;
+
+        .custom-input__wrapper {
+          display: flex;
+          flex-direction: column;
+          &:nth-child(2) {
+            @media (max-width: 768px) {
+              flex-direction: column-reverse;
+            }
+          }
+        }
+
+        .custom-select {
+          margin-top: 5px;
+        }
+
+        h6 {
+          color: #000;
+          font-size: 15px;
+          @include montserrat-semibold;
+
+          span {
+            display: inline;
+            color: #000;
+            font-size: 15px;
+            @include montserrat-semibold;
+            margin: 0;
+          }
+        }
+
+        button[data-btn="delete"] {
+          height: 25px;
+          color: #CD0000;
+          font-size: 15px;
+          @include montserrat-regular;
+          text-align: right;
+          display: flex;
+          margin-left: auto;
+          @media (max-width: 768px) {
+            margin-top: 10px;
+          }
+
+          svg {
+            margin-right: 3px;
+          }
+
+          &:hover {
+            text-decoration-line: underline;
+          }
+        }
+      }
+
+      ul[data-list="changeable"] {
+        margin-bottom: 15px;
+      }
+
     }
+
+
   }
 }
