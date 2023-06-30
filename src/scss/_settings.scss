@@ -329,4 +329,17 @@ main {
     line-height: 25px;
   }
 }
-
+.blue-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  padding: 0 20px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 22px;
+  background-color: #0D77E7;
+}

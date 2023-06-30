@@ -9,13 +9,16 @@
 @import "pages/selection-rooms";
 @import "pages/tariffs";
 @import "pages/services";
+@import "pages/one-room";
 @import "pages/guest-data";
+
 
 //Медиа
 @import "./media/media-booking";
 @import "./media/media-selection-rooms";
 @import "./media/media-tariffs";
 @import "./media/media-services";
+@import "./media/media-one-room";
 
 
 //Компоненты
@@ -25,6 +28,7 @@
 @import "./components/custom-input";
 @import "./components/find-res-form";
 @import "./components/top-row";
+@import "./components/breadcrumbs";
 
 
 @import "./components/footer";

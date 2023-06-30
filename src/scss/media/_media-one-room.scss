@@ -1,0 +1,29 @@
+@media (max-width: 1200px) {
+  .one-room-page .one-room__swiper2 {
+    height: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .one-room-page .one-room__swiper2 {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .one-room-page .one-room__swiper2 {
+    height: 300px;
+  }
+  .one-room-page .one-room__inside {
+    flex-direction: column;
+  }
+  .one-room-page .one-room__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .one-room-page .one-room__swiper2 {
+    height: 240px;
+  }
+}
