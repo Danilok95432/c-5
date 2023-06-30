@@ -2,7 +2,7 @@
   .air-datepicker {
     width: 493px;
     height: auto;
-    padding: 20px 25px 20px 25px ;
+    padding: 20px 25px 20px 25px;
   }
 
   .air-datepicker--navigation {
@@ -24,11 +24,18 @@
     font-size: 17px;
     border: 1px solid #E8EFF8;
     @include montserrat-semibold;
+
+    &.-focus-:not(.-range-to-, .-range-from-) {
+      border: 1px solid #E8EFF8;
+      background: #4089D6;
+      color: #ffffff;
+    }
+
   }
 
   .air-datepicker-body--day-names {
     grid-template-columns: repeat(7, 70px);
-    margin: 8px 0 3px;
+    margin: 15px 0 15px;
   }
 
   .air-datepicker-body--cells.-days- {
@@ -77,6 +84,68 @@
   .-selected-.air-datepicker-cell.-day-.-other-month-.-range-to-,
   .air-datepicker-cell.-range-to- {
     background: #165CA7 url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='68' viewBox='0 0 14 68' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 34L13.5 0.225006L13.5 67.775L0 34Z' fill='%23072E57'/%3e%3c/svg%3e ") no-repeat right;
+  }
+
+  .air-datepicker-nav--title {
+    width: 130px;
+  }
+
+  .air-datepicker-nav--title {
+    display: flex;
+    align-items: center;
+
+    h4 {
+      color: #000;
+      text-align: center;
+      font-size: 17px;
+      @include montserrat-semibold;
+    }
+  }
+
+  .air-datepicker-body--day-name {
+    color: #000;
+    font-size: 13px;
+    @include montserrat-regular;
+    text-transform: initial;
+
+    &.-weekend- {
+      color: #CD0000;
+    }
+  }
+
+  .air-datepicker--content {
+    padding: 2px 2px 30px 2px;
+    border-bottom: 1px solid #DAE1EA;
+  }
+
+  .check-info {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+
+    span {
+      margin: 0;
+    }
+
+    span.check-info__separator {
+      @include montserrat-semibold;
+    }
+
+    h3 {
+      color: #000;
+      font-size: 17px;
+      @include montserrat-regular;
+      &._bold {
+        @include montserrat-semibold;
+      }
+    }
+
+
+    h3.check-info__check-out {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
   }
 
 
