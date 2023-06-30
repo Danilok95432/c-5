@@ -19,7 +19,8 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 235px);
+  padding-top: 140px;
+  min-height: calc(100vh - 285px);
 }
 
 ul,
@@ -94,10 +95,6 @@ h1 {
   line-height: 30px;
 }
 
-
-main {
-  min-height: calc(100vh - 226px);
-}
 
 .hidden {
   display: none !important;
@@ -329,6 +326,7 @@ main {
     line-height: 25px;
   }
 }
+
 .blue-btn {
   display: flex;
   justify-content: center;
@@ -342,4 +340,22 @@ main {
   font-weight: 600;
   line-height: 22px;
   background-color: #0D77E7;
+}
+
+.simple-input {
+  color: #000;
+  font-size: 17px;
+  @include montserrat-regular;
+  padding: 12px 11px;
+  border: 1px solid #ADB9C7;
+  outline: none;
+  background: #FFF;
+
+  &::placeholder {
+    color: #000;
+  }
+
+  &:focus {
+    border: 1px solid #0D77E7;
+  }
 }

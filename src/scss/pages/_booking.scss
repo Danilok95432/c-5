@@ -1,7 +1,4 @@
 .booking-page {
-  main {
-    margin-top: 140px;
-  }
   .booking {
     border-top: 1px solid #ADB9C7;
 
@@ -148,6 +145,7 @@
         .custom-input__wrapper {
           display: flex;
           flex-direction: column;
+
           &:nth-child(2) {
             @media (max-width: 768px) {
               flex-direction: column-reverse;

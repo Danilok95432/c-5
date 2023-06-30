@@ -1,8 +1,4 @@
 .guest-data-page {
-  main {
-    padding-top: 140px;
-  }
-
   .guest-data {
     border-top: 1px solid #ADB9C7;
 
@@ -162,9 +158,23 @@
 
       svg {
         margin-top: 3px;
-        width: 18px;
+        min-width: 18px;
         height: 18px;
         margin-right: 8px;
+      }
+    }
+
+    &__inputs {
+      display: flex;
+      flex-wrap: wrap;
+
+      .simple-input {
+        width: 31%;
+        margin-bottom: 25px;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
       }
     }
   }
