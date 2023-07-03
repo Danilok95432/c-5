@@ -4,7 +4,7 @@
 
     .container {
       padding-top: 75px;
-      padding-bottom: 200px;
+      padding-bottom: 75px;
     }
 
     .section__title {
@@ -26,9 +26,14 @@
       justify-content: space-between;
     }
 
-    &__inner {
+    &__form {
       padding: 18px 20px 38px;
       background-color: #D6DCE3;
+      .main-btn {
+        background-color: #0D77E7;
+        font-weight: 600;
+        padding: 12px 25px;
+      }
     }
 
     &__titles {
@@ -175,6 +180,202 @@
         &:not(:last-child) {
           margin-right: 20px;
         }
+      }
+    }
+
+
+    .main-checkbox {
+      background-color: rgba(#E1EAF5, 0.8);
+      padding: 5px 5px 1px 5px;
+      margin-bottom: 10px;
+
+      input + label::before {
+        background-color: #fff;
+      }
+    }
+
+  }
+
+  .guest-info {
+    h4 {
+      color: #000;
+      font-size: 17px;
+      @include montserrat-regular;
+      margin-bottom: 30px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    &__inputs {
+      margin-bottom: 20px;
+      padding: 25px 0 25px;
+      border-top: 1px solid #ADB9C7;
+      border-bottom: 1px solid #ADB9C7;
+
+      .simple-input {
+        margin-right: 20px;
+        width: 26.5%;
+      }
+
+      .custom-select {
+        width: 130px;
+
+        .choices__inner {
+          background-color: #fff;
+        }
+
+        .choices__list--single {
+          padding: 3px 16px 4px 0;
+        }
+
+        svg {
+          top: 19px;
+        }
+
+        img {
+          width: 29px;
+          height: 20px;
+        }
+
+        .choices__item {
+          background-size: 30px 21px;
+          height: 30px;
+          background-position: 10px center;
+          background-repeat: no-repeat;
+        }
+
+        .choices__list[aria-expanded] .choices__item {
+          padding: 0;
+          margin-bottom: 5px;
+        }
+
+        .choices__item[data-value="ru"] {
+          background-image: url("../img/ru-flag.png");
+        }
+
+        .choices__item.choices__item--choice.is-selected.choices__item--selectable {
+          background-color: #E1EAF5;
+        }
+
+        .choices__item[data-value="blg"] {
+          background-image: url("../img/blg-flag.png");
+        }
+
+      }
+    }
+
+    &__inputs-item {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__add {
+      display: flex;
+      align-items: center;
+      color: #3188E4;
+      font-size: 17px;
+      @include montserrat-medium;
+
+      svg {
+        margin-right: 8px;
+      }
+    }
+
+
+  }
+
+  .check-time {
+
+    margin-bottom: 35px;
+
+    &__desc {
+      margin-bottom: 35px;
+
+      p {
+        font-size: 17px;
+        line-height: 25px;
+      }
+    }
+
+    &__select-wrapper {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+
+      span {
+        font-size: 17px;
+        width: 70px;
+      }
+    }
+
+    .custom-select {
+      width: 420px;
+
+
+      svg {
+        top: 20px;
+      }
+
+      .choices__list--single {
+        padding: 6px 30px 4px 4px;
+      }
+
+      .choices__inner {
+        background-color: #fff;
+      }
+
+      .choices__item--selectable {
+        font-weight: 600;
+      }
+
+    }
+
+  }
+
+  .add-comment {
+    .custom-textarea {
+      height: 145px;
+    }
+  }
+
+  .payment {
+
+    &__desc {
+      margin-bottom: 35px;
+      max-width: 1040px;
+
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 25px;
+
+      a {
+        color: #3188E4;
+      }
+    }
+
+    .main-radio {
+      margin-bottom: 30px;
+
+      input + label {
+        align-items: flex-start;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px;
+        @include montserrat-semibold;
       }
     }
   }

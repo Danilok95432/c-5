@@ -1,0 +1,18 @@
+.custom-textarea {
+  width: 100%;
+  border: 1px solid #ADB9C7;
+  background: #FFF;
+  resize: none;
+  color: $black;
+  font-size: 15px;
+  @include montserrat-regular;
+  padding: 15px 17px;
+  outline: none;
+
+  &::placeholder {
+    color: #808994;
+  }
+  &:focus {
+    border: 1px solid #0D77E7;
+  }
+}

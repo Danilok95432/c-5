@@ -15,13 +15,17 @@
   <main class="main">
     <section class="section guest-data">
       <div class="container">
-        <h1 class="section__title">Бронирование номеров гостиницы «Славянская»</h1>
-        <p class="section__desc">С помощью приведенной ниже формы вы можете забронировать наши
+        <h1 class="section__title">Бронирование номеров гостиницы
+          «Славянская»</h1>
+        <p class="section__desc">С помощью приведенной ниже формы вы можете
+          забронировать наши
           номера в режиме
-          онлайн и получить гарантированную бронь. Для оплаты вы можете использовать кредитную
+          онлайн и получить гарантированную бронь. Для оплаты вы можете
+          использовать кредитную
           карту,
-          электронные деньги, безналичный расчет либо оплатить заказ на месте.</p>
-        <div class="guest-data__inner">
+          электронные деньги, безналичный расчет либо оплатить заказ на
+          месте.</p>
+        <form action="#" class="guest-data__form">
           <div class="top-row">
             <div class="top-row__info">
               <div class="top-row__wrapper">
@@ -48,10 +52,12 @@
             <div class="top-row__lang">
 							<span>
 							<svg width="21" height="15" viewBox="0 0 21 15" fill="none"
-                   xmlns="http://www.w3.org/2000/svg"><path d="M20.89 10H0V14.89H20.89V10Z"
-                                                            fill="#D52B1E"/><path
-                d="M20.89 5H0V9.89H20.89V5Z" fill="#0039A6"/><path d="M20.89 0H0V4.89H20.89V0Z"
-                                                                   fill="white"/></svg>
+                   xmlns="http://www.w3.org/2000/svg"><path
+                d="M20.89 10H0V14.89H20.89V10Z"
+                fill="#D52B1E"/><path
+                d="M20.89 5H0V9.89H20.89V5Z" fill="#0039A6"/><path
+                d="M20.89 0H0V4.89H20.89V0Z"
+                fill="white"/></svg>
 						</span>
               <span>RUB</span>
             </div>
@@ -95,7 +101,8 @@
                 </div>
               </div>
               <div class="top-item__wrapper-right">
-                <h4>Итого <span>44 000</span> <span class="top-item__currency">₽</span></h4>
+                <h4>Итого <span>44 000</span> <span
+                  class="top-item__currency">₽</span></h4>
               </div>
             </div>
             <p class="top-item__details">
@@ -121,21 +128,226 @@
                   d="M10.0462 7.4115L7.46995 7.73438L7.3777 8.16188L7.88395 8.25525C8.2147 8.334 8.27995 8.45325 8.20795 8.78288L7.3777 12.6844C7.15945 13.6935 7.49582 14.1682 8.2867 14.1682C8.89982 14.1682 9.61195 13.8848 9.93482 13.4955L10.0338 13.0275C9.80882 13.2255 9.48032 13.3043 9.26207 13.3043C8.9527 13.3043 8.8402 13.0871 8.92007 12.7046L10.0462 7.4115ZM10.1249 5.0625C10.1249 5.36087 10.0064 5.64702 9.79544 5.85799C9.58446 6.06897 9.29831 6.1875 8.99995 6.1875C8.70158 6.1875 8.41543 6.06897 8.20445 5.85799C7.99347 5.64702 7.87495 5.36087 7.87495 5.0625C7.87495 4.76413 7.99347 4.47798 8.20445 4.267C8.41543 4.05603 8.70158 3.9375 8.99995 3.9375C9.29831 3.9375 9.58446 4.05603 9.79544 4.267C10.0064 4.47798 10.1249 4.76413 10.1249 5.0625Z"
                   fill="#0D77E7"/>
               </svg>
-              На электронную почту вам придёт подтверждение бронирования. При необходимости мы
+              На электронную почту вам придёт подтверждение бронирования. При
+              необходимости мы
               свяжемся с вами по телефону, чтобы уточнить детали.
             </p>
             <div class="contacts-item__inputs">
-              <input class="simple-input" placeholder="Фамилия" type="text" name="surname">
-              <input class="simple-input" placeholder="Имя" type="text" name="name">
-              <input class="simple-input" placeholder="Отчество" type="text" name="patronymic">
-              <input class="simple-input" placeholder="Электронная почта" type="email" name="email">
-              <input class="simple-input phone-mask" placeholder="Номер телефона" type="text"
+              <input class="simple-input" placeholder="Фамилия" type="text"
+                     name="surname">
+              <input class="simple-input" placeholder="Имя" type="text"
+                     name="name">
+              <input class="simple-input" placeholder="Отчество" type="text"
+                     name="patronymic">
+              <input class="simple-input" placeholder="Электронная почта"
+                     type="email" name="email">
+              <input class="simple-input phone-mask"
+                     placeholder="Номер телефона" type="text"
                      name="phone">
             </div>
+            <div class="main-checkbox">
+              <input type="checkbox" name="phone_confirm" id="phoneConfirm">
+              <label for="phoneConfirm">Получить подтверждение бронирования на
+                телефон</label>
+            </div>
+            <div class="main-checkbox">
+              <input type="checkbox" name="notice" id="notice">
+              <label for="notice">Я хочу узнавать о специальных
+                предложениях и новостях по email или SMS</label>
+            </div>
+            <div class="main-checkbox">
+              <input type="checkbox" name="another_booking" id="anotherBooking">
+              <label for="anotherBooking">Я бронирую для другого
+                человека</label>
+            </div>
           </div>
-        </div>
+          <h2 class="item-title">Информация о гостях</h2>
+          <div class="guest-data__item guest-info">
+            <h4><span>1 номер:</span> 2 гостя, 1 ребенок 5 лет на дополнительном
+              месте</h4>
+            <ul class="guest-info__inputs" data-list="changeable">
+              <li class="guest-info__inputs-item">
+                <input class="simple-input" placeholder="Фамилия" type="text"
+                       name="surname_guest">
+                <input class="simple-input" placeholder="Имя" type="text"
+                       name="name_guest">
+                <input class="simple-input" placeholder="Отчество" type="text"
+                       name="patronymic_guest">
+                <div class="custom-select">
+                  <select name="country_guest">
+                    <option value="ru">
+                    </option>
+                    <option value="blg">
+                    </option>
+                  </select>
+                  <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.71429 7L13.3951 0.25H0.0335183L6.71429 7Z"
+                          fill="#ADB9C7"/>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+            <button class="guest-info__add" data-btn="add"
+                    data-template="guest-item" type="button">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 18.75C7.67936 18.75 5.45376 17.8281 3.81282 16.1872C2.17187 14.5462 1.25 12.3206 1.25 10C1.25 7.67936 2.17187 5.45376 3.81282 3.81282C5.45376 2.17187 7.67936 1.25 10 1.25C12.3206 1.25 14.5462 2.17187 16.1872 3.81282C17.8281 5.45376 18.75 7.67936 18.75 10C18.75 12.3206 17.8281 14.5462 16.1872 16.1872C14.5462 17.8281 12.3206 18.75 10 18.75ZM10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20Z"
+                  fill="#3188E4"/>
+                <path
+                  d="M10 5C10.1658 5 10.3247 5.06585 10.4419 5.18306C10.5592 5.30027 10.625 5.45924 10.625 5.625V9.375H14.375C14.5408 9.375 14.6997 9.44085 14.8169 9.55806C14.9342 9.67527 15 9.83424 15 10C15 10.1658 14.9342 10.3247 14.8169 10.4419C14.6997 10.5592 14.5408 10.625 14.375 10.625H10.625V14.375C10.625 14.5408 10.5592 14.6997 10.4419 14.8169C10.3247 14.9342 10.1658 15 10 15C9.83424 15 9.67527 14.9342 9.55806 14.8169C9.44085 14.6997 9.375 14.5408 9.375 14.375V10.625H5.625C5.45924 10.625 5.30027 10.5592 5.18306 10.4419C5.06585 10.3247 5 10.1658 5 10C5 9.83424 5.06585 9.67527 5.18306 9.55806C5.30027 9.44085 5.45924 9.375 5.625 9.375H9.375V5.625C9.375 5.45924 9.44085 5.30027 9.55806 5.18306C9.67527 5.06585 9.83424 5 10 5Z"
+                  fill="#3188E4"/>
+              </svg>
+              Указать данные следующего гостя
+            </button>
+          </div>
+          <h2 class="item-title">Время заезда и выезда</h2>
+          <div class="guest-data__item check-time">
+            <div class="check-time__desc">
+              <p>Вы можете выбрать удобное для вас время заезда и выезда.</p>
+              <p>Услуга раннего заезда и позднего выезда предоставляется за
+                дополнительную плату.</p>
+              <p>Стандартное время заезда — 14:00, выезда — 12:00.</p>
+            </div>
+
+            <div class="check-time__select-wrapper">
+              <span>Заезд</span>
+              <div class="custom-select">
+                <select name="check-in_time">
+                  <option value="13">
+                    13:00 — 1000 Р ранний заезд
+                  </option>
+                  <option value="14">
+                    14:00
+                  </option>
+                  <option value="15">
+                    15:00
+                  </option>
+                </select>
+                <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.71429 7L13.3951 0.25H0.0335183L6.71429 7Z"
+                        fill="#ADB9C7"/>
+                </svg>
+              </div>
+            </div>
+            <div class="check-time__select-wrapper">
+              <span>Выезд</span>
+              <div class="custom-select">
+                <select name="check-in_time">
+                  <option value="12">
+                    12:00
+                  </option>
+                  <option value="13">
+                    13:00
+                  </option>
+                  <option value="14">
+                    14:00
+                  </option>
+                  <option value="15">
+                    15:00
+                  </option>
+                </select>
+                <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.71429 7L13.3951 0.25H0.0335183L6.71429 7Z"
+                        fill="#ADB9C7"/>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+          <h2 class="item-title">Дополнительные комментарии</h2>
+          <div class="guest-data__item add-comment">
+            <textarea class="custom-textarea" name="add_comment"
+                      placeholder="Если у вас есть дополнительные пожелания, пожалуйста, напишите нам об этом. Мы постараемся их учесть."></textarea>
+          </div>
+          <h2 class="item-title">Выберите способ оплаты</h2>
+          <div class="guest-data__item payment">
+            <p class="payment__desc">Фактом бронирования вы соглашаетесь с <a
+              href="#">правилами
+              онлайн-бронирования, обработкой персональных данных</a> и
+              <a href="#">политикой конфиденциальности</a>
+            </p>
+
+            <div class="main-radio">
+              <input type="radio" name="pay_type" id="type_1" value="1" checked>
+              <label for="type_1">
+                <div class="label-wrapper">
+                  <span>Оплатить при заселении</span>
+                  <p>
+                    Выбирая этот способ оплаты, вы не вносите предоплату за
+                    бронь.
+                    Получите подтверждение бронирования на электронную почту,
+                    которую указали при бронировании, и предъявите его при
+                    заселении.
+                  </p>
+                </div>
+
+              </label>
+            </div>
+            <div class="main-radio">
+              <input type="radio" name="pay_type" id="type_2" value="2">
+              <label for="type_2">
+                <div class="label-wrapper">
+                  <span>Гарантия банковской картой</span>
+                  <p>
+                    Вы указываете данные кредитной карты, которые поступят в
+                    отель, для гарантии бронирования и получаете подтверждение
+                    на электронную почту.
+                    Внимание! К оплате принимаются карты Visa, Visa Electron,
+                    MasterCard, НСПК Мир и Maestro.
+                  </p>
+                </div>
+
+              </label>
+            </div>
+            <div class="main-radio">
+              <input type="radio" name="pay_type" id="type_3" value="3">
+              <label for="type_3">
+                <div class="label-wrapper">
+                  <span>Безналичный расчет</span>
+                  <p>
+                    Для юридических лиц
+                    Оплачивается вся сумма брони. Вы получите подтверждение
+                    бронирования и счет на оплату. Счет нужно оплатить в течение
+                    3 банковских дней.
+                  </p>
+                </div>
+
+              </label>
+            </div>
+
+
+          </div>
+          <button class="main-btn" type="submit">забронировать номер</button>
+        </form>
       </div>
     </section>
+    <template id="guest-item">
+      <li class="guest-info__inputs-item">
+        <input class="simple-input" placeholder="Фамилия" type="text"
+               name="surname_guest">
+        <input class="simple-input" placeholder="Имя" type="text"
+               name="name_guest">
+        <input class="simple-input" placeholder="Отчество" type="text"
+               name="patronymic_guest">
+        <div class="custom-select">
+          <select name="country_guest">
+            <option value="ru">
+            </option>
+            <option value="blg">
+            </option>
+          </select>
+          <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.71429 7L13.3951 0.25H0.0335183L6.71429 7Z"
+                  fill="#ADB9C7"/>
+          </svg>
+        </div>
+      </li>
+    </template>
   </main>
   @include('partials/footer.html')
 </div>
