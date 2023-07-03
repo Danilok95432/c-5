@@ -1,6 +1,9 @@
-.selection-rooms-page {
+.selection-one-room-page {
+  main {
+    margin-top: 140px;
+  }
 
-  .selection-rooms {
+  .selection-one-room {
     border-top: 1px solid #ADB9C7;
 
     .container {
@@ -36,8 +39,23 @@
 
         li {
           max-width: 382px;
-          border: 1px solid #ADB9C7;
           position: relative;
+
+          &:not(:last-child) {
+            border: 1px solid #ADB9C7;
+          }
+
+          &:last-child {
+            background: none;
+            display: flex;
+          }
+        }
+
+        &__item {
+          display: none;
+        &._show {
+          display: list-item;
+        }
         }
 
         &__swiper {
@@ -207,6 +225,34 @@
           text-transform: uppercase;
           border: 1px solid #0D77E7;
         }
+
+        &__btn-show {
+          height: 46px;
+          width: 100%;
+          padding: 0 25px;
+          margin: auto;
+          font-size: 15px;
+          font-weight: 500;
+          color: #0D77E7;
+          border: 1px solid #0D77E7;
+
+          span {
+            &:last-child {
+              display: none;
+            }
+          }
+          &._active {
+            span {
+              &:first-child {
+                display: none;
+              }
+              &:last-child {
+                display: block;
+              }
+            }
+          }
+        }
+
       }
 
     }
