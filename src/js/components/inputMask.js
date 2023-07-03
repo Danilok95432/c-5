@@ -60,6 +60,18 @@ export const initAllMasks = () => {
     })
   }
 
+  const phoneMasks = document.querySelectorAll('.phone-mask')
+  if (phoneMasks) {
+    phoneMasks.forEach(itemMask => {
+      Inputmask({
+        "mask": "+7 (999) 999-99-99",
+        showMaskOnHover: false,
+        showMaskOnFocus: false,
+        shortcuts: null
+      }).mask(itemMask)
+    })
+  }
+
 
   //маска валют для текстовых элементов
 
