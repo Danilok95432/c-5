@@ -56,6 +56,10 @@
         outline: 1px solid #515151;
         outline-offset: -1px;
       }
+      .swiper-slide-thumb-active {
+        outline: 2px solid #0D77E7;
+        outline-offset: -2px;
+      }
     }
 
     &__titles {

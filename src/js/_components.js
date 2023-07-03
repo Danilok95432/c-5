@@ -8,6 +8,7 @@ import './components/customInputs'
 import './components/cutStrings'
 import './components/galleryImg'
 import './components/fixedNavMenu'
+import './components/show-room'
 
 
 

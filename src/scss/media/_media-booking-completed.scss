@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+  .booking-completed-page .booking-completed__btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .booking-completed-page .booking-completed__btns .blue-btn:first-child {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .booking-completed-page .booking-completed__inner {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .booking-completed-page .booking-completed__block {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .booking-completed-page .booking-completed__btns .blue-btn:first-child {
+    width: 100%;
+    min-height: 46px;
+    height: max-content;
+  }
+  .booking-completed-page .booking-completed__top p {
+    font-size: 24px;
+  }
+}
