@@ -1,12 +1,9 @@
-const listItems = document.querySelectorAll('.rooms-list__item')
 const btnShow = document.querySelector('.rooms-list__btn-show')
 
-if (btnShow && listItems) {
+if (btnShow) {
   btnShow.addEventListener('click', () => {
-    btnShow.classList.toggle('_active')
-    listItems.forEach(item => {
-      item.classList.toggle('_show')
-    })
+    const roomsList = btnShow.closest('.rooms-list ')
+    roomsList.classList.toggle('_show-all')
   })
 }
 

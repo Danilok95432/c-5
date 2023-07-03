@@ -35,11 +35,16 @@
         &.grid-layout {
           grid-column-gap: 20px;
           grid-row-gap: 20px;
+          justify-items: start;
         }
 
         li {
           max-width: 382px;
           position: relative;
+
+          &:not(._basic) {
+            display: none;
+          }
 
           &:not(:last-child) {
             border: 1px solid #ADB9C7;
@@ -51,11 +56,21 @@
           }
         }
 
-        &__item {
-          display: none;
-        &._show {
-          display: list-item;
-        }
+        &._show-all {
+          li:not(:last-child) {
+            display: block;
+          }
+
+          .rooms-list__btn-show {
+            span:first-child {
+              display: none;
+            }
+            span:last-child {
+              display: block;
+            }
+          }
+
+
         }
 
         &__swiper {
@@ -239,16 +254,6 @@
           span {
             &:last-child {
               display: none;
-            }
-          }
-          &._active {
-            span {
-              &:first-child {
-                display: none;
-              }
-              &:last-child {
-                display: block;
-              }
             }
           }
         }
