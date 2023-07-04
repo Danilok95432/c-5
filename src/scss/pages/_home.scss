@@ -1,6 +1,10 @@
 .home-page {
   padding-top: 140px;
 
+  .air-datepicker-global-container {
+    z-index: 1300;
+  }
+
   .section-title {
     color: #000;
     text-align: center;
@@ -163,8 +167,6 @@
             margin-bottom: 20px;
             border-bottom: 1px solid #ADB9C7;
           }
-
-
         }
 
         a {
@@ -309,7 +311,7 @@
       }
 
       &__img {
-        padding-top: 30%;
+        padding-top: 33%;
         position: relative;
         cursor: pointer;
 
