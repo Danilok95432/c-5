@@ -13,3 +13,16 @@ if (homePage) {
   })
 
 }
+
+const restaurantPage = document.querySelector('.restaurant-page')
+
+
+if (restaurantPage) {
+  const restaurantGallery = restaurantPage.querySelectorAll('.restaurant-page .cafe__gallery a')
+
+  const restaurantLightbox = new SimpleLightbox(restaurantGallery, {
+    overlayOpacity: 0.85,
+    showCounter: false,
+  })
+
+}

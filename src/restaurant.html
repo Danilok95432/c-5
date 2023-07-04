@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Ресторан'
+})
+
+<body class="page__body restaurant-page">
+
+<div class="site-container">
+	<header class="header">
+		@include('partials/main-menu.html')
+		<div class="header__inner">
+		</div>
+	</header>
+
+	<main class="main">
+		<!-- <section class="section services">
+		   <div class="container">
+			 <h2 class="section-title">
+			   Уютная гостиница с рестораном,
+			   отличным номерным фондом
+			   и конференц-залом
+			 </h2>
+			 <p class="section-desc">Воспользуйтесь специальными скидками и
+			   эксклюзивными предложениями
+			   при бронировании напрямую в отеле «Славянская». Наши специальные
+			   предложения разработаны с учетом самых востребованных услуг и
+			   требований наших гостей.</p>
+			 <ul class="rooms-list grid-layout">
+			   <li>
+				 <div class="rooms-list__image">
+				   <img src="img/rooms-item.jpg" alt="">
+				 </div>
+				 <a href="#" class="rooms-list__content">
+				   <h3 class="rooms-list__title">Романтический пакет с ужином</h3>
+				   <p class="rooms-list__desc" data-shear="130">Если Вы понимаете,
+					 что пришло время романтики и сюрпризов, тогда прислушайтесь к
+					 себе и
+					 воплотите Lorem ipsum dolor sit amet.</p>
+				   <div class="rooms-list__hover-content">
+					 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+						  xmlns="http://www.w3.org/2000/svg">
+					   <path
+						 d="M20.5217 26.2611L19.9131 25.7393L25.4783 19.9132L19.9131 14.0872L20.5217 13.4785L26.6957 19.9132L20.5217 26.2611Z"
+						 fill="#A8B6BD"/>
+					   <path
+						 d="M20 40C8.95652 40 0 31.0435 0 20C0 8.95652 8.95652 0 20 0C31.0435 0 40 8.95652 40 20C40 31.0435 30.9565 40 20 40ZM20 0.869565C9.47826 0.869565 0.869565 9.47826 0.869565 20C0.869565 30.5217 9.47826 39.1304 20 39.1304C30.5217 39.1304 39.1304 30.5217 39.1304 20C39.1304 9.47826 30.5217 0.869565 20 0.869565Z"
+						 fill="#A8B6BD"/>
+					   <path d="M26.1733 19.4785H15.3037V20.3481H26.1733V19.4785Z"
+							 fill="#A8B6BD"/>
+					 </svg>
+				   </div>
+				 </a>
+			   </li>
+			   <li>
+				 <div class="rooms-list__image">
+				   <img src="img/rooms-item-1.jpg" alt="">
+				 </div>
+				 <a href="#" class="rooms-list__content">
+				   <h3 class="rooms-list__title">Романтический пакет с ужином</h3>
+				   <p class="rooms-list__desc" data-shear="130">Забронируйте номер на
+					 10 или более дней подряд со скидкой 20% и приятными бонусами от
+					 отеля.</p>
+				   <div class="rooms-list__hover-content">
+					 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+						  xmlns="http://www.w3.org/2000/svg">
+					   <path
+						 d="M20.5217 26.2611L19.9131 25.7393L25.4783 19.9132L19.9131 14.0872L20.5217 13.4785L26.6957 19.9132L20.5217 26.2611Z"
+						 fill="#A8B6BD"/>
+					   <path
+						 d="M20 40C8.95652 40 0 31.0435 0 20C0 8.95652 8.95652 0 20 0C31.0435 0 40 8.95652 40 20C40 31.0435 30.9565 40 20 40ZM20 0.869565C9.47826 0.869565 0.869565 9.47826 0.869565 20C0.869565 30.5217 9.47826 39.1304 20 39.1304C30.5217 39.1304 39.1304 30.5217 39.1304 20C39.1304 9.47826 30.5217 0.869565 20 0.869565Z"
+						 fill="#A8B6BD"/>
+					   <path d="M26.1733 19.4785H15.3037V20.3481H26.1733V19.4785Z"
+							 fill="#A8B6BD"/>
+					 </svg>
+				   </div>
+				 </a>
+			   </li>
+			   <li>
+				 <div class="rooms-list__image">
+				   <img src="img/rooms-item-2.jpg" alt="">
+				 </div>
+				 <a href="#" class="rooms-list__content">
+				   <h3 class="rooms-list__title">Длительное проживание
+					 в номерах</h3>
+				   <p class="rooms-list__desc" data-shear="130">Забронируйте номер на
+					 10 или более
+					 дней подряд со скидкой 20% и приятными бонусами от отеля.</p>
+				   <div class="rooms-list__hover-content">
+					 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+						  xmlns="http://www.w3.org/2000/svg">
+					   <path
+						 d="M20.5217 26.2611L19.9131 25.7393L25.4783 19.9132L19.9131 14.0872L20.5217 13.4785L26.6957 19.9132L20.5217 26.2611Z"
+						 fill="#A8B6BD"/>
+					   <path
+						 d="M20 40C8.95652 40 0 31.0435 0 20C0 8.95652 8.95652 0 20 0C31.0435 0 40 8.95652 40 20C40 31.0435 30.9565 40 20 40ZM20 0.869565C9.47826 0.869565 0.869565 9.47826 0.869565 20C0.869565 30.5217 9.47826 39.1304 20 39.1304C30.5217 39.1304 39.1304 30.5217 39.1304 20C39.1304 9.47826 30.5217 0.869565 20 0.869565Z"
+						 fill="#A8B6BD"/>
+					   <path d="M26.1733 19.4785H15.3037V20.3481H26.1733V19.4785Z"
+							 fill="#A8B6BD"/>
+					 </svg>
+				   </div>
+				 </a>
+			   </li>
+			   <li>
+				 <div class="rooms-list__image">
+				   <img src="img/rooms-item-3.jpg" alt="">
+				 </div>
+				 <a href="#" class="rooms-list__content">
+				   <h3 class="rooms-list__title">Романтический пакет с ужином</h3>
+				   <p class="rooms-list__desc" data-shear="130">Если Вы понимаете,
+					 что пришло время романтики и сюрпризов, тогда прислушайтесь к
+					 себе и воплотите всe</p>
+				   <div class="rooms-list__hover-content">
+					 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+						  xmlns="http://www.w3.org/2000/svg">
+					   <path
+						 d="M20.5217 26.2611L19.9131 25.7393L25.4783 19.9132L19.9131 14.0872L20.5217 13.4785L26.6957 19.9132L20.5217 26.2611Z"
+						 fill="#A8B6BD"/>
+					   <path
+						 d="M20 40C8.95652 40 0 31.0435 0 20C0 8.95652 8.95652 0 20 0C31.0435 0 40 8.95652 40 20C40 31.0435 30.9565 40 20 40ZM20 0.869565C9.47826 0.869565 0.869565 9.47826 0.869565 20C0.869565 30.5217 9.47826 39.1304 20 39.1304C30.5217 39.1304 39.1304 30.5217 39.1304 20C39.1304 9.47826 30.5217 0.869565 20 0.869565Z"
+						 fill="#A8B6BD"/>
+					   <path d="M26.1733 19.4785H15.3037V20.3481H26.1733V19.4785Z"
+							 fill="#A8B6BD"/>
+					 </svg>
+				   </div>
+				 </a>
+			   </li>
+			   <li>
+				 <div class="rooms-list__image">
+				   <img src="img/rooms-item-4.jpg" alt="">
+				 </div>
+				 <a href="#" class="rooms-list__content">
+				   <h3 class="rooms-list__title">Романтический пакет с ужином</h3>
+				   <p class="rooms-list__desc" data-shear="130">Если Вы понимаете,
+					 что пришло время
+					 романтики и сюрпризов, тогда прислушайтесь к себе и воплотите
+					 все</p>
+				   <div class="rooms-list__hover-content">
+					 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+						  xmlns="http://www.w3.org/2000/svg">
+					   <path
+						 d="M20.5217 26.2611L19.9131 25.7393L25.4783 19.9132L19.9131 14.0872L20.5217 13.4785L26.6957 19.9132L20.5217 26.2611Z"
+						 fill="#A8B6BD"/>
+					   <path
+						 d="M20 40C8.95652 40 0 31.0435 0 20C0 8.95652 8.95652 0 20 0C31.0435 0 40 8.95652 40 20C40 31.0435 30.9565 40 20 40ZM20 0.869565C9.47826 0.869565 0.869565 9.47826 0.869565 20C0.869565 30.5217 9.47826 39.1304 20 39.1304C30.5217 39.1304 39.1304 30.5217 39.1304 20C39.1304 9.47826 30.5217 0.869565 20 0.869565Z"
+						 fill="#A8B6BD"/>
+					   <path d="M26.1733 19.4785H15.3037V20.3481H26.1733V19.4785Z"
+							 fill="#A8B6BD"/>
+					 </svg>
+				   </div>
+				 </a>
+			   </li>
+			   <li>
+				 <div class="rooms-list__image">
+				   <img src="img/rooms-item-1.jpg" alt="">
+				 </div>
+				 <a href="#" class="rooms-list__content">
+				   <h3 class="rooms-list__title">Романтический пакет с ужином</h3>
+				   <p class="rooms-list__desc">Если Вы понимаете, что пришло время
+					 романтики и сюрпризов, тогда прислушайтесь к себе и воплотите
+					 все</p>
+				   <div class="rooms-list__hover-content">
+					 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+						  xmlns="http://www.w3.org/2000/svg">
+					   <path
+						 d="M20.5217 26.2611L19.9131 25.7393L25.4783 19.9132L19.9131 14.0872L20.5217 13.4785L26.6957 19.9132L20.5217 26.2611Z"
+						 fill="#A8B6BD"/>
+					   <path
+						 d="M20 40C8.95652 40 0 31.0435 0 20C0 8.95652 8.95652 0 20 0C31.0435 0 40 8.95652 40 20C40 31.0435 30.9565 40 20 40ZM20 0.869565C9.47826 0.869565 0.869565 9.47826 0.869565 20C0.869565 30.5217 9.47826 39.1304 20 39.1304C30.5217 39.1304 39.1304 30.5217 39.1304 20C39.1304 9.47826 30.5217 0.869565 20 0.869565Z"
+						 fill="#A8B6BD"/>
+					   <path d="M26.1733 19.4785H15.3037V20.3481H26.1733V19.4785Z"
+							 fill="#A8B6BD"/>
+					 </svg>
+				   </div>
+				 </a>
+			   </li>
+			 </ul>
+			 <a class="main-btn _gray" href="rooms.html">
+			   ознакомиться с предложениями
+			 </a>
+		   </div>
+		 </section>-->
+		<section class="section our-rooms">
+			<div class="container">
+				<h2>Организация банкета</h2>
+			</div>
+			<div class="rooms-swiper-container">
+				<div class="swiper rooms-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="rooms-swiper__img">
+								<img src="img/restaurant-slide.jpg"
+									 alt="rooms-slide">
+							</div>
+							<div class="rooms-swiper__desc">
+								<p>Планируете отпраздновать день рождения, корпоративное мероприятие или другое памятное
+									событие? Ресторан гостиницы «Славянская» всегда к Вашим услугам. В ресторане ...
+									просторных зала с видом на ... общей вместимостью до ... человек...</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="rooms-swiper__img">
+								<img src="img/restaurant-slide.jpg"
+									 alt="rooms-slide">
+							</div>
+							<div class="rooms-swiper__desc">
+								<p>Планируете отпраздновать день рождения, корпоративное мероприятие или другое памятное
+									событие? Ресторан гостиницы «Славянская» всегда к Вашим услугам. В ресторане ...
+									просторных зала с видом на ... общей вместимостью до ... человек...</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="rooms-swiper__img">
+								<img src="img/restaurant-slide.jpg"
+									 alt="rooms-slide">
+							</div>
+							<div class="rooms-swiper__desc">
+								<p>Планируете отпраздновать день рождения, корпоративное мероприятие или другое памятное
+									событие? Ресторан гостиницы «Славянская» всегда к Вашим услугам. В ресторане ...
+									просторных зала с видом на ... общей вместимостью до ... человек...</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="rooms-swiper__img">
+								<img src="img/restaurant-slide.jpg"
+									 alt="rooms-slide">
+							</div>
+							<div class="rooms-swiper__desc">
+								<p>Планируете отпраздновать день рождения, корпоративное мероприятие или другое памятное
+									событие? Ресторан гостиницы «Славянская» всегда к Вашим услугам. В ресторане ...
+									просторных зала с видом на ... общей вместимостью до ... человек...</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="rooms-swiper__img">
+								<img src="img/restaurant-slide.jpg"
+									 alt="rooms-slide">
+							</div>
+							<div class="rooms-swiper__desc">
+								<p>Планируете отпраздновать день рождения, корпоративное мероприятие или другое памятное
+									событие? Ресторан гостиницы «Славянская» всегда к Вашим услугам. В ресторане ...
+									просторных зала с видом на ... общей вместимостью до ... человек...</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper__controls rooms-swiper__controls">
+						<button class="rooms-swiper__swiper-button-prev swiper-btn _prev">
+							<svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+								 xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M21.9117 15.4571L22.5964 16.0441L16.3356 22.5982L22.5964 29.1523L21.9117 29.8371L14.9661 22.5982L21.9117 15.4571Z"
+										fill="#808994"/>
+								<path
+										d="M22.4994 0.00117874C34.923 0.00117874 44.9988 10.077 44.9988 22.5006C44.9988 34.9242 34.923 45 22.4994 45C10.0758 45 -1.14441e-05 34.9242 -1.14441e-05 22.5006C-1.14441e-05 10.077 10.1736 0.00117874 22.4994 0.00117874ZM22.4994 44.0218C34.336 44.0218 44.0206 34.3372 44.0206 22.5006C44.0206 10.6639 34.336 0.979416 22.4994 0.979416C10.6628 0.979416 0.978226 10.6639 0.978226 22.5006C0.978226 34.3372 10.6628 44.0218 22.4994 44.0218Z"
+										fill="#808994"/>
+								<path d="M15.555 23.0869H27.783V22.1087H15.555V23.0869Z"
+									  fill="#808994"/>
+							</svg>
+						</button>
+						<button class="rooms-swiper__swiper-button-next swiper-btn _next">
+							<svg width="46" height="45" viewBox="0 0 46 45" fill="none"
+								 xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M23.6283 29.5429L22.9436 28.9559L29.2043 22.4018L22.9436 15.8477L23.6283 15.1629L30.5739 22.4018L23.6283 29.5429Z"
+										fill="#808994"/>
+								<path
+										d="M23.0404 44.9988C10.6168 44.9988 0.541016 34.923 0.541016 22.4994C0.541016 10.0758 10.6168 0 23.0404 0C35.464 0 45.5398 10.0758 45.5398 22.4994C45.5398 34.923 35.3662 44.9988 23.0404 44.9988ZM23.0404 0.978235C11.2038 0.978235 1.51925 10.6628 1.51925 22.4994C1.51925 34.3361 11.2038 44.0206 23.0404 44.0206C34.8771 44.0206 44.5616 34.3361 44.5616 22.4994C44.5616 10.6628 34.8771 0.978235 23.0404 0.978235Z"
+										fill="#808994"/>
+								<path d="M29.9858 21.9131H17.7578V22.8913H29.9858V21.9131Z"
+									  fill="#808994"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section cafe">
+			<div class="container">
+				<div class="cafe__gallery grid-layout">
+					<a href="img/restaurant-gall.jpg">
+						<img src="img/restaurant-gall.jpg"/>
+					</a>
+					<a href="img/restaurant-gall-1.jpg">
+						<img src="img/restaurant-gall-1.jpg"/>
+					</a>
+					<a href="img/restaurant-gall-2.jpg">
+						<img src="img/restaurant-gall-2.jpg"/>
+					</a>
+					<a href="img/restaurant-gall-3.jpg">
+						<img src="img/restaurant-gall-3.jpg"/>
+					</a>
+					<a href="img/restaurant-gall-4.jpg">
+						<img src="img/restaurant-gall-4.jpg"/>
+					</a>
+					<a href="img/restaurant-gall-5.jpg">
+						<img src="img/restaurant-gall-5.jpg"/>
+					</a>
+					<a href="img/restaurant-gall-6.jpg">
+						<img src="img/restaurant-gall-6.jpg"/>
+					</a>
+					<a href="img/restaurant-gall-7.jpg">
+						<img src="img/restaurant-gall-7.jpg"/>
+					</a>
+					<a href="img/restaurant-gall-7.jpg">
+						<img src="img/restaurant-gall-7.jpg"/>
+					</a>
+					<a href="img/restaurant-gall-8.jpg">
+						<img src="img/restaurant-gall-8.jpg"/>
+					</a>
+					<a href="img/restaurant-gall.jpg">
+						<img src="img/restaurant-gall.jpg"/>
+					</a>
+					<a href="img/restaurant-gall-4.jpg">
+						<img src="img/restaurant-gall-4.jpg"/>
+					</a>
+
+				</div>
+
+
+			</div>
+		</section>
+
+	</main>
+	@include('partials/footer.html')
+</div>
+
+</body>
+
+</html>
