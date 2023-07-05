@@ -23,6 +23,11 @@ $main-blue: #072E57;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
+@mixin montserrat-italic {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
 @mixin book-bold {
   font-family: 'Book Antiqua', serif;
   font-weight: 700;

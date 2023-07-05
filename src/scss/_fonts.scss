@@ -47,6 +47,15 @@
   font-display: swap;
 }
 @font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+  url('../fonts/Montserrat-Italic.woff') format('woff'),
+  url('../fonts/Montserrat-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
   font-family: 'Book Antiqua';
   src: url('../fonts/BookAntiqua-Bold.woff2') format('woff2'),
   url('../fonts/BookAntiqua-Bold.woff') format('woff'),
