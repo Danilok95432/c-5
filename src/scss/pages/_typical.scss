@@ -1,0 +1,64 @@
+.typical-page {
+  background-color: #FFFFFF;
+
+  .breadcrumbs {
+    margin-bottom: 29px;
+    padding-top: 35px;
+  }
+
+  .typical {
+    > .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__content {
+      margin-right: 20px;
+
+      > p {
+        margin-bottom: 30px;
+
+        b {
+          display: block;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__desc {
+      text-align: left;
+    }
+
+    &__link {
+      display: block;
+      width: max-content;
+      margin-bottom: 15px;
+      color: #3188E4;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+    .section__title {
+      margin-bottom: 29px;
+      text-align: left;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    aside {
+      width: 296px;
+      flex-shrink: 0;
+    }
+
+    .aside-menu {
+      margin-bottom: 25px;
+    }
+
+  }
+}

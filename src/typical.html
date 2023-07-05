@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Номера'
+})
+
+<body class="page__body typical-page">
+
+<div class="site-container">
+	<header class="header">
+		@include('partials/main-menu.html')
+	</header>
+
+	<main class="main">
+		<div class="breadcrumbs container">
+			<a href="index.html">Главная</a>&nbsp;/&nbsp;<a href="#">Досуг
+		</a>&nbsp;/&nbsp;<span>Куда сходить в Тамбове</span>
+		</div>
+		<section class="section typical">
+			<div class="container">
+				<div class="typical__content">
+					<h1 class="section__title">Куда сходить в Тамбове</h1>
+					<h2>Театры</h2>
+					<p class="typical__desc">
+						<b>«Тамбовский драматический театр»</b>
+						Адрес местонахождения: г. Тамбов, ул. Интернациональная, д.15 <br>
+						Контактный телефон: (4752) 71-95-80, 72-13-65
+					</p>
+					<p class="typical__desc">
+						<b>«Театр кукол»</b>
+						Тамбовский кукольный театр.<br>
+						Адрес местонахождения: г. Тамбов, ул. Интернациональная, д.15<br>
+						Контактный телефон: (4752) 72-11-58
+					</p>
+					<p class="typical__desc">
+						<b>«Учебный театр ТГУ»</b>
+						В учебном театре ТГУ проходят концерты, спектакли, музыкальные фестивали, закрытые показы.<br>
+						Адрес местонахождения: г. Тамбов, ул. Советская , д.6
+					</p>
+					<h2>Кинотеатры</h2>
+					<p class="typical__desc">
+						<b>«Киномакс-Фестиваль»</b>
+						кинозалы, система звука Dolby Digital Surround, комфортабельные кресла, плазменный экран <br>
+						Адрес местонахождения: г. Тамбов, бул. Энтузиастов, д.1А<br>
+						Контактный телефон: (4752) 63-34-35, 63-39-39, 50-41-07
+					</p>
+					<p class="typical__desc">
+						<b>«Киномакс-Акварель»</b>
+						Адрес местонахождения: г.Тамбов, Студенецкая набережная, д.20а <br>
+						Контактный телефон: (4752) 43-07-77
+					</p>
+					<a href="#" class="typical__link">Пример ссылки в тексте 1</a>
+					<a href="#" class="typical__link">Пример ссылки в тексте 2</a>
+					<a href="#" class="typical__link">Пример ссылки в тексте 3</a>
+					<a href="#" class="typical__link">Пример ссылки в тексте 4</a>
+
+					<h2>Цены</h2>
+
+				</div>
+				<aside>
+					<ul class="aside-menu">
+						<li class="aside-menu__item">
+							<a href="#">Основной пункт меню 1</a>
+							<ul class="aside-menu__submenu">
+								<li>
+									<a href="#">Подпункт 1</a>
+								</li>
+								<li>
+									<a href="#">Подпункт 2</a>
+								</li>
+								<li>
+									<a href="#">Подпункт 3</a>
+								</li>
+								<li>
+									<a href="#">Подпункт 4</a>
+								</li>
+							</ul>
+						</li>
+						<li class="aside-menu__item">
+							<a href="#">Основной пункт меню 2</a>
+						</li>
+						<li class="aside-menu__item">
+							<a href="#">Основной пункт меню 3</a>
+						</li>
+						<li class="aside-menu__item">
+							<a href="#">Основной пункт меню 4</a>
+						</li>
+						<li class="aside-menu__item">
+							<a href="#">Основной пункт меню 5</a>
+						</li>
+					</ul>
+
+					<form action="" class="aside-review">
+						<p>Как Вам наша гостиница?</p>
+						<label>
+							<input type="radio" name="review" id="5" checked>
+							Полностью понравилась
+						</label>
+						<label>
+							<input type="radio" name="review" id="4">
+							Скорее понравилась, чем нет
+						</label>
+						<label>
+							<input type="radio" name="review" id="3">
+							Трудно сказать, и да, и нет
+						</label>
+						<label>
+							<input type="radio" name="review" id="2">
+							Скорее не понравилась
+						</label>
+						<label>
+							<input type="radio" name="review" id="1">
+							Полностью не понравилась
+						</label>
+						<button class="blue-btn aside-review__btn" type="submit">Голосовать</button>
+					</form>
+
+				</aside>
+			</div>
+		</section>
+	</main>
+	@include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

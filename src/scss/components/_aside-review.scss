@@ -1,0 +1,26 @@
+.aside-review {
+  padding: 23px 28px 35px 18px;
+  width: 100%;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  p {
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  label {
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    height: 30px;
+    width: max-content;
+    text-transform: none;
+  }
+
+}

@@ -1,0 +1,33 @@
+.aside-menu {
+  padding: 23px 18px 40px;
+  width: 100%;
+  background-color: #F5F5F5;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    > a {
+      color: #3188E4;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  &__submenu {
+    padding-top: 20px;
+
+    > li {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      > a {
+        color: #000;
+        font-size: 14px;
+
+      }
+    }
+  }
+}
