@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Гости'
+})
+
+<body class="page__body guests-page">
+
+<div class="site-container">
+  <header class="header">
+    @include('partials/main-menu.html')
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <div class="guests-page__inner">
+          <div class="breadcrumbs">
+            <a href="index.html">Главная</a>&nbsp;/&nbsp;<a
+            href="#">Досуг</a>&nbsp;/&nbsp;<span>Куда сходить в Тамбове</span>
+          </div>
+          <h2 class="section__title">
+            Гости
+          </h2>
+          <p class="guests-page__desc">
+            Эта страница посвящена почетным гостям нашей гостиницы «Славянская».
+            Вот их мнение и пожелания по нашей работе.
+          </p>
+          <ul class="guests-page__list">
+            <li>
+              <img src="./img/guest-1.jpg" alt="Гость">
+              <div class="guests-page__list-content">
+                <h4>От всей души благодарю за теплый прием и доброе отношение. Храни Вас Господь! Спасибо за все!</h4>
+                <p>Заслуженная артистка России Елена Цыплакова</p>
+                <span>03.10.2009</span>
+              </div>
+            </li>
+            <li>
+              <img src="./img/guest-2.jpg" alt="Гость">
+              <div class="guests-page__list-content">
+                <h4>Коллективу гостиницы "Славянская" спасибо огромное! Уютно и стильно! Успехов, здоровья и
+                  благополучия!</h4>
+                <p>Актер Валерий Николаев</p>
+                <span>06.10.2009</span>
+              </div>
+            </li>
+            <li>
+              <img src="./img/guest-3.jpg" alt="Гость">
+              <div class="guests-page__list-content">
+                <h4>Спасибо за прекрасное обслуживание. Я от всей души желаю Вашей гостинице счастья и удачи!</h4>
+                <p>Народная артистка России Валентина Толкунова</p>
+                <span>23.07.2009</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <aside>
+          <form class="main-review" action="#">
+            <h3>Оставить отзыв</h3>
+            <div class="main-review__input-wrapper">
+              <label for="name">Ваше имя</label>
+              <input class="simple-input" type="text" name="name" id="name">
+            </div>
+            <div class="main-review__input-wrapper">
+              <label for="message">Ваше сообщение</label>
+              <textarea class="custom-textarea" type="text" name="name" id="message"></textarea>
+            </div>
+            <img class="main-review__captcha" src="./img/captcha.jpg" alt="captcha">
+            <label>Введите код с изображения</label>
+            <button class="main-review__captcha-code" type="button">сменить код</button>
+            <input class="simple-input main-review__captcha-input" type="text" name="captcha">
+            <button class="main-review__submit-btn" type="submit">Отправить</button>
+          </form>
+        </aside>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>

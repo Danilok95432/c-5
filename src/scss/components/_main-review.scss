@@ -1,0 +1,62 @@
+.main-review {
+  width: 100%;
+  background: #F5F5F5;
+  padding: 25px 18px 30px;
+
+  h3 {
+    font-size: 15px;
+    @include montserrat-semibold;
+    margin-bottom: 15px;
+  }
+
+  label {
+    color: #808994;
+    font-size: 13px;
+    @include montserrat-regular;
+    display: block;
+  }
+
+  &__input-wrapper {
+    margin-bottom: 15px;
+    .simple-input {
+      width: 100%;
+      padding: 7px 11px;
+    }
+    .custom-textarea {
+      height: 135px;
+    }
+  }
+
+  &__captcha {
+    width: 120px;
+    height: 72px;
+    margin-bottom: 5px;
+  }
+
+  &__captcha-code {
+    border: none;
+    outline: none;
+    background: none;
+    color: #0D77E7;
+    font-size: 13px;
+    @include montserrat-medium;
+    margin-bottom: 13px;
+  }
+
+  &__captcha-input {
+    margin-bottom: 17px;
+    width: 120px;
+    display: block;
+    padding: 5px 11px;
+  }
+
+  &__submit-btn {
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    @include montserrat-semibold;
+    line-height: 22px;
+    background: #0D77E7;
+    padding: 4px 17px;
+  }
+}
