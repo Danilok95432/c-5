@@ -50,13 +50,132 @@
 						Адрес местонахождения: г.Тамбов, Студенецкая набережная, д.20а <br>
 						Контактный телефон: (4752) 43-07-77
 					</p>
-					<a href="#" class="typical__link">Пример ссылки в тексте 1</a>
-					<a href="#" class="typical__link">Пример ссылки в тексте 2</a>
-					<a href="#" class="typical__link">Пример ссылки в тексте 3</a>
-					<a href="#" class="typical__link">Пример ссылки в тексте 4</a>
-
+					<ul class="typical__links">
+						<li>
+							<a href="#">Пример ссылки в тексте 1</a>
+						</li>
+						<li>
+							<a href="#">Пример ссылки в тексте 2</a>
+						</li>
+						<li>
+							<a href="#">Пример ссылки в тексте 3</a>
+						</li>
+						<li>
+							<a href="#">Пример ссылки в тексте 4</a>
+						</li>
+					</ul>
 					<h2>Цены</h2>
-
+					<div class="typical__table-wrapper">
+					<table class="typical__table">
+						<thead>
+						<tr>
+							<td rowspan="2">Тип номера</td>
+							<td rowspan="2">Кол-во номеров</td>
+							<td rowspan="2">Почасовая</td>
+							<td colspan="2">Цены услуг в сутки</td>
+							<td rowspan="2">Стоимость размещения на дополнительной кровати</td>
+						</tr>
+						<tr>
+							<td>за номер при размещении 1 чел.</td>
+							<td>за номер при размещении 2 чел.</td>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th>Одноместный «Стандарт»</th>
+							<td>3</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>500 ₽</td>
+						</tr>
+						<tr>
+							<th>Одноместный «Комфорт»</th>
+							<td>6</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>500 ₽</td>
+						</tr>
+						<tr>
+							<th>Трехместный</th>
+							<td>6</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>500 ₽</td>
+						</tr>
+						<tr>
+							<th>Двухместный</th>
+							<td>6</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>500 ₽</td>
+						</tr>
+						<tr>
+							<th>Одноместный «Студия»</th>
+							<td>6</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>500 ₽</td>
+						</tr>
+						<tr>
+							<th>Одноместный «Студия» с балконом</th>
+							<td>6</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>500 ₽</td>
+						</tr>
+						<tr>
+							<th>Одноместный «Студия» с диваном</th>
+							<td>6</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>500 ₽</td>
+						</tr>
+						<tr>
+							<th>Полулюкс</th>
+							<td>6</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>200 ₽</td>
+							<td>500 ₽</td>
+						</tr>
+						</tbody>
+					</table>
+					</div>
+					<div class="typical__inside">
+						<p>В номере (пример списка):</p>
+						<ul>
+							<li>удобное рабочее место с дополнительной лампой;</li>
+							<li>кровать с ортопедическим матрасом;</li>
+							<li>столик и кресла;</li>
+							<li>просторная ванная комната с ванной;</li>
+							<li>антиаллергенные подушки и бельё.</li>
+						</ul>
+					</div>
+					<div class="typical__images">
+						<img src="img/typical-img.jpg" alt="">
+						<ul>
+							<li><img src="img/typical-img-1.jpg" alt=""></li>
+							<li><img src="img/typical-img-2.jpg" alt=""></li>
+							<li><img src="img/typical-img-3.jpg" alt=""></li>
+							<li>
+								<button class="typical__images-btn" type="button"><span>8 ФОТО</span>
+									<svg width="42" height="15" viewBox="0 0 42 15" fill="none"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path d="M34.8703 14.38L34.1855 13.793L40.4463 7.23885L34.1855 0.684717L34.8703 0L41.8158 7.23885L34.8703 14.38Z"
+											  fill="#808994"/>
+										<path d="M41 7H0V8H41V7Z" fill="#808994"/>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<aside>
 					<ul class="aside-menu">
@@ -117,6 +236,101 @@
 					</form>
 
 				</aside>
+			</div>
+			<div class="slider">
+			<div class="slider__wrapper">
+				<button class="slider__btn-close"  type="button">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect y="26.9998" width="38.1834" height="4.2426" transform="rotate(-45 0 26.9998)"
+							  fill="#808994"/>
+						<rect x="27" y="29.9998" width="38.1834" height="4.2426" transform="rotate(-135 27 29.9998)"
+							  fill="#808994"/>
+					</svg>
+				</button>
+				<div class="swiper typical-swiper2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/one-room-slide.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-2.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-3.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-4.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-5.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-6.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-7.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-8.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-10.jpg"/>
+						</div>
+					</div>
+					<div class="swiper-button-next">
+						<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M26.7286 33.8203L25.9616 33.1753L32.8479 25.8263L25.8218 18.6109L26.5752 17.8428L34.3696 25.8117L26.7286 33.8203Z"
+								  fill="#808994"/>
+							<path d="M26.2406 50.9989C12.4369 51.1314 1.13427 40.0438 1.00174 26.2401C0.869206 12.4363 11.9569 1.13372 25.7606 1.00119C39.5643 0.868657 50.8669 11.9563 50.9994 25.76C51.132 39.5637 39.9356 50.8674 26.2406 50.9989ZM25.771 2.0881C12.6194 2.21437 1.96237 13.0781 2.08865 26.2296C2.21492 39.3812 13.0786 50.0383 26.2302 49.912C39.3817 49.7857 50.0388 38.922 49.9125 25.7705C49.7863 12.6189 38.9226 1.96183 25.771 2.0881Z"
+								  fill="#808994"/>
+							<path d="M33.7113 25.2746L20.125 25.405L20.1354 26.4919L33.7218 26.3615L33.7113 25.2746Z"
+								  fill="#808994"/>
+						</svg>
+
+					</div>
+					<div class="swiper-button-prev">
+						<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M24.3466 17.1732L25.1074 17.8254L18.1509 25.108L25.1074 32.3906L24.3466 33.1514L16.6291 25.108L24.3466 17.1732Z"
+								  fill="#808994"/>
+							<path d="M25 0C38.8043 0 50 11.1957 50 25C50 38.8043 38.8043 50 25 50C11.1957 50 0 38.8043 0 25C0 11.1957 11.3043 0 25 0ZM25 48.913C38.1522 48.913 48.913 38.1522 48.913 25C48.913 11.8478 38.1522 1.08696 25 1.08696C11.8478 1.08696 1.08696 11.8478 1.08696 25C1.08696 38.1522 11.8478 48.913 25 48.913Z"
+								  fill="#808994"/>
+							<path d="M17.2822 25.6514H30.8691V24.5644H17.2822V25.6514Z" fill="#808994"/>
+						</svg>
+					</div>
+				</div>
+				<div thumbsSlider="" class="swiper typical-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/one-room-slide.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-2.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-3.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-4.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-5.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-6.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-7.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-8.jpg"/>
+						</div>
+
+						<div class="swiper-slide">
+							<img src="https://swiperjs.com/demos/images/nature-10.jpg"/>
+						</div>
+					</div>
+				</div>
+			</div>
 			</div>
 		</section>
 	</main>
