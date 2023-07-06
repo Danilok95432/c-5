@@ -9,6 +9,7 @@ import './components/cutStrings'
 import './components/galleryImg'
 import './components/fixedNavMenu'
 import './components/show-room'
+import './components/typical-slider'
 
 
 

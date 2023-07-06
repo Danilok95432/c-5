@@ -1,11 +1,12 @@
 .aside-menu {
-  padding: 23px 18px 40px;
-  width: 100%;
+  padding: 18px 18px 30px;
+  width: 300px;
   background-color: #F5F5F5;
+  flex-shrink: 0;
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     > a {
@@ -16,7 +17,7 @@
   }
 
   &__submenu {
-    padding-top: 20px;
+    padding-top: 13px;
 
     > li {
       &:not(:last-child) {
