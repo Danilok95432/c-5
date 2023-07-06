@@ -1,6 +1,33 @@
 .home-page {
   padding-top: 140px;
 
+  .lg-toolbar {
+    margin-top: 230px;
+    @media (max-width: 1280px) {
+      margin-top: 260px;
+    }
+  }
+  .lg-outer .lg-object {
+    max-width: 60%;
+    max-height: 60%;
+    margin-top: 190px;
+    @media (max-width: 1280px) {
+      max-width: 50%;
+      max-height: 50%;
+    }
+    @media (max-width: 768px) {
+      margin-top: 150px;
+      max-width: 70%;
+      max-height: 70%;
+    }
+  }
+
+
+  .lg-next, .lg-prev {
+    top: 60%;
+  }
+
+
   .air-datepicker-global-container {
     z-index: 1300;
   }

@@ -64,9 +64,9 @@
     "imask": "^6.4.3",
     "inputmask": "^5.0.8",
     "just-validate": "^3.3.3",
+    "lightgallery": "2.7.1",
     "rellax": "^1.12.1",
     "simplebar": "^5.3.6",
-    "simplelightbox": "^2.14.1",
     "smooth-scroll": "^16.1.3",
     "swiped-events": "^1.1.6",
     "swiper": "^7.4.1"
