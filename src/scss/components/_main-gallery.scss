@@ -71,7 +71,11 @@
 
 
 .lg-toolbar {
+  margin-top: 140px;
   width: 81.5%;
+  @media (max-width: 1500px) {
+    width: 90%;
+  }
 }
 
 .lg-toolbar .lg-icon {
