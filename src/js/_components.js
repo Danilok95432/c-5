@@ -10,6 +10,8 @@ import './components/galleryImg'
 import './components/fixedNavMenu'
 import './components/show-room'
 import './components/typical-slider'
+import './components/addChildrenSelect'
+import './components/guestsModal'
 
 
 

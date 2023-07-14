@@ -1,5 +1,46 @@
-.custom-select {
+.custom-select,
+.children-select {
   position: relative;
+
+  &._add-children {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .custom-select__delete-btn {
+      position: absolute;
+      right: 15px;
+      top: 9px;
+      width: 15px;
+      height: 15px;
+      transform: rotate(45deg);
+      transition: all .3s;
+
+      &:hover {
+        &::after, &::before {
+          background-color: #3188E4;
+        }
+      }
+
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 18px;
+        right: 0;
+        top: 0;
+        background-color: #ADB9C7;
+      }
+
+      &::after {
+        transform: rotate(90deg);
+      }
+
+    }
+
+
+  }
+
 
   &:hover svg path {
     fill: #0D77E7;

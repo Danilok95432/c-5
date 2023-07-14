@@ -1,0 +1,65 @@
+.main-counter {
+  width: 135px;
+  .signature {
+    color: #808994;
+    @include montserrat-regular;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  &__inner {
+    display: flex;
+    border: 1px solid #ADB9C7;
+    padding: 5px;
+  }
+
+  &__count {
+    margin: 0 5px 0 5px;
+    max-width: 56px;
+    flex-grow: 1;
+    color: #000;
+    text-align: center;
+    @include book-bold;
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F4F9FF;
+  }
+
+  &__btn {
+    background-color: #E1EAF5;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      background-color: #838E9A;
+    }
+  }
+
+  &__dec-btn {
+    &::before {
+      width: 14px;
+      height: 2px;
+    }
+  }
+  &__inc-btn {
+    &::before {
+      width: 14px;
+      height: 2px;
+    }
+    &::after {
+      width: 2px;
+      height: 14px;
+    }
+  }
+
+
+}

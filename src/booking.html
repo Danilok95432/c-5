@@ -15,21 +15,27 @@
   <main class="main">
     <section class="section booking">
       <div class="container">
-        <h1 class="section__title">Бронирование номеров гостиницы «Славянская»</h1>
-        <p class="section__desc">С помощью приведенной ниже формы вы можете забронировать наши
+        <h1 class="section__title">Бронирование номеров гостиницы
+          «Славянская»</h1>
+        <p class="section__desc">С помощью приведенной ниже формы вы можете
+          забронировать наши
           номера в режиме
-          онлайн и получить гарантированную бронь. Для оплаты вы можете использовать кредитную
+          онлайн и получить гарантированную бронь. Для оплаты вы можете
+          использовать кредитную
           карту,
-          электронные деньги, безналичный расчет либо оплатить заказ на месте.</p>
-        <form class="booking-form" action="#">
+          электронные деньги, безналичный расчет либо оплатить заказ на
+          месте.</p>
+        <form class="booking-form" action="./data/test.txt">
           <div class="booking-form__row-title">
             <h2>Выберите даты заезда, выезда и количество гостей</h2>
             <span class="booking-form__lang">
 							<svg width="21" height="15" viewBox="0 0 21 15" fill="none"
-                   xmlns="http://www.w3.org/2000/svg"><path d="M20.89 10H0V14.89H20.89V10Z"
-                                                            fill="#D52B1E"/><path
-                d="M20.89 5H0V9.89H20.89V5Z" fill="#0039A6"/><path d="M20.89 0H0V4.89H20.89V0Z"
-                                                                   fill="white"/></svg>
+                   xmlns="http://www.w3.org/2000/svg"><path
+                d="M20.89 10H0V14.89H20.89V10Z"
+                fill="#D52B1E"/><path
+                d="M20.89 5H0V9.89H20.89V5Z" fill="#0039A6"/><path
+                d="M20.89 0H0V4.89H20.89V0Z"
+                fill="white"/></svg>
 						</span>
             <span class="booking-form__lang">RUB</span>
           </div>
@@ -55,7 +61,8 @@
                 <p>Дата выезда</p>
                 <div class="custom-input">
                   <label>Выезд</label>
-                  <input class="date-mask input_disabled" data-date-start="26.06.2023" type="text"
+                  <input class="date-mask input_disabled"
+                         data-date-start="26.06.2023" type="text"
                          name="check_out" disabled>
                   <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
                        xmlns="http://www.w3.org/2000/svg">
@@ -68,10 +75,13 @@
                 </div>
               </div>
             </div>
-            <div class="booking-form__row">
+            <div class="booking-form__inner-desc">
+              <p>Размещение в номере</p>
+              <span
+                class="booking-form__desc">Взрослые от 18 лет и старше</span>
+            </div>
+            <div class="booking-form__row booking-form__guest-row">
               <div class="custom-input__wrapper">
-                <p>Размещение в номере</p>
-                <span class="booking-form__row-desc">Взрослые от 18 лет и старше</span>
                 <div class="custom-select">
                   <label>Гости</label>
                   <select name="guests">
@@ -90,8 +100,9 @@
                   </svg>
                 </div>
               </div>
-              <div class="custom-input__wrapper">
-                <div class="custom-select">
+              <div
+                class="custom-input__wrapper custom-select__children-wrapper">
+                <div class="children-select custom-select__main-children">
                   <label>Дети</label>
                   <select name="children">
                     <option value="">Добавить детей</option>
@@ -101,6 +112,18 @@
                     <option value="3">Ребенок 3 года</option>
                     <option value="4">Ребенок 4 года</option>
                     <option value="5">Ребенок 5 лет</option>
+                    <option value="6">Ребенок 6 лет</option>
+                    <option value="7">Ребенок 7 лет</option>
+                    <option value="8">Ребенок 8 лет</option>
+                    <option value="9">Ребенок 9 лет</option>
+                    <option value="10">Ребенок 10 лет</option>
+                    <option value="11">Ребенок 11 лет</option>
+                    <option value="12">Ребенок 12 лет</option>
+                    <option value="13">Ребенок 13 лет</option>
+                    <option value="14">Ребенок 14 лет</option>
+                    <option value="15">Ребенок 15 лет</option>
+                    <option value="16">Ребенок 16 лет</option>
+                    <option value="17">Ребенок 17 лет</option>
                   </select>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                        xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +150,7 @@
               </svg>
               Нужен еще один номер
             </button>
-            <div class="booking-form__row">
+            <div class="booking-form__row booking-form__promo-row">
               <div class="custom-input__wrapper">
                 <p>Промокод</p>
                 <div class="custom-input">
@@ -145,7 +168,7 @@
                 </div>
               </div>
             </div>
-            <button class="main-btn">найти номер</button>
+            <button class="main-btn" type="submit">найти номер</button>
           </div>
         </form>
       </div>
@@ -158,7 +181,8 @@
 <template id="room-item">
   <li class="booking-form__row">
     <div class="custom-input__wrapper">
-      <h6 class="room-item__amount">Номер <span class="changeable-amount">1</span></h6>
+      <h6 class="room-item__amount">Номер <span
+        class="changeable-amount">1</span></h6>
       <div class="custom-select">
         <label>Гости</label>
         <select name="guests">
@@ -196,26 +220,69 @@
         </svg>
         Удалить номер
       </button>
-      <div class="custom-select">
-        <label>Дети</label>
-        <select name="children">
-          <option value="">Добавить детей</option>
-          <option value="0">Ребенок до 1 года</option>
-          <option value="1">Ребенок 1 год</option>
-          <option value="2">Ребенок 2 года</option>
-          <option value="3">Ребенок 3 года</option>
-          <option value="4">Ребенок 4 года</option>
-          <option value="5">Ребенок 5 лет</option>
-        </select>
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z"
-            fill="#ADB9C7"/>
-        </svg>
+      <div class="custom-select__children-wrapper">
+        <div class="children-select custom-select__main-children">
+          <label>Дети</label>
+          <select name="children">
+            <option value="">Добавить детей</option>
+            <option value="0">Ребенок до 1 года</option>
+            <option value="1">Ребенок 1 год</option>
+            <option value="2">Ребенок 2 года</option>
+            <option value="3">Ребенок 3 года</option>
+            <option value="4">Ребенок 4 года</option>
+            <option value="5">Ребенок 5 лет</option>
+            <option value="6">Ребенок 6 лет</option>
+            <option value="7">Ребенок 7 лет</option>
+            <option value="8">Ребенок 8 лет</option>
+            <option value="9">Ребенок 9 лет</option>
+            <option value="10">Ребенок 10 лет</option>
+            <option value="11">Ребенок 11 лет</option>
+            <option value="12">Ребенок 12 лет</option>
+            <option value="13">Ребенок 13 лет</option>
+            <option value="14">Ребенок 14 лет</option>
+            <option value="15">Ребенок 15 лет</option>
+            <option value="16">Ребенок 16 лет</option>
+            <option value="17">Ребенок 17 лет</option>
+          </select>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z"
+              fill="#ADB9C7"/>
+          </svg>
+        </div>
+
       </div>
     </div>
   </li>
+</template>
+<template id="children-select">
+  <div class="children-select _add-children">
+    <label>Дети</label>
+    <select name="children[]">
+      <option value="">Добавить детей</option>
+      <option value="0">Ребенок до 1 года</option>
+      <option value="1">Ребенок 1 год</option>
+      <option value="2">Ребенок 2 года</option>
+      <option value="3">Ребенок 3 года</option>
+      <option value="4">Ребенок 4 года</option>
+      <option value="5">Ребенок 5 лет</option>
+      <option value="6">Ребенок 6 лет</option>
+      <option value="7">Ребенок 7 лет</option>
+      <option value="8">Ребенок 8 лет</option>
+      <option value="9">Ребенок 9 лет</option>
+      <option value="10">Ребенок 10 лет</option>
+      <option value="11">Ребенок 11 лет</option>
+      <option value="12">Ребенок 12 лет</option>
+      <option value="13">Ребенок 13 лет</option>
+      <option value="14">Ребенок 14 лет</option>
+      <option value="15">Ребенок 15 лет</option>
+      <option value="16">Ребенок 16 лет</option>
+      <option value="17">Ребенок 17 лет</option>
+    </select>
+    <button class="custom-select__delete-btn" type="button">
+    </button>
+  </div>
 </template>
 
 </body>

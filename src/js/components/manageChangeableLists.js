@@ -1,5 +1,10 @@
-import { limitationChangeableElements, updateChangeableListId } from '../_functions'
-import { initSelects }             from "./customSelect"
+import {
+  limitationChangeableElements,
+  updateChangeableListId
+} from '../_functions'
+import {initSelects} from "./customSelect"
+import {initChildrenSelects} from "./addChildrenSelect";
+import {initCounters} from "./guestsModal";
 
 const changeableLists = document.querySelectorAll('ul[data-list="changeable"]')
 
@@ -35,6 +40,17 @@ if (addToListBtns) {
       limitationChangeableElements(targetChangeableList, addBtn)
       updateChangeableListId(targetChangeableList)
       initSelects()
+
+      const childrenSelects = templateElement.querySelectorAll('.children-select.custom-select__main-children select')
+
+      if (childrenSelects) {
+        initChildrenSelects(childrenSelects)
+      }
+
+      const initialCounters = templateElement.querySelectorAll('.main-counter')
+      if (initialCounters) {
+        initCounters(initialCounters)
+      }
     })
   })
 }

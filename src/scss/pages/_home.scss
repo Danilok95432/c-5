@@ -7,6 +7,7 @@
       margin-top: 260px;
     }
   }
+
   .lg-outer .lg-object {
     max-width: 60%;
     max-height: 60%;
@@ -56,6 +57,13 @@
       padding: 0;
     }
 
+    .custom-input__guests-modal {
+      input {
+        padding-right: 25px;
+      }
+    }
+
+
     &._fixed {
       background-color: #ffffff;
       height: 90px;
@@ -70,6 +78,7 @@
       .custom-input {
         border: 1px solid #ADB9C7;
       }
+
 
       .container {
         padding: 0 15px;

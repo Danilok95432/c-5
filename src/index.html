@@ -44,15 +44,81 @@
                   fill="#ADB9C7"/>
               </svg>
             </div>
-            <div class="custom-input">
+            <div class="custom-input custom-input__guests-modal">
               <label>Гости</label>
-              <input type="text" name="guests">
+              <input type="text" name="guests" autocomplete="off">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z"
                   fill="#ADB9C7"/>
               </svg>
+              <div class="guests-modal">
+                <h3>Количество гостей</h3>
+                <ul class="guests-modal__rooms-list" data-list="changeable"
+                    data-changeable-id="true">
+                  <li class="guests-modal__rooms-list-item">
+                    <h5>Номер <span class="changeable-amount">1</span></h5>
+                    <div class="guests-modal__counters">
+                      <div class="main-counter _adults">
+                        <p class="signature">Взрослые</p>
+                        <div class="main-counter__inner">
+                          <button
+                            class="main-counter__dec-btn main-counter__btn"
+                            type="button">
+
+                          </button>
+                          <span class="main-counter__count">1</span>
+                          <button
+                            class="main-counter__inc-btn main-counter__btn"
+                            type="button">
+
+                          </button>
+                        </div>
+                      </div>
+                      <div class="main-counter _children">
+                        <p class="signature">Дети младше 18 лет</p>
+                        <div class="main-counter__inner">
+                          <button
+                            class="main-counter__dec-btn main-counter__btn"
+                            type="button">
+
+                          </button>
+                          <span class="main-counter__count">0</span>
+                          <button
+                            class="main-counter__inc-btn main-counter__btn"
+                            type="button"
+                            data-template="children-guest">
+                          </button>
+                        </div>
+                      </div>
+
+                    </div>
+                    <ul class="guests-modal__children-list">
+
+                    </ul>
+                  </li>
+                </ul>
+
+                <button class="guests-modal__add-room" type="button"
+                        data-btn="add"
+                        data-template="guest-room">
+                    <span class="guests-modal__add-room-wrapper">
+                                          <svg width="12" height="12"
+                                               viewBox="0 0 12 12" fill="none"
+                                               xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6 0C6.19891 0 6.38968 0.0790178 6.53033 0.21967C6.67098 0.360322 6.75 0.551088 6.75 0.75V5.25H11.25C11.4489 5.25 11.6397 5.32902 11.7803 5.46967C11.921 5.61032 12 5.80109 12 6C12 6.19891 11.921 6.38968 11.7803 6.53033C11.6397 6.67098 11.4489 6.75 11.25 6.75H6.75V11.25C6.75 11.4489 6.67098 11.6397 6.53033 11.7803C6.38968 11.921 6.19891 12 6 12C5.80109 12 5.61032 11.921 5.46967 11.7803C5.32902 11.6397 5.25 11.4489 5.25 11.25V6.75H0.75C0.551088 6.75 0.360322 6.67098 0.21967 6.53033C0.0790178 6.38968 0 6.19891 0 6C0 5.80109 0.0790178 5.61032 0.21967 5.46967C0.360322 5.32902 0.551088 5.25 0.75 5.25H5.25V0.75C5.25 0.551088 5.32902 0.360322 5.46967 0.21967C5.61032 0.0790178 5.80109 0 6 0Z"
+                        fill="#3188E4"/>
+                    </svg>
+                    Добавить номер
+                    </span>
+                </button>
+                <button class="guests-modal__complete-btn" type="button">
+                  Готово
+                </button>
+              </div>
+
             </div>
             <div class="custom-input">
               <label>Промокод</label>
@@ -527,8 +593,10 @@
         <h2 class="section-title">
           Контактная информация
         </h2>
-        <p class="section-desc">Персонал гостиницы «Славянская» будет рад помочь Вам при выборе
-          номера и совершении бронирования. Просто свяжитесь с нами для этого.</p>
+        <p class="section-desc">Персонал гостиницы «Славянская» будет рад помочь
+          Вам при выборе
+          номера и совершении бронирования. Просто свяжитесь с нами для
+          этого.</p>
         <div class="contact-info__inner">
           <ul class="contact-info__inner-contacts">
             <li>
@@ -551,7 +619,100 @@
   </main>
   @include('partials/footer.html')
 </div>
+<template id="children-guest">
+  <li>
+    <p class="signature">
+      Возраст <span class="changeable-amount">1</span>
+      ребенка
+    </p>
+    <div class="custom-select">
+      <select name="children">
+        <option value="">выбрать</option>
+        <option value="0">до 1 года</option>
+        <option value="1">1 год</option>
+        <option value="2">2 года</option>
+        <option value="3">3 года</option>
+        <option value="4">4 года</option>
+        <option value="5">5 лет</option>
+        <option value="6">6 лет</option>
+        <option value="7">7 лет</option>
+        <option value="8">8 лет</option>
+        <option value="9">9 лет</option>
+        <option value="10">10 лет</option>
+        <option value="11">11 лет</option>
+        <option value="12">12 лет</option>
+        <option value="13">13 лет</option>
+        <option value="14">14 лет</option>
+        <option value="15">15 лет</option>
+        <option value="16">16 лет</option>
+        <option value="17">17 лет</option>
+      </select>
+    </div>
+  </li>
+</template>
+<template id="guest-room">
+  <li class="guests-modal__rooms-list-item">
+    <div class="guests-modal__top">
+      <h5>Номер <span class="changeable-amount">1</span></h5>
+      <button class="guests-modal__delete-btn" data-btn="delete" type="button">
+        <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.921 3.77532C16.8876 3.38145 16.556 3.07946 16.1397 3.07818C14.9304 3.07496 13.7206 3.07304 12.5113 3.08139C12.3404 3.08267 12.2987 3.03834 12.3038 2.87128C12.3167 2.43115 12.3089 1.99038 12.3077 1.54961C12.3051 0.680916 11.6234 0.00112442 10.7515 0.000481894C9.22932 -0.000160631 7.70782 -0.000160631 6.18568 0.000481894C5.29642 0.000481894 4.61727 0.675776 4.61535 1.55925C4.6147 1.99167 4.60635 2.42473 4.6192 2.85651C4.62434 3.02934 4.58836 3.08332 4.40203 3.08203C3.20051 3.07175 1.99898 3.07496 0.797463 3.07753C0.34384 3.07946 0.00651467 3.40394 8.94189e-05 3.8325C-0.00633583 4.27006 0.334202 4.60482 0.79682 4.6151C0.884846 4.61702 0.974157 4.62345 1.0609 4.61381C1.19519 4.59903 1.23888 4.64915 1.24402 4.78472C1.27293 5.5127 1.3102 6.24068 1.34618 6.96866C1.43164 8.70477 1.51709 10.4402 1.60447 12.1757C1.70921 14.2633 1.82229 16.3508 1.91803 18.4384C1.95979 19.3514 2.60424 19.9991 3.51534 19.9997C5.15764 20.0004 6.79929 19.9997 8.44158 19.9997C10.1076 19.9997 11.7737 20.0004 13.4398 19.9991C14.1697 19.9984 14.7653 19.5332 14.9555 18.8322C15.0178 18.6029 15.0011 18.3716 15.0133 18.1409C15.1386 15.7417 15.2607 13.3419 15.3809 10.9427C15.483 8.89495 15.5832 6.84723 15.679 4.7995C15.6854 4.6575 15.7201 4.59775 15.8711 4.61124C16.006 4.62345 16.1455 4.62345 16.2785 4.60225C16.6762 4.54056 16.955 4.17368 16.921 3.77532ZM6.15098 1.69546C6.14841 1.57017 6.18311 1.53547 6.30968 1.53547C7.7438 1.53997 9.17792 1.53997 10.612 1.53547C10.7367 1.53483 10.7752 1.56632 10.7727 1.69418C10.7643 2.09447 10.7624 2.49541 10.7733 2.8957C10.7772 3.04412 10.7386 3.08267 10.5895 3.08075C9.87634 3.07239 9.16378 3.07689 8.45058 3.07689C7.74573 3.07689 7.04024 3.07239 6.33539 3.08075C6.18825 3.08267 6.14584 3.04798 6.15034 2.89698C6.16126 2.49669 6.15869 2.0964 6.15098 1.69546ZM14.1433 4.84962C14.0283 7.0734 13.9204 9.29782 13.7861 12.0285C13.6974 13.7614 13.5799 16.0013 13.4745 18.2418C13.4655 18.439 13.3987 18.466 13.2265 18.4654C10.046 18.4609 6.86547 18.4602 3.68497 18.466C3.51663 18.466 3.46073 18.4377 3.45173 18.252C3.33094 15.6839 3.19922 13.1157 3.07072 10.5482C2.97498 8.64437 2.88246 6.73993 2.78029 4.83677C2.77066 4.66072 2.80214 4.61124 2.98976 4.61124C6.6348 4.61767 10.2805 4.61767 13.9255 4.61124C14.1234 4.6106 14.1523 4.67035 14.1433 4.84962Z"
+            fill="#0D77E7"/>
+          <path
+            d="M9.61633 11.5534C9.61633 13.0742 9.61761 14.5957 9.61569 16.1166C9.61504 16.5034 9.40494 16.7854 9.05541 16.8895C8.74057 16.9833 8.40646 16.8625 8.2137 16.5837C8.11989 16.4481 8.07812 16.2978 8.07812 16.132C8.07877 13.0659 8.07748 9.99973 8.08005 6.9336C8.0807 6.48576 8.42123 6.15165 8.85108 6.15357C9.279 6.1555 9.61376 6.49218 9.61505 6.94195C9.61826 8.47887 9.61633 10.0164 9.61633 11.5534Z"
+            fill="#0D77E7"/>
+          <path
+            d="M12.4768 11.8627C12.4421 13.0527 12.3984 14.5819 12.3509 16.1105C12.3374 16.5487 12.0663 16.8648 11.6737 16.9175C11.319 16.965 10.9708 16.7421 10.848 16.3957C10.8121 16.2942 10.8108 16.1914 10.8133 16.088C10.9059 13.0379 11.0003 9.98784 11.0922 6.93778C11.1025 6.59081 11.2548 6.33637 11.5773 6.20722C11.8703 6.08964 12.1446 6.14811 12.3798 6.36015C12.5713 6.53234 12.6381 6.75658 12.6304 7.0091C12.5822 8.51325 12.5353 10.0187 12.4768 11.8627Z"
+            fill="#0D77E7"/>
+          <path
+            d="M6.36626 11.5583C6.41059 13.0715 6.45364 14.584 6.49991 16.0971C6.51019 16.4255 6.37718 16.6722 6.09319 16.8296C5.83296 16.9735 5.56953 16.9556 5.32023 16.7962C5.069 16.6356 4.96877 16.3927 4.95977 16.1036C4.9103 14.4626 4.86082 12.8216 4.81071 11.1805C4.7683 9.7959 4.72589 8.41126 4.6822 7.02598C4.66807 6.58006 4.92186 6.23503 5.31702 6.16307C5.68197 6.09689 6.045 6.31149 6.17479 6.66488C6.21462 6.77346 6.21655 6.88462 6.22041 6.99578C6.26924 8.51663 6.31679 10.0375 6.36433 11.5583C6.36562 11.5583 6.36562 11.5583 6.36626 11.5583Z"
+            fill="#0D77E7"/>
+        </svg>
 
+      </button>
+    </div>
+    <div class="guests-modal__counters">
+      <div class="main-counter _adults">
+        <p class="signature">Взрослые</p>
+        <div class="main-counter__inner">
+          <button
+            class="main-counter__dec-btn main-counter__btn"
+            type="button">
+
+          </button>
+          <span class="main-counter__count">1</span>
+          <button
+            class="main-counter__inc-btn main-counter__btn"
+            type="button">
+
+          </button>
+        </div>
+      </div>
+      <div class="main-counter _children">
+        <p class="signature">Дети младше 18 лет</p>
+        <div class="main-counter__inner">
+          <button
+            class="main-counter__dec-btn main-counter__btn"
+            type="button">
+
+          </button>
+          <span class="main-counter__count">0</span>
+          <button
+            class="main-counter__inc-btn main-counter__btn"
+            type="button"
+            data-template="children-guest">
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <ul class="guests-modal__children-list">
+
+    </ul>
+  </li>
+</template>
 </body>
 
 </html>
