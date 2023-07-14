@@ -9,6 +9,9 @@
   left: 0;
   bottom: 0;
   z-index: 1020;
+  @media (max-width: 768px) {
+    height: 104px;
+  }
 
   .container {
     display: flex;
@@ -16,23 +19,44 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1250px;
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+    }
   }
 
   &__logo {
     margin-right: 30px;
+    @media (max-width: 768px) {
+      margin-right: 20px;
+    }
+  }
+
+  &__logo-desktop {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__logo-mobile {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 
   &__burger-btn {
     display: none;
     @media (max-width: 768px) {
-      width: 40px;
-      height: 40px;
+      width: 22px;
+      height: 20px;
       display: block;
+      margin-right: 20px;
     }
   }
 
   &__nav {
     margin-right: 10px;
+    transition: all .5s;
 
     ul {
       display: flex;
@@ -47,7 +71,6 @@
           @include montserrat-medium;
           color: $black;
           font-size: 14px;
-          font-weight: 500;
           transition: all .3s;
         }
 
@@ -57,6 +80,55 @@
           }
         }
       }
+    }
+
+    @media (max-width: 768px) {
+      position: fixed;
+      left: -200%;
+      top: 0;
+      width: 100%;
+      min-height: 100vh;
+      height: 100%;
+      background-color: #fefefe;
+      z-index: 1030;
+      display: flex;
+      overflow-y: auto;
+      visibility: hidden;
+      ul {
+        flex-direction: column;
+        margin: 15% auto auto;
+        padding: 30px 0;
+
+        li {
+          &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 40px;
+          }
+
+          &:hover {
+            a {
+              color: #0D77E7;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      &._active {
+        left: 0;
+        visibility: visible;
+        transition: all .5s;
+      }
+    }
+
+  }
+
+  &__nav-wrapper-btn {
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    @media (max-width: 768px) {
+      display: block;
     }
   }
 
@@ -68,6 +140,12 @@
     color: #000000;
     font-size: 14px;
     @include montserrat-medium;
+    @media (max-width: 768px) {
+      width: max-content;
+      bottom: -42px;
+      left: -100%;
+      color: #004D9F;
+    }
   }
 
   &__phone-select {
@@ -77,6 +155,24 @@
     &:hover {
       .main-menu__phone-select-hidden {
         display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 35px;
+      height: 35px;
+      margin-right: 15px;
+      margin-left: auto;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $main-blue;
+      &:hover {
+        .main-menu__phone-select-main {
+          display: block;
+        }
       }
     }
   }
@@ -95,6 +191,24 @@
     svg:last-child {
       margin-left: 5px;
     }
+
+    @media (max-width: 768px) {
+      position: absolute;
+      width: max-content;
+      display: none;
+      bottom: -19px;
+      left: -100%;
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  &__phone-icon-mobile {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 
   &__mobile {
@@ -104,7 +218,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     @media (max-width: 768px) {
-      display: none;
+      .lang-switcher {
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -121,9 +237,31 @@
     @include montserrat-medium;
     transition: all .3s;
 
+    svg {
+      display: none;
+    }
+
     @media (max-width: 1280px) {
       margin-left: auto;
     }
+    @media (max-width: 768px) {
+      width: 35px;
+      height: 35px;
+      margin-left: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $main-blue;
+      span {
+        display: none;
+      }
+      svg {
+        display: block;
+      }
+    }
+
 
     &:hover {
       color: #ffffff;
