@@ -3,6 +3,7 @@
   @media (max-width: 768px) {
     padding-top: 104px;
   }
+
   .lg-toolbar {
     margin-top: 230px;
     @media (max-width: 1280px) {
@@ -64,7 +65,9 @@
         padding-right: 25px;
       }
     }
-
+    .choices__list--dropdown, .choices__list[aria-expanded] {
+       bottom: auto;
+    }
 
     &._fixed {
       background-color: #ffffff;
