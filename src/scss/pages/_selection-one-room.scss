@@ -1,11 +1,5 @@
 .selection-one-room-page {
-  main {
-    margin-top: 140px;
-  }
-
   .selection-one-room {
-    border-top: 1px solid #ADB9C7;
-
     .container {
       padding-top: 75px;
       padding-bottom: 200px;
@@ -21,247 +15,234 @@
     }
 
     &__inner {
-      padding: 18px 20px 38px;
+      padding: 25px 20px 40px 20px;
       background-color: #D6DCE3;
 
       h2 {
-        margin-bottom: 35px;
+        margin-bottom: 45px;
         @include book-bold;
         text-align: center;
         font-size: 35px;
       }
 
       .rooms-list {
-        &.grid-layout {
-          grid-column-gap: 20px;
-          grid-row-gap: 20px;
-          justify-items: start;
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
 
-        li {
-          max-width: 382px;
-          position: relative;
+        &__item {
+          min-width: 100%;
 
-          &:not(._basic) {
-            display: none;
-          }
-
-          &:not(:last-child) {
-            border: 1px solid #ADB9C7;
-          }
-
-          &:last-child {
-            background: none;
+          &-header {
             display: flex;
-          }
-        }
-
-        &._show-all {
-          li:not(:last-child) {
-            display: block;
+            max-height: 200px;
           }
 
-          .rooms-list__btn-show {
-            span:first-child {
-              display: none;
-            }
-            span:last-child {
-              display: block;
-            }
+          &-title {
+            font-size: 30px;
+            @include book-bold;
+            line-height: normal;
+            margin-bottom: 6px;
           }
 
+          &-description {
+            padding: 26px 63px 25px 23px;
+            width: 100%;
 
-        }
+            .room-params {
+              display: flex;
+              gap: 20px;
 
-        &__swiper {
-          height: 230px;
-
-          .swiper-pagination {
-            bottom: 0;
-          }
-
-          .swiper-pagination-bullet {
-            width: 22%;
-            height: 5px;
-            background: #FFFFFF;
-            opacity: 1;
-            border-radius: 0;
-          }
-
-          .swiper-pagination-bullet-active {
-            background: #0D77E7;
-          }
-
-          .swiper-slide {
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-
-        &__information {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 42px;
-          display: flex;
-          align-items: center;
-          z-index: 10;
-        }
-
-        &__sticker {
-          height: 100%;
-          width: max-content;
-          align-items: center;
-          padding: 0 17px;
-          background-color: #0D77E7;
-          display: none;
-
-          &._leader {
-            display: flex;
-
-            .remainder {
-              display: none;
-            }
-          }
-
-          &._remainder {
-            display: flex;
-
-            .leader {
-              display: none;
-            }
-          }
-
-          p {
-            font-size: 15px;
-            font-weight: 600;
-            color: #FFF;
-          }
-        }
-
-        &__icons {
-          height: 100%;
-          align-items: center;
-          padding: 0 0 0 16px;
-          background-color: rgba(255, 255, 255, 0.9);
-          display: none;
-
-          .wi-fi, .snowflake, .wave {
-            display: none;
-          }
-
-          &._wi-fi {
-            display: flex;
-
-            .wi-fi {
-              display: block;
-            }
-          }
-
-          &._snowflake {
-            display: flex;
-
-            .snowflake {
-              display: block;
-            }
-          }
-
-          &._wave {
-            display: flex;
-
-            .wave {
-              display: block;
-            }
-          }
-
-          svg {
-            margin-right: 16px;
-          }
-        }
-
-        &__row {
-          justify-content: space-between;
-
-          &:nth-of-type(1) {
-            margin-bottom: 16px;
-          }
-
-          &:nth-of-type(2) {
-            justify-content: flex-start;
-            margin-bottom: 27px;
-
-            svg {
-              margin-right: 6px;
-            }
-
-            p {
-              &:first-of-type {
-                margin-right: 40px;
+              svg {
+                margin-right: 5px;
               }
             }
 
-          }
+            .rooms-list__advantages {
+              margin-top: 15px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 6px;
 
-        }
-
-        &__content {
-          padding: 18px 18px 30px;
-          background-color: #FFFFFF;
-        }
-
-        &__title {
-          margin-right: 10px;
-          margin-bottom: 0;
-          font-size: 20px;
-        }
-
-        &__price {
-          span {
-            font-size: 30px;
-            font-weight: 500;
-
-            &:last-of-type {
-              color: #ADB9C7;
+              &-item {
+                padding: 12px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background-color: rgba(225, 234, 245, 0.9);
+              }
             }
           }
 
-        }
+          &-foto-block {
+            position: relative;
+            min-width: 260px;
+            min-height: 200px;
+            background-image: url('../../img/tariffs.jpg');
+            position: relative;
 
-        &__link {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 46px;
-          padding: 0 22px;
-          font-weight: 500;
-          color: #0D77E7;
-          text-transform: uppercase;
-          border: 1px solid #0D77E7;
-        }
+            .foto-block_fotos-count {
+              display: flex;
+              position: absolute;
+              content: '';
+              bottom: 0;
+              right: 0;
+              background-color: rgba(83, 90, 97, 0.8);
+              font-family: 'Montserrat';
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 18px;
+              color: #FFFFFF;
+              padding: 14px;
 
-        &__btn-show {
-          height: 46px;
-          width: 100%;
-          padding: 0 25px;
-          margin: auto;
-          font-size: 15px;
-          font-weight: 500;
-          color: #0D77E7;
-          border: 1px solid #0D77E7;
+              p {
+                margin-left: 10px;
+              }
+            }
+          }
 
-          span {
-            &:last-child {
-              display: none;
+          .two-beds {
+            background-image: url('../../img/rooms-item-1.jpg');
+          }
+
+          &-body {
+            border: 1px solid #ADB9C7;
+
+            .tariffs-item {
+              min-width: 100%;
+              display: flex;
+
+              &:not(:last-child) {
+                border-bottom: 1px solid #ADB9C7;
+              }
+            }
+
+            .tariffs-conditions,
+            .payment-conditions {
+
+              li {
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                  color: #0D77E7;
+
+                  svg path {
+                    fill: #0D77E7;
+                  }
+                }
+
+                p {
+                  margin-left: 8px;
+                }
+
+                &:not(:last-child) {
+                  margin-bottom: 6px;
+                }
+              }
+
+              .top-alignment {
+                align-items: flex-start;
+              }
+            }
+
+            .tariffs-conditions {
+              max-width: 290px;
+            }
+
+            .payment-conditions {
+              max-width: 396px;
+            }
+
+            .tariffs-item-payment {
+              display: flex;
+              font-size: 13px;
+              font-weight: 400;
+              line-height: normal;
+            }
+
+            .green-block {
+              background: #F6FFF3;
+            }
+
+            .yellow-block {
+              background: #FFE;
+            }
+
+            .total-payment {
+              min-width: 245px;
+
+              &__price {
+                font-size: 20px;
+                font-weight: 500;
+              }
+            }
+
+            .tariffs-item-point {
+              flex-grow: 1;
+              padding: 10px 20px 5px 20px;
+              position: relative;
+
+              &:not(:last-child) {
+
+                &::after {
+                  position: absolute;
+                  content: '';
+                  background-color: #ADB9C7;
+                  width: 1px;
+                  height: calc(100% - 20px);
+                  right: 0;
+                  top: 10px;
+                }
+              }
+            }
+
+            .green-text {
+              color: #0B8417;
+              font-weight: 500;
+              font-size: 13px;
+            }
+
+            .tariffs-item-booking {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              min-width: 240px;
+              padding-top: 20px;
+
+              .booking-button {
+                margin-top: 12px;
+                padding: 13px 25px;
+                background-color: #0D77E7;
+                text-transform: uppercase;
+                color: #FFF;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+              }
+            }
+          }
+
+          &-footer {
+            padding: 15px;
+            border: 1px solid #ADB9C7;
+            border-top: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+              text-transform: uppercase;
+              color: #0D77E7;
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 22px;
+              letter-spacing: 0.45px;
             }
           }
         }
-
       }
-
     }
-
-
   }
 }
