@@ -53,17 +53,26 @@ export const initAllDates = () => {
         container: ".date-custom-container",
         selectedDates: [formatDate],
         minDate: [formatDate],
-        // range: true,
+        range: true,
         //multipleDatesSeparator: " - ",
         navTitles: {
           days: "<h4>MMMM yyyy</h4>",
         },
         onSelect: ({ date, formattedDate, datepicker }) => {
+          const checkInInput = document.querySelector('input[name="check_in"]');
+          const checkOutInput = document.querySelector(
+            'input[name="check_out"]'
+          );
+
+          if (checkInInput && checkOutInput) {
+            checkInInput.value = formattedDate[0];
+            checkOutInput.value = formattedDate[1];
+          }
+
           let checkInText = datepicker.$datepicker?.querySelector(
             ".check-info__check-in"
           );
-          //let checkInCurrentDate = date[0];
-          let checkInCurrentDate = date;
+          let checkInCurrentDate = date[0];
 
           if (checkInText) {
             if (checkInCurrentDate) {
@@ -83,7 +92,6 @@ export const initAllDates = () => {
 
           // Для второй даты в одном input
           let checkOutCurrentDate = date[1];
-
           if (checkOutText) {
             if (checkOutCurrentDate) {
               checkOutText.classList.add("_bold");
