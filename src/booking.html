@@ -38,13 +38,11 @@
               </div>
               <div class="booking-form__inner">
                 <div class="booking-form__row">
-                  <div
-                    class="custom-input__wrapper"
-                  >
+                  <div class="custom-input__wrapper">
                     <p>Дата заезда</p>
                     <div class="custom-input booking-calendar _active">
                       <label>Заезд</label>
-                      <input type="text" name="check_in" />
+                      <input class="date-mask" type="text" name="check_in" />
                       <svg
                         width="17"
                         height="12"
@@ -60,15 +58,12 @@
                       <div class="date-custom-container"></div>
                     </div>
                   </div>
-                  <div
-                    class="custom-input__wrapper"
-                  >
+                  <div class="custom-input__wrapper">
                     <p>Дата выезда</p>
-                    <div class="custom-input booking-calendar  _active">
+                    <div class="custom-input booking-calendar _active">
                       <label>Выезд</label>
                       <input
                         class="date-mask booking-calendar__exit"
-                        data-date-start="26.06.2023"
                         type="text"
                         name="check_out"
                       />
