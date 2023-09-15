@@ -1,8 +1,17 @@
 .selection-one-room-page {
   .selection-one-room {
     .container {
-      padding-top: 75px;
-      padding-bottom: 200px;
+      padding: 75px 0;
+
+      @media screen and (max-width: 1300px) {
+        width: 95vw;
+        padding: 30px 0;
+      }
+
+      @media (max-width: 400px) {
+        width: 100vw;
+        margin: 0 auto;
+      }
     }
 
     .section__title {
@@ -18,11 +27,19 @@
       padding: 25px 20px 40px 20px;
       background-color: #D6DCE3;
 
+      @media (max-width: 1000px) {
+        padding-bottom: 20px;
+      }
+
       h2 {
         margin-bottom: 45px;
         @include book-bold;
         text-align: center;
         font-size: 35px;
+
+        @media (max-width: 850px) {
+          margin-bottom: 25px;
+        }
       }
 
       .rooms-list {
@@ -35,7 +52,10 @@
 
           &-header {
             display: flex;
-            max-height: 200px;
+
+            @media (max-width: 820px) {
+              flex-direction: column;
+            }
           }
 
           &-title {
@@ -49,9 +69,29 @@
             padding: 26px 63px 25px 23px;
             width: 100%;
 
+            @media (max-width: 1300px) {
+              padding: 10px 20px 10px 20px;
+            }
+
+            @media (max-width: 340px) {
+              padding: 10px 0px 10px 15px;
+            }
+
             .room-params {
-              display: flex;
-              gap: 20px;
+              @media (max-width: 1300px) {
+                display: flex;
+                gap: 15px;
+              }
+
+              @media (max-width: 520px) {
+                flex-direction: column;
+                gap: 5px;
+              }
+
+              div {
+                display: flex;
+                gap: 20px;
+              }
 
               svg {
                 margin-right: 5px;
@@ -70,16 +110,31 @@
                 align-items: center;
                 gap: 10px;
                 background-color: rgba(225, 234, 245, 0.9);
+
+                @media screen and (max-width: 1230px) {
+                  padding: 8px;
+                  font-size: 12px;
+                }
               }
             }
           }
 
           &-foto-block {
             position: relative;
-            min-width: 260px;
-            min-height: 200px;
+            width: 260px;
+            height: 200px;
             background-image: url('../../img/tariffs.jpg');
+            background-size: cover;
             position: relative;
+
+            @media (max-width: 820px) {
+              min-height: 200px;
+              margin: 15px 0 0 15px;
+            }
+
+            @media (max-width: 340px) {
+              width: 90%;
+            }
 
             .foto-block_fotos-count {
               display: flex;
@@ -108,6 +163,12 @@
           &-body {
             border: 1px solid #ADB9C7;
 
+            .tariffs {
+              @media (max-width: 1340px) {
+                display: flex;
+              }
+            }
+
             .tariffs-item {
               min-width: 100%;
               display: flex;
@@ -115,14 +176,50 @@
               &:not(:last-child) {
                 border-bottom: 1px solid #ADB9C7;
               }
+
+              @media (max-width: 1340px) {
+                min-width: calc(100% / 3);
+                flex-direction: column;
+
+                ul {
+                  max-width: 100%;
+                }
+
+                &:not(:last-child) {
+                  border-bottom: none;
+                  border-right: 1px solid #ADB9C7;
+                }
+              }
             }
 
             .tariffs-conditions,
             .payment-conditions {
+              @media (max-width: 1340px) {
+                border-bottom: 1px solid #ADB9C7;
+              }
 
               li {
                 display: flex;
                 align-items: center;
+
+                position: relative;
+
+                @media (max-width: 1340px) {
+                  max-width: 100%;
+                }
+
+                &::before {
+                  @media (max-width: 460px) {
+                    position: absolute;
+                    content: '';
+
+                    width: 3px;
+                    height: 3px;
+
+                    border-radius: 50%;
+                    background-color: #000;
+                  }
+                }
 
                 &:hover {
                   color: #0D77E7;
@@ -134,10 +231,36 @@
 
                 p {
                   margin-left: 8px;
+
+
+                  @media (max-width: 1340px) {
+                    width: 90%;
+                  }
+
+                  @media (max-width: 1340px) {
+                    font-size: 12px;
+                    line-height: normal;
+                  }
+
+                  @media (max-width: 600px) {
+                    font-size: 10px;
+                    line-height: 10px;
+                  }
+                }
+
+                svg {
+                  @media (max-width: 460px) {
+                    display: none;
+                  }
                 }
 
                 &:not(:last-child) {
                   margin-bottom: 6px;
+
+                  @media (max-width: 1340px) {
+                    font-size: 12px;
+                    margin-bottom: 0px;
+                  }
                 }
               }
 
@@ -147,11 +270,40 @@
             }
 
             .tariffs-conditions {
-              max-width: 290px;
+              min-width: 290px;
+
+              @media (max-width: 1340px) {
+                min-width: calc(100% / 3);
+              }
+
+              li {
+                @media (max-width: 730px) {
+                  min-height: 30px;
+                }
+              }
             }
 
             .payment-conditions {
-              max-width: 396px;
+              min-width: 396px;
+
+              @media (max-width: 1340px) {
+                min-width: calc(100% / 3);
+              }
+
+              @media (max-width: 720px) {
+                min-height: 80px;
+              }
+
+              li {
+                @media (max-width: 1230px) {
+                  min-height: 50px;
+                  margin-top: 5px;
+                }
+
+                @media (max-width: 760px) {
+                  min-height: 50px;
+                }
+              }
             }
 
             .tariffs-item-payment {
@@ -159,6 +311,15 @@
               font-size: 13px;
               font-weight: 400;
               line-height: normal;
+
+              @media (max-width: 760px) {
+                padding-top: 10px;
+              }
+
+              @media (max-width: 1340px) {
+                flex-direction: column;
+                align-items: flex-start;
+              }
             }
 
             .green-block {
@@ -175,6 +336,15 @@
               &__price {
                 font-size: 20px;
                 font-weight: 500;
+
+                @media (max-width: 400px) {
+                  font-size: 4vw;
+                }
+              }
+
+              @media (max-width: 800px) {
+                font-size: 10px;
+                min-width: 100px;
               }
             }
 
@@ -183,8 +353,11 @@
               padding: 10px 20px 5px 20px;
               position: relative;
 
-              &:not(:last-child) {
+              @media (max-width: 1000px) {
+                flex-grow: unset;
+              }
 
+              &:not(:last-child) {
                 &::after {
                   position: absolute;
                   content: '';
@@ -193,6 +366,26 @@
                   height: calc(100% - 20px);
                   right: 0;
                   top: 10px;
+
+                  @media (max-width: 1340px) {
+                    width: 0;
+                    height: 0;
+                  }
+                }
+              }
+
+              @media (max-width: 1340px) {
+                padding: 10px 10px 5px 10px;
+              }
+
+              @media (max-width: 600px) {
+                padding: 5px;
+              }
+
+              svg {
+                @media (max-width: 700px) {
+                  width: 20px;
+                  height: 20px;
                 }
               }
             }
@@ -201,6 +394,21 @@
               color: #0B8417;
               font-weight: 500;
               font-size: 13px;
+
+              @media (max-width: 800px) {
+                font-size: 10px;
+                margin: 5px 0;
+              }
+
+              @media (max-width: 600px) {
+                max-width: 70px;
+              }
+            }
+
+            .best-price-text {
+              @media (max-width: 660px) {
+                min-height: 26px;
+              }
             }
 
             .tariffs-item-booking {
@@ -209,6 +417,15 @@
               align-items: center;
               min-width: 240px;
               padding-top: 20px;
+
+              @media (max-width: 1340px) {
+                padding: 10px;
+                align-items: flex-start;
+              }
+
+              @media (max-width: 800px) {
+                padding: 5px;
+              }
 
               .booking-button {
                 margin-top: 12px;
@@ -220,6 +437,15 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: 22px;
+
+                @media (max-width: 1340px) {
+                  margin-bottom: 10px;
+                }
+
+                @media (max-width: 800px) {
+                  font-size: 1vh;
+                  padding: 1vw 2vw;
+                }
               }
             }
           }
@@ -232,6 +458,10 @@
             justify-content: center;
             align-items: center;
 
+            @media (max-width: 500px) {
+              padding: 6px;
+            }
+
             button {
               text-transform: uppercase;
               color: #0D77E7;
@@ -239,6 +469,10 @@
               font-weight: 500;
               line-height: 22px;
               letter-spacing: 0.45px;
+
+              @media (max-width: 760px) {
+                font-size: 12px;
+              }
             }
           }
         }
