@@ -30,28 +30,55 @@ export const showBigImgModal = (path) => {
   });
 };
 
+const formatChangeableInputName = (name, id) => {
+  const initialName = name.split("[")[0];
+  return `${initialName}[${id}]`;
+};
+
+export const updateInputsId = (input, changeableId) => {
+  const currentInput = input.querySelector("input, select, textarea") ?? input;
+  const inputLabel = input.querySelector("label");
+  currentInput.name = formatChangeableInputName(
+    currentInput.name,
+    changeableId
+  );
+  if (currentInput.id) {
+    currentInput.id = currentInput.id + changeableId;
+  }
+  if (inputLabel?.getAttribute("for")) {
+    const attrValue = inputLabel.getAttribute("for");
+    inputLabel.setAttribute("for", attrValue + changeableId);
+  }
+};
+
 // Обновление id в изменяемых списках
 export const updateChangeableListId = (changeableList) => {
   if (changeableList && changeableList.dataset.changeableId) {
     const changeableElements = Array.from(changeableList.children);
     changeableElements.forEach((el, i) => {
-      const changeableId = i + 2; // скорректировано
+      const changeableId = i + 1;
 
       const changeableAmount = el.querySelector(".changeable-amount");
-      const changeableInput = el.querySelector(".changeable-input");
+      const changeableInputs = el.querySelectorAll(".changeable-input");
 
       if (changeableAmount) {
         changeableAmount.textContent = changeableId;
       }
 
-      if (changeableInput) {
-        const input = changeableInput.querySelector("input");
-        const inputLabel = changeableInput.querySelector("label");
-
-        input.value = changeableId;
-        input.id = changeableId;
-        inputLabel.setAttribute("for", changeableId);
+      if (changeableInputs) {
+        changeableInputs.forEach((inputEl) =>
+          updateInputsId(inputEl, changeableId)
+        );
       }
+
+      // if (changeableInput) {
+      //   const input = changeableInput.querySelector("input");
+      //   const inputLabel = changeableInput.querySelector("label");
+
+      //   input.value = changeableId;
+      //   input.id = changeableId;
+      //   inputLabel.setAttribute("for", changeableId);
+      // }
     });
   }
 };
