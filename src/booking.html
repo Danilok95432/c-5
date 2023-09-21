@@ -89,74 +89,76 @@
                     >Взрослые от 18 лет и старше</span
                   >
                 </div>
-                <div class="booking-form__row booking-form__guest-row">
-                  <div class="custom-input__wrapper">
-                    <div class="custom-select">
-                      <label>Гости</label>
-                      <select name="guests">
-                        <option value="">Добавить гостей</option>
-                        <option value="1">1 взрослый</option>
-                        <option value="2">2 взрослых</option>
-                        <option value="3">3 взрослых</option>
-                        <option value="4">4 взрослых</option>
-                        <option value="5">5 взрослых</option>
-                      </select>
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 14 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z"
-                          fill="#ADB9C7"
-                        />
-                      </svg>
+
+                <ul data-list="changeable" data-changeable-id="true">
+                  <li class="booking-form__row booking-form__guest-row">
+                    <div class="custom-input__wrapper">
+                      <div class="custom-select">
+                        <label>Гости</label>
+                        <select name="guests">
+                          <option value="">Добавить гостей</option>
+                          <option value="1">1 взрослый</option>
+                          <option value="2">2 взрослых</option>
+                          <option value="3">3 взрослых</option>
+                          <option value="4">4 взрослых</option>
+                          <option value="5">5 взрослых</option>
+                        </select>
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z"
+                            fill="#ADB9C7"
+                          />
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    class="custom-input__wrapper custom-select__children-wrapper"
-                  >
-                    <div class="children-select custom-select__main-children">
-                      <label>Дети</label>
-                      <select name="children">
-                        <option value="">Добавить детей</option>
-                        <option value="0">Ребенок до 1 года</option>
-                        <option value="1">Ребенок 1 год</option>
-                        <option value="2">Ребенок 2 года</option>
-                        <option value="3">Ребенок 3 года</option>
-                        <option value="4">Ребенок 4 года</option>
-                        <option value="5">Ребенок 5 лет</option>
-                        <option value="6">Ребенок 6 лет</option>
-                        <option value="7">Ребенок 7 лет</option>
-                        <option value="8">Ребенок 8 лет</option>
-                        <option value="9">Ребенок 9 лет</option>
-                        <option value="10">Ребенок 10 лет</option>
-                        <option value="11">Ребенок 11 лет</option>
-                        <option value="12">Ребенок 12 лет</option>
-                        <option value="13">Ребенок 13 лет</option>
-                        <option value="14">Ребенок 14 лет</option>
-                        <option value="15">Ребенок 15 лет</option>
-                        <option value="16">Ребенок 16 лет</option>
-                        <option value="17">Ребенок 17 лет</option>
-                      </select>
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 14 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z"
-                          fill="#ADB9C7"
-                        />
-                      </svg>
+                    <div
+                      class="custom-input__wrapper custom-select__children-wrapper"
+                    >
+                      <div class="children-select custom-select__main-children">
+                        <label>Дети</label>
+                        <select name="children">
+                          <option value="">Добавить детей</option>
+                          <option value="0">Ребенок до 1 года</option>
+                          <option value="1">Ребенок 1 год</option>
+                          <option value="2">Ребенок 2 года</option>
+                          <option value="3">Ребенок 3 года</option>
+                          <option value="4">Ребенок 4 года</option>
+                          <option value="5">Ребенок 5 лет</option>
+                          <option value="6">Ребенок 6 лет</option>
+                          <option value="7">Ребенок 7 лет</option>
+                          <option value="8">Ребенок 8 лет</option>
+                          <option value="9">Ребенок 9 лет</option>
+                          <option value="10">Ребенок 10 лет</option>
+                          <option value="11">Ребенок 11 лет</option>
+                          <option value="12">Ребенок 12 лет</option>
+                          <option value="13">Ребенок 13 лет</option>
+                          <option value="14">Ребенок 14 лет</option>
+                          <option value="15">Ребенок 15 лет</option>
+                          <option value="16">Ребенок 16 лет</option>
+                          <option value="17">Ребенок 17 лет</option>
+                        </select>
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z"
+                            fill="#ADB9C7"
+                          />
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <ul data-list="changeable" data-changeable-id="true"></ul>
+                  </li>
+                </ul>
                 <button
                   class="booking-form__btn-add"
                   type="button"
