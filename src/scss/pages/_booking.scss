@@ -166,9 +166,9 @@
           }
         }
 
-        .custom-select {
-          margin-top: 5px;
-        }
+        // .custom-select {
+        //   margin-top: 5px;
+        // }
 
         h6 {
           color: #000;
@@ -192,6 +192,7 @@
           text-align: right;
           display: flex;
           margin-left: auto;
+
           @media (max-width: 768px) {
             margin-top: 10px;
           }
@@ -213,7 +214,9 @@
     }
 
     .children-select {
-      .choices__list--dropdown .choices__list, .choices__list[aria-expanded] .choices__list {
+
+      .choices__list--dropdown .choices__list,
+      .choices__list[aria-expanded] .choices__list {
         max-height: 240px;
       }
     }

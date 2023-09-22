@@ -87,14 +87,18 @@
                       <li class="guests-modal__rooms-list-item">
                         <h5>Номер <span class="changeable-amount">1</span></h5>
                         <div class="guests-modal__counters">
-                          <div class="main-counter _adults">
+                          <div class="main-counter _adults changeable-input">
                             <p class="signature">Взрослые</p>
                             <div class="main-counter__inner">
                               <button
                                 class="main-counter__dec-btn main-counter__btn"
                                 type="button"
                               ></button>
-                              <input class="main-counter__count" value="1" />
+                              <input
+                                class="main-counter__count"
+                                value="1"
+                                name="count_adults"
+                              />
                               <button
                                 class="main-counter__inc-btn main-counter__btn"
                                 type="button"
@@ -111,7 +115,7 @@
                               <input
                                 class="main-counter__count"
                                 value="0"
-                            
+                                name="count_children"
                               />
                               <!-- <span class="main-counter__count">0</span> -->
                               <button
@@ -827,8 +831,8 @@
           Возраст <span class="changeable-amount">1</span>
           ребенка
         </p>
-        <div class="custom-select changeable-input">
-          <select name="children">
+        <div class="custom-select">
+          <select name="">
             <option value="">выбрать</option>
             <option value="0">до 1 года</option>
             <option value="1">1 год</option>
@@ -888,28 +892,37 @@
           </button>
         </div>
         <div class="guests-modal__counters">
-          <div class="main-counter _adults">
+          <div class="main-counter _adults changeable-input">
             <p class="signature">Взрослые</p>
             <div class="main-counter__inner">
               <button
                 class="main-counter__dec-btn main-counter__btn"
                 type="button"
               ></button>
-              <span class="main-counter__count">1</span>
+              <input
+                class="main-counter__count"
+                value="1"
+                name="count_adults"
+              />
               <button
                 class="main-counter__inc-btn main-counter__btn"
                 type="button"
               ></button>
             </div>
           </div>
-          <div class="main-counter _children">
+          <div class="main-counter _children changeable-input">
             <p class="signature">Дети младше 18 лет</p>
             <div class="main-counter__inner">
               <button
                 class="main-counter__dec-btn main-counter__btn"
                 type="button"
               ></button>
-              <span class="main-counter__count">0</span>
+              <!-- <span class="main-counter__count">0</span> -->
+              <input
+                class="main-counter__count"
+                value="0"
+                name="count_children"
+              />
               <button
                 class="main-counter__inc-btn main-counter__btn"
                 type="button"

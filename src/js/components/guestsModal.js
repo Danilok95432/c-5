@@ -6,6 +6,13 @@ import { updateChangeableListId } from "../_functions";
 const guestsInput = document.querySelector(".custom-input__guests-modal input");
 const guestsModal = document.querySelector(".guests-modal");
 
+const formatGenerate = (nameSelect, number, i) => {
+  const nameArr = nameSelect.split("[");
+  nameArr[1] = `${number}]`;
+  nameArr[2] = `${i + 1}]`;
+  return nameArr.join("[");
+};
+
 // Счетчики гостей
 
 export const initCounters = (counters) => {
@@ -47,6 +54,20 @@ export const initCounters = (counters) => {
           const targetChangeableList = e.target
             .closest(".guests-modal__rooms-list-item")
             .querySelector(".guests-modal__children-list");
+
+          const childSelect = templateElement.querySelector("select");
+
+          const roomSequenceNumber = targetChangeableList
+            .closest(".guests-modal__rooms-list-item")
+            .querySelector(".changeable-amount").textContent;
+
+          const childSequenceNumber = targetChangeableList.children.length;
+
+          childSelect.name = formatGenerate(
+            childSelect.name,
+            roomSequenceNumber,
+            childSequenceNumber
+          );
 
           targetChangeableList.appendChild(templateElement);
 
