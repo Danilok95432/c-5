@@ -1,5 +1,6 @@
 .main-counter {
   width: 135px;
+
   .signature {
     color: #808994;
     @include montserrat-regular;
@@ -13,7 +14,7 @@
     padding: 5px;
   }
 
-  &__count {
+  input.main-counter__count {
     margin: 0 5px 0 5px;
     max-width: 56px;
     flex-grow: 1;
@@ -26,6 +27,8 @@
     align-items: center;
     justify-content: center;
     background: #F4F9FF;
+
+    padding: 5px 10px 5px 10px !important;
   }
 
   &__btn {
@@ -37,7 +40,8 @@
     align-items: center;
     justify-content: center;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       background-color: #838E9A;
@@ -50,11 +54,13 @@
       height: 2px;
     }
   }
+
   &__inc-btn {
     &::before {
       width: 14px;
       height: 2px;
     }
+
     &::after {
       width: 2px;
       height: 14px;
