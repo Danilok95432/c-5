@@ -1,17 +1,9 @@
 .selection-one-room-page {
   .selection-one-room {
+
     .container {
-      padding: 75px 0;
-
-      @media screen and (max-width: 1300px) {
-        width: 95vw;
-        padding: 30px 0;
-      }
-
-      @media (max-width: 400px) {
-        width: 100vw;
-        margin: 0 auto;
-      }
+      padding-top: 60px;
+      padding-bottom: 75px;
     }
 
     .section__title {
@@ -19,8 +11,8 @@
     }
 
     .section__desc {
-      max-width: 805px;
       margin: 0 auto 50px;
+      max-width: 805px;
     }
 
     &__inner {
@@ -47,14 +39,19 @@
         flex-direction: column;
         gap: 20px;
 
+
         &__item {
           min-width: 100%;
 
           &-header {
             display: flex;
+            gap: 23px;
+            height: 200px;
 
             @media (max-width: 820px) {
+              height: auto;
               flex-direction: column;
+              padding: 15px;
             }
           }
 
@@ -66,15 +63,10 @@
           }
 
           &-description {
-            padding: 26px 63px 25px 23px;
             width: 100%;
-
-            @media (max-width: 1300px) {
-              padding: 10px 20px 10px 20px;
-            }
-
-            @media (max-width: 340px) {
-              padding: 10px 0px 10px 15px;
+            padding-top: 26px;
+            @media (max-width: 820px) {
+              padding-top: 0;
             }
 
             .room-params {
@@ -105,7 +97,7 @@
               gap: 6px;
 
               &-item {
-                padding: 12px;
+                padding: 8px 14px;
                 display: flex;
                 align-items: center;
                 gap: 10px;
@@ -119,32 +111,28 @@
             }
           }
 
-          &-foto-block {
-            position: relative;
+          &-photo-block {
+            min-width: 260px;
             width: 260px;
-            height: 200px;
-            background-image: url('../../img/tariffs.jpg');
-            background-size: cover;
             position: relative;
-
             @media (max-width: 820px) {
-              min-height: 200px;
-              margin: 15px 0 0 15px;
+              height: 200px;
             }
 
-            @media (max-width: 340px) {
-              width: 90%;
+
+            img {
+              width: 100%;
+              height: 100%;
             }
 
-            .foto-block_fotos-count {
+            .photo-block_photos-count {
               display: flex;
               position: absolute;
               content: '';
               bottom: 0;
               right: 0;
               background-color: rgba(83, 90, 97, 0.8);
-              font-family: 'Montserrat';
-              font-weight: 400;
+              @include montserrat-regular;
               font-size: 15px;
               line-height: 18px;
               color: #FFFFFF;
@@ -154,10 +142,6 @@
                 margin-left: 10px;
               }
             }
-          }
-
-          .two-beds {
-            background-image: url('../../img/rooms-item-1.jpg');
           }
 
           &-body {
