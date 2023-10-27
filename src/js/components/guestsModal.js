@@ -121,10 +121,10 @@ if (guestsModal) {
     );
 
     adultsCounts.forEach((el) => {
-      adultsNum = adultsNum + Number(el.textContent);
+      adultsNum = adultsNum + Number(el.value);
     });
     childrenCounts.forEach((el) => {
-      childrenNum = childrenNum + Number(el.textContent);
+      childrenNum = childrenNum + Number(el.value);
     });
 
     guestsModal.classList.remove("_active");
