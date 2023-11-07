@@ -65,8 +65,9 @@
         padding-right: 25px;
       }
     }
+
     .choices__list--dropdown, .choices__list[aria-expanded] {
-       bottom: auto;
+      bottom: auto;
     }
 
     &._fixed {
@@ -109,11 +110,11 @@
 
   .header {
 
+
     &__inner {
       position: relative;
       height: 580px;
       padding: 105px 0 0;
-      background: url("../img/home-header-bg.jpg") #ADB9C7 50% / cover no-repeat;
 
       @media (max-width: 768px) {
         padding: 40px 0 0;
@@ -135,6 +136,17 @@
           font-size: 30px;
           line-height: 35px;
         }
+      }
+    }
+
+    &__inner-bg {
+      position: absolute;
+      top: -6%;
+      width: 100%;
+      z-index: -1;
+      min-height: 620px;
+      @media (max-width: 768px) {
+        min-height: 720px;
       }
     }
 
