@@ -215,14 +215,15 @@
           align-items: center;
           text-align: center;
           color: #000;
+          gap: 20px;
           font-size: 20px;
           @include book-bold;
           line-height: 27px;
           text-decoration: #ADB9C7 underline;
         }
 
-        svg {
-          margin-right: 20px;
+        img {
+          flex-grow: 1;
         }
       }
     }
