@@ -3,6 +3,18 @@
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
   }
 
+  .slider-section {
+    background-color: #001227;
+
+    .container {
+      padding-bottom: 25px;
+    }
+  }
+
+  ._bold {
+    font-weight: 700;
+  }
+
   .one-room {
     padding-bottom: 50px;
 
@@ -52,6 +64,7 @@
         outline: 1px solid #515151;
         outline-offset: -1px;
       }
+
       .swiper-slide-thumb-active {
         outline: 2px solid #0D77E7;
         outline-offset: -2px;
@@ -88,12 +101,18 @@
 
       ul {
         margin-bottom: 15px;
-        padding-left: 23px;
 
         li {
-          list-style: disc;
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
         }
 
+        span {
+           display: inline-block;
+           margin-right: 10px;
+           min-width: 25px;
+        }
       }
     }
 
@@ -107,5 +126,11 @@
         display: block;
       }
     }
+  }
+
+  .text-mark {
+    font-size: 13px;
+    line-height: 1.1;
+    max-width: 480px;
   }
 }

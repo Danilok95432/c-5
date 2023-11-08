@@ -1,156 +1,163 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+  @include('partials/head.html', { 'title': 'Один номер' })
 
-@include('partials/head.html', {
-'title': 'Один номер'
-})
+  <body class="page__body one-room-page">
+    <div class="site-container">
+      <header class="header">@include('partials/main-menu.html')</header>
 
-<body class="page__body one-room-page">
+      <main class="main">
+        <section class="section one-room">
+          <div class="slider-section">
+            <div class="container one-room__slider">
+              <div class="swiper one-room__swiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/one-room-slide.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/one-room-slide.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/one-room-slide.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://swiperjs.com/demos/images/nature-10.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper one-room__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/one-room-slide.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/one-room-slide.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/one-room-slide.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://swiperjs.com/demos/images/nature-10.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<div class="site-container">
-	<header class="header">
-		@include('partials/main-menu.html')
-	</header>
+          <div class="container">
+            <div class="breadcrumbs">
+              <a href="index.html">Главная</a>&nbsp;/&nbsp;<a href="rooms.html"
+                >Номера</a
+              >&nbsp;/&nbsp;<span>Номер одноместный «Студия комфорт»</span>
+            </div>
 
-	<main class="main">
-		<section class="section one-room">
-			<div class="container">
-				<div class="one-room__slider">
-					<div class="swiper one-room__swiper2">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="img/one-room-slide.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-2.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="img/one-room-slide.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-4.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-5.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-6.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-7.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-8.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="img/one-room-slide.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-10.jpg"/>
-							</div>
-						</div>
-					</div>
-					<div thumbsSlider="" class="swiper one-room__swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="img/one-room-slide.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-2.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="img/one-room-slide.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-4.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-5.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-6.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-7.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-8.jpg"/>
-							</div>
-							<div class="swiper-slide">
-								<img src="img/one-room-slide.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-10.jpg"/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="breadcrumbs">
-					<a href="index.html">Главная</a>&nbsp;/&nbsp;<a href="rooms.html">Номера</a>&nbsp;/&nbsp;<span>Номер одноместный «Студия комфорт»</span>
-				</div>
+            <div class="one-room__titles">
+              <h1 class="section__title">Одноместный «Студия комфорт»</h1>
+              <a class="blue-btn" href="#">ЗАБРОНИРОВАТЬ ЭТОТ НОМЕР</a>
+            </div>
 
-				<div class="one-room__titles">
-					<h1 class="section__title">Одноместный «Студия комфорт»</h1>
-					<a class="blue-btn" href="#">ЗАБРОНИРОВАТЬ ЭТОТ НОМЕР</a>
-				</div>
+            <p class="section__desc">
+              Удобно меблированный номер идеально подходит для работы и отдыха.
+              Из огромных окон открывается роскошный вид на ... . Все номера
+              оснащены кондиционерами и имеют бесплатный доступ к сети Wi-Fi.
+              Площадь — 44 м².
+            </p>
+            <p class="section__desc">
+              Номер представлен в двух вариантах: одноместный и студия комфорт с
+              диваном. Также предлагаем ознакомиться со специальными
+              предложениями в разделе
+              <a href="#">Акции</a>
+            </p>
 
-				<p class="section__desc">Удобно меблированный номер идеально подходит для работы и отдыха.
-					Из огромных окон открывается роскошный вид на ... . Все номера оснащены кондиционерами и имеют
-					бесплатный доступ к сети Wi-Fi. Площадь — 44 м².
-				</p>
-				<p class="section__desc">
-					Номер представлен в двух вариантах: одноместный и студия комфорт с диваном.
-					Также предлагаем ознакомиться со специальными предложениями в разделе
-					<a href="#">Акции</a>
-				</p>
-
-				<div class="one-room__inside">
-					<div class="one-room__item">
-						<div class="one-room__image">
-							<img src="img/one-room_item.jpg" alt="">
-						</div>
-						<h4>В номере:</h4>
-						<ul>
-							<li>удобное рабочее место с дополнительной лампой</li>
-							<li>кровать с ортопедическим матрасом</li>
-							<li>столик и кресла</li>
-							<li>просторная ванная комната с ванной</li>
-							<li>антиаллергенные подушки и бельё</li>
-							<li>кондиционер</li>
-							<li>холодильник</li>
-							<li>мини-бар</li>
-							<li>телефон</li>
-							<li>телевизор</li>
-							<li>фен</li>
-							<li>бесплатная питьевая вода (в бутылочках)</li>
-							<li>гигиенические принадлежности</li>
-							<li>одноразовые тапочки</li>
-							<li>будильник</li>
-							<li>электрический чайник</li>
-							<li>чайные бокалы, чай, кофе, сахар(бесплатно)</li>
-						</ul>
-					</div>
-					<div class="one-room__item">
-						<div class="one-room__image">
-							<img src="img/one-room_item-1.jpg" alt="">
-						</div>
-						<h4>Включено в размещение:</h4>
-						<ul>
-							<li>бесплатный WiFi интернет</li>
-							<li>спутниковое телевидение</li>
-							<li>завтрак не входит в стоимость номера</li>
-						</ul>
-						<p>Обращаем ваше внимание, что на фото изображен типовой номер.
-							Конфигурация номера может отличаться от представленного на фото.</p>
-					</div>
-				</div>
-
-			</div>
-		</section>
-	</main>
-	@include('partials/footer.html')
-</div>
-
-</body>
-
+            <div class="one-room__inside">
+              <div class="one-room__item">
+                <div class="one-room__image">
+                  <img src="img/one-room_item.jpg" alt="" />
+                </div>
+                <h4>В номере:</h4>
+                <ul class="styled-list">
+                  <li>
+					<span><img src="./img/room-icons/workplace.svg" alt="workplace"></span>удобное рабочее место с дополнительной лампой</li>
+                  <li><span><img src="./img/room-icons/mattress.svg" alt="mattress"></span>кровать с ортопедическим матрасом</li>
+                  <li><span><img src="./img/room-icons/chairs.svg" alt="chairs"></span>столик и кресла</li>
+                  <li><span><img src="./img/room-icons/bathroom.svg" alt="bathroom"></span>просторная ванная комната с ванной</li>
+                  <li><span><img src="./img/room-icons/pillows.svg" alt="pillows"></span>антиаллергенные подушки и бельё</li>
+                  <li><span><img src="./img/room-icons/conditioner.svg" alt="conditioner"></span>кондиционер</li>
+                  <li><span><img src="./img/room-icons/fridge.svg" alt="fridge"></span>холодильник</li>
+                  <li><span><img src="./img/room-icons/bar.svg" alt="bar"></span>мини-бар</li>
+                  <li><span><img src="./img/room-icons/phone.svg" alt="phone"></span>телефон</li>
+                  <li><span><img src="./img/room-icons/tv.svg" alt="tv"></span>телевизор</li>
+                  <li><span><img src="./img/room-icons/fan.svg" alt="fan"></span>фен</li>
+                  <li><span><img src="./img/room-icons/water.svg" alt="water"></span>бесплатная питьевая вода (в бутылочках)</li>
+                  <li><span><img src="./img/room-icons/hygiene.svg" alt="hygiene"></span>гигиенические принадлежности</li>
+                  <li><span><img src="./img/room-icons/slippers.svg" alt="slippers"></span>одноразовые тапочки</li>
+                  <li><span><img src="./img/room-icons/alarm.svg" alt="alarm"></span>будильник</li>
+                  <li><span><img src="./img/room-icons/teapot.svg" alt="teapot"></span>электрический чайник</li>
+                  <li><span><img src="./img/room-icons/tea.svg" alt="tea"></span>чайные бокалы, чай, кофе, сахар(бесплатно)</li>
+                </ul>
+              </div>
+              <div class="one-room__item">
+                <div class="one-room__image">
+                  <img src="img/one-room_item-1.jpg" alt="" />
+                </div>
+                <h4>Включено в размещение:</h4>
+                <ul class="styled-list">
+                  <li><span><img src="./img/room-icons/wifi.svg" alt="wifi"></span>бесплатный WiFi интернет</li>
+                  <li><span><img src="./img/room-icons/satellite-tv.svg" alt="satellite-tv"></span>спутниковое телевидение</li>
+                  <li><span><img src="./img/room-icons/breakfast.svg" alt="breakfast"></span>завтрак <span class="_bold">&nbsp;не входит</span> в стоимость номера</li>
+                </ul>
+                <p class="text-mark">
+                  Обращаем ваше внимание, что на фото изображен типовой номер.
+                  Конфигурация номера может отличаться от представленного на
+                  фото.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
 </html>
