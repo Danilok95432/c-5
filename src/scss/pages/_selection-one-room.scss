@@ -46,7 +46,6 @@
           &-header {
             display: flex;
             gap: 23px;
-            height: 200px;
 
             @media (max-width: 820px) {
               height: auto;
@@ -65,6 +64,7 @@
           &-description {
             width: 100%;
             padding-top: 26px;
+            padding-bottom: 25px;
             @media (max-width: 820px) {
               padding-top: 0;
             }
