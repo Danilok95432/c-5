@@ -1,6 +1,10 @@
 import { Swiper } from "swiper/bundle";
 // Инициализация слайдеров
 
+const fotosCount = document
+  .querySelector(".one-room__swiper")
+  .querySelector(".swiper-wrapper").childElementCount;
+
 const swiperRooms = new Swiper(".rooms-swiper", {
   navigation: {
     nextEl: ".rooms-swiper__swiper-button-next",
@@ -52,7 +56,7 @@ const servicesSwiper = new Swiper(".services__swiper", {
 const oneRoomSwiper = new Swiper(".one-room__swiper", {
   loop: true,
   spaceBetween: 5,
-  slidesPerView: 2.5,
+  slidesPerView: fotosCount,
   freeMode: true,
   watchSlidesProgress: true,
   breakpoints: {
@@ -66,7 +70,7 @@ const oneRoomSwiper = new Swiper(".one-room__swiper", {
       slidesPerView: 6.5,
     },
     1400: {
-      slidesPerView: 8.5,
+      slidesPerView: fotosCount,
     },
   },
 });
