@@ -3,7 +3,7 @@ import { Swiper } from "swiper/bundle";
 
 const fotosCount = document
   .querySelector(".one-room__swiper")
-  .querySelector(".swiper-wrapper").childElementCount;
+  ?.querySelector(".swiper-wrapper")?.childElementCount;
 
 const swiperRooms = new Swiper(".rooms-swiper", {
   navigation: {
