@@ -50,9 +50,9 @@ const servicesSwiper = new Swiper(".services__swiper", {
 });
 
 const oneRoomSwiper = new Swiper(".one-room__swiper", {
-  loop: true,
+  //loop: true,
   spaceBetween: 5,
-  slidesPerView: 2.5,
+  slidesPerView: 8.5,
   freeMode: true,
   watchSlidesProgress: true,
   breakpoints: {
@@ -71,7 +71,7 @@ const oneRoomSwiper = new Swiper(".one-room__swiper", {
   },
 });
 const oneRoomSwiper2 = new Swiper(".one-room__swiper2", {
-  loop: true,
+ // loop: true,
   spaceBetween: 10,
   thumbs: {
     swiper: oneRoomSwiper,
