@@ -191,6 +191,8 @@
       &__desc {
         background-color: #072E57;
         padding: 36px 46px 29px 30px;
+        display: flex;
+        align-items: center;
         position: absolute;
         left: -30px;
         bottom: -60px;
@@ -210,6 +212,10 @@
           @include montserrat-regular;
           line-height: 20px;
           max-width: 375px;
+          -webkit-line-clamp: 5;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
           @media (max-width: 768px) {
             max-width: 100%;
           }
@@ -221,6 +227,7 @@
         justify-content: flex-end;
         max-width: 1250px;
         padding: 0 15px;
+        height: 50px;
         margin: 0 auto;
         @media (max-width: 1280px) {
           padding: 0 90px;

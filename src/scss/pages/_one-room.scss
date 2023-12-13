@@ -105,13 +105,14 @@
         li {
           display: flex;
           align-items: center;
-          margin-bottom: 12px;
+          margin-bottom: 15px;
         }
 
         span {
-           display: inline-block;
-           margin-right: 10px;
-           min-width: 25px;
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+          min-width: 25px;
         }
       }
     }

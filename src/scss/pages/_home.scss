@@ -194,7 +194,7 @@
           width: 100%;
           display: flex;
           justify-content: center;
-          
+
         }
 
         &:not(:last-child) {
@@ -273,6 +273,9 @@
 
       .swiper-slide {
         transition: all .3s;
+        a {
+          display: block;
+        }
       }
 
       .swiper-slide:not(.swiper-slide-active) {
