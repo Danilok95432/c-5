@@ -47,6 +47,7 @@ if (addToListBtns) {
         ".children-select.custom-select__main-children select"
       );
 
+
       if (childrenSelects) {
         initChildrenSelects(childrenSelects);
       }

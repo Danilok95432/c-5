@@ -57,7 +57,6 @@ export const updateChangeableListId = (changeableList) => {
     const changeableElements = Array.from(changeableList.children);
     changeableElements.forEach((el, i) => {
       const changeableId = i + 1;
-
       const changeableAmount = el.querySelector(".changeable-amount");
       const changeableInputs = el.querySelectorAll(".changeable-input");
 
@@ -71,14 +70,6 @@ export const updateChangeableListId = (changeableList) => {
         );
       }
 
-      // if (changeableInput) {
-      //   const input = changeableInput.querySelector("input");
-      //   const inputLabel = changeableInput.querySelector("label");
-
-      //   input.value = changeableId;
-      //   input.id = changeableId;
-      //   inputLabel.setAttribute("for", changeableId);
-      // }
     });
   }
 };
@@ -134,3 +125,4 @@ export const getNoun = (number, one, two, five) => {
   }
   return five;
 };
+
