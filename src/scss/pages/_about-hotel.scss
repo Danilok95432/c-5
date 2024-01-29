@@ -1,0 +1,222 @@
+.about-hotel-page {
+
+  .breadcrumbs {
+    margin-bottom: 28px;
+  }
+
+  .main {
+    padding-top: 30px;
+  }
+
+  .section__title {
+    text-align: left;
+    margin-bottom: 38px;
+  }
+
+  .header {
+    &__inner {
+      position: relative;
+      height: 500px;
+      margin-top: 140px;
+      background: url("../img/restaurant-bg.jpg") #fff 50% / cover no-repeat;
+      @media (max-width: 768px) {
+        height: 300px;
+      }
+    }
+  }
+
+  .about {
+
+    padding-bottom: 80px;
+
+    &__info-wrapper {
+      display: flex;
+      gap: 50px;
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
+    }
+
+    &__img {
+      min-width: 450px;
+      width: 450px;
+      height: 274px;
+      @media (max-width: 768px) {
+        width: 100%;
+        min-width: 100%;
+    }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__descs {
+      max-width: 680px;
+      @include montserrat-regular;
+      font-size: 15px;
+      line-height: 1.66;
+      p {
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+
+
+  }
+  .our-rooms {
+    padding: 91px 0 76px;
+    background: #D6DCE3;
+
+    h2 {
+      color: #000000;
+      font-size: 38px;
+      @include book-bold;
+      margin-bottom: 35px;
+    }
+
+    .rooms-swiper-container {
+      @media (max-width: 1024px) {
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+    }
+
+    .rooms-swiper {
+      .swiper-wrapper {
+        margin-bottom: 15px;
+      }
+
+      .swiper-slide {
+        transition: all .3s;
+        a {
+          display: block;
+        }
+      }
+
+      .swiper-slide:not(.swiper-slide-active) {
+        transform: scale(0.89);
+
+        img {
+          transition: all .3s;
+          filter: brightness(.5)
+        }
+
+        .rooms-swiper__desc {
+          opacity: 0;
+        }
+      }
+
+      &__desc {
+        background-color: #072E57;
+        padding: 36px 46px 29px 30px;
+        position: absolute;
+        left: -30px;
+        bottom: -60px;
+        transition: all .3s;
+        @media (max-width: 1024px) {
+          left: 0;
+        }
+        @media (max-width: 768px) {
+          position: static;
+          max-width: 100%;
+          padding: 15px 20px 10px 20px;
+        }
+
+
+        h4 {
+          max-width: 375px;
+          color: #FFF;
+          font-size: 30px;
+          @include book-bold;
+          margin-bottom: 10px;
+          @media (max-width: 768px) {
+            font-size: 25px;
+            max-width: 100%;
+            margin-bottom: 5px;
+          }
+        }
+
+        p {
+          color: #ffffff;
+          font-size: 15px;
+          @include montserrat-regular;
+          line-height: 20px;
+          max-width: 375px;
+          @media (max-width: 768px) {
+            max-width: 100%;
+          }
+        }
+      }
+
+      &__controls {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1250px;
+        padding: 0 15px;
+        margin: 0 auto;
+        @media (max-width: 1280px) {
+          padding: 0 90px;
+        }
+        @media (max-width: 1024px) {
+          padding: 0;
+        }
+        @media (max-width: 768px) {
+          padding: 0;
+          margin-top: 30px;
+        }
+
+        button:first-child {
+          margin-right: 20px;
+        }
+      }
+
+      &__img {
+        padding-top: 33%;
+        position: relative;
+        cursor: pointer;
+
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .cafe {
+    padding: 60px 0 80px;
+
+    .section__title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    .section-desc {
+      text-align: center;
+      max-width: 985px;
+      margin: 0 auto 30px;
+    }
+
+    &__gallery {
+      grid-template-columns: repeat(auto-fit, minmax(288px, 1fr) );
+      grid-column-gap: 10px;
+      grid-row-gap: 18px;
+      justify-items: center;
+
+      a {
+        display: inline-block;
+        width: 288px;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+}
