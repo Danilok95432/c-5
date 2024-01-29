@@ -5,6 +5,8 @@ import {
 import { initSelects } from "./customSelect";
 import { initChildrenSelects } from "./addChildrenSelect";
 import { initCounters } from "./guestsModal";
+import {initAllDates} from './customDate'
+import {initAllMasks} from './inputMask'
 
 const changeableLists = document.querySelectorAll('ul[data-list="changeable"]');
 
@@ -56,6 +58,8 @@ if (addToListBtns) {
       if (initialCounters) {
         initCounters(initialCounters);
       }
+      initAllDates()
+      initAllMasks()
     });
   });
 }

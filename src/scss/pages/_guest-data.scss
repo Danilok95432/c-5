@@ -238,7 +238,7 @@
       color: #000;
       font-size: 17px;
       @include montserrat-regular;
-      margin-bottom: 30px;
+      margin-bottom: 17px;
 
       span {
         font-weight: 600;
@@ -247,71 +247,47 @@
 
     &__inputs {
       margin-bottom: 20px;
-      padding: 25px 0 25px;
-      border-top: 1px solid #ADB9C7;
+      padding: 0 0 25px;
       border-bottom: 1px solid #ADB9C7;
 
       .simple-input {
-        margin-right: 20px;
-        width: 26.5%;
+        width: 28%;
 
         @media (max-width: 768px) {
-          margin-right: 0;
-          margin-bottom: 15px;
           width: 100%;
         }
-
       }
-
-      .custom-select {
-        width: 130px;
-
-        .choices__inner {
-          background-color: #fff;
+      .date-wrapper {
+        width: 16%;
+        min-width: 180px;
+        .simple-input  {
+          width: 100%;
+          padding-right: 30px;
         }
-
-        .choices__list--single {
-          padding: 3px 16px 4px 0;
-        }
-
         svg {
-          top: 19px;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
         }
-
-        img {
-          width: 29px;
-          height: 20px;
-        }
-
-        .choices__item {
-          background-size: 30px 21px;
-          height: 30px;
-          background-position: 10px center;
-          background-repeat: no-repeat;
-        }
-
-        .choices__list[aria-expanded] .choices__item {
-          padding: 0;
-          margin-bottom: 5px;
-        }
-
-        .choices__item[data-value="ru"] {
-          background-image: url("../img/ru-flag.png");
-        }
-
-        .choices__item.choices__item--choice.is-selected.choices__item--selectable {
-          background-color: #E1EAF5;
-        }
-
-        .choices__item[data-value="blg"] {
-          background-image: url("../img/blg-flag.png");
-        }
-
       }
+
     }
 
     &__inputs-item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      p {
+        @include montserrat-semibold;
+        font-size: 17px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__inputs-wrapper {
       display: flex;
+      gap: 20px;
       align-items: center;
 
       @media (max-width: 768px) {
@@ -319,12 +295,6 @@
         align-items: flex-start;
       }
 
-      &:not(:last-child) {
-        margin-bottom: 15px;
-        @media (max-width: 768px) {
-          margin-bottom: 40px;
-        }
-      }
     }
 
     &__add {
