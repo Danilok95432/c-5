@@ -1,0 +1,106 @@
+.template-stocks {
+    padding-top: 10px;
+
+    .breadcrumbs {
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        color: #000;
+        text-align: center;
+        font-size: 38px;
+        line-height: 40px;
+        @include book-bold;
+        margin: 0 auto 25px auto;
+        max-width: 485px;
+    }
+
+    .section-desc {
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto 50px auto;
+    }
+
+    .stocks {
+        padding-bottom: 47px;
+        position: relative;
+
+        @media (max-width: 1280px) {
+            padding-top: 0;
+        }
+
+        .stocks-list {
+            margin-bottom: 70px;
+            grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
+            align-items: start;
+
+            @media (max-width: 700px) {
+                grid-template-columns: minmax(300px, 1fr);
+            }
+
+            li {
+                max-width: 380px;
+                background-color: #ffffff;
+            }
+
+            &__image {
+                img {
+                    width: 100%;
+                    height: 230px;
+
+                    @media (max-width: 400px) {
+                        height: 100%;
+                    }
+                }
+            }
+
+            &__hover-content {
+                visibility: hidden;
+                opacity: 0;
+                transition: all .3s;
+                position: absolute;
+                background-color: #ffffff;
+                left: 0;
+                bottom: -50px;
+                width: 100%;
+                height: 50px;
+
+                svg {
+                    position: absolute;
+                    top: -20px;
+                    left: 35px;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            &__content {
+                padding: 20px 30px 35px 35px;
+                display: block;
+                color: #000000;
+                transition: all .3s;
+                position: relative;
+
+                &:hover {
+                    .stocks-list__hover-content {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+
+            &__row {
+                display: flex;
+                align-items: center;
+            }
+
+            &__title {
+                margin-bottom: 10px;
+                @include book-bold;
+                font-size: 24px;
+                line-height: 1.2;
+            }
+        }
+    }
+}
