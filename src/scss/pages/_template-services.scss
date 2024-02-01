@@ -22,9 +22,6 @@
         margin: 0 auto 50px auto;
     }
 
-    .grid-layout {
-        row-gap: 100px;
-    }
 
     .services {
         padding-bottom: 47px;
@@ -35,18 +32,29 @@
         }
 
         .services-list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
             margin-bottom: 70px;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
             li {
-                max-width: 380px;
+                max-height: 200px;
+                display: flex;
                 background-color: #ffffff;
+
+                @media (max-width: 1080px) {
+                    max-height: max-content;
+                }
+
+                @media (max-width: 700px) {
+                    flex-direction: column;
+                }
             }
 
             &__image {
                 img {
-                    width: 100%;
-                    height: 230px;
+                    width: 350px;
+                    height: 100%;
 
                     @media (max-width: 400px) {
                         height: 100%;
@@ -54,39 +62,18 @@
                 }
             }
 
-            &__hover-content {
-                visibility: hidden;
-                opacity: 0;
-                transition: all .3s;
-                position: absolute;
-                background-color: #ffffff;
-                left: 0;
-                bottom: -50px;
-                width: 100%;
-                height: 50px;
-
-                svg {
-                    position: absolute;
-                    top: -20px;
-                    left: 35px;
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-
             &__content {
-                padding: 20px 30px 35px 35px;
+                flex: 1;
+                padding: 30px 65px 35px 40px;
                 display: block;
                 color: #000000;
                 transition: all .3s;
                 position: relative;
 
-                &:hover {
-                    .services-list__hover-content {
-                        opacity: 1;
-                        visibility: visible;
-                    }
+                @media (max-width: 1080px) {
+                    padding: 10px 20px 20px 20px;
                 }
+
             }
 
             &__row {
@@ -95,16 +82,21 @@
             }
 
             &__title {
-                margin-bottom: 10px;
+                margin-bottom: 12px;
                 @include book-bold;
-                font-size: 24px;
+                font-size: 26px;
             }
 
             &__desc {
-                max-width: 310px;
                 font-size: 15px;
                 line-height: 25px;
             }
         }
+    }
+
+    .pets_accommodation-rules {
+        display: inline-block;
+        color: #3188E4;
+        padding: 20px 0 10px 0;
     }
 }
