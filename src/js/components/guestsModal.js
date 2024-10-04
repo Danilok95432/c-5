@@ -23,7 +23,8 @@ export const initCounters = (counters) => {
       const incBtn = counter.querySelector(".main-counter__inc-btn");
 
       decBtn.addEventListener("click", (e) => {
-        if (computedCount.value > 0) {
+
+        if (computedCount.value > 1) {
           computedCount.setAttribute("value", computedCount.value--);
         }
 
@@ -100,6 +101,8 @@ if (guestsInput) {
   guestsInput.addEventListener("click", (e) => {
     guestsModal.classList.add("_active");
   });
+  guestsInput.addEventListener('keydown', (e) => e.preventDefault())
+  guestsInput.addEventListener('paste', (e) => e.preventDefault())
 
   const initialCounters = guestsModal.querySelectorAll(".main-counter");
   initCounters(initialCounters);
@@ -109,7 +112,7 @@ if (guestsInput) {
 
 if (guestsModal) {
   const completeBtn = guestsModal.querySelector(".guests-modal__complete-btn");
-  completeBtn.addEventListener("click", (e) => {
+  completeBtn.addEventListener("click", () => {
     let adultsNum = 0;
     let childrenNum = 0;
 

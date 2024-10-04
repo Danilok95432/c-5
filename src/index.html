@@ -19,16 +19,16 @@
           обстановка создает особое настроение и ощущение внутреннего
           комфорта.
         </p>
-        <form class="find-res-form" action="#">
+        <form class="find-res-form booking-dates" action="#">
           <div class="container">
-            <div class="custom-input">
+            <div class="custom-input _active">
               <label>Заезд</label>
               <input
-                class="date-mask"
-                data-date-start="26.06.2023"
+                class="booking-dates__input _checkin"
                 type="text"
                 name="check_in"
                 autocomplete="off"
+                required
               />
               <svg
                 width="17"
@@ -42,15 +42,16 @@
                   fill="#ADB9C7"
                 />
               </svg>
+              <div class="date-custom-container"></div>
             </div>
-            <div class="custom-input">
+            <div class="custom-input _active">
               <label>Выезд</label>
               <input
-                class="date-mask"
-                data-date-start="26.06.2023"
+                class="booking-dates__input _checkout"
                 type="text"
                 name="check_out"
                 autocomplete="off"
+                required
               />
               <svg
                 width="17"
@@ -64,10 +65,11 @@
                   fill="#ADB9C7"
                 />
               </svg>
+              <div class="date-custom-container"></div>
             </div>
-            <div class="custom-input custom-input__guests-modal">
+            <div class="custom-input custom-input__guests-modal _active">
               <label>Гости</label>
-              <input type="text" name="guests" autocomplete="off"/>
+              <input type="text" name="guests" autocomplete="off" value="1 взрослый , 0 детей" required/>
               <svg
                 width="14"
                 height="14"

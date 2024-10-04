@@ -13,3 +13,4 @@ import "./components/typical-slider";
 import "./components/addChildrenSelect";
 import "./components/guestsModal";
 import "./components/booking";
+import "./components/bookingDates";
