@@ -1,6 +1,6 @@
 .footer {
   background-color: $main-blue;
-  padding: 23px 0 62px 0;
+  padding: 37px 0 22px 0;
   color: #FFFFFF;
 
   @media (max-width: 768px) {
@@ -10,40 +10,32 @@
   &__top {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
+    gap: 120px;
+    max-width: 1135px;
 
     @media (max-width: 768px) {
       flex-direction: column;
-      margin-bottom: 30px;
+      gap: 30px;
     }
 
     .footer__top-logo {
       min-width: 161px;
-      margin-right: 120px;
-      padding-bottom: 5px;
-      @media (max-width: 768px) {
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
+      height: 31px;
     }
 
 
     ul {
       display: flex;
       flex-wrap: wrap;
-      width: 70%;
+      flex-grow: 1;
+      gap: 6px 31px;
       @media (max-width: 768px) {
         width: 100%;
         justify-content: center;
       }
 
       li {
-        margin-bottom: 10px;
-
-        &:not(:last-child) {
-          margin-right: 27px;
-        }
         &:hover {
           a {
             text-decoration: underline;
@@ -62,7 +54,7 @@
   &__bottom {
     color: #ffffff;
     font-size: 14px;
-    max-width: 91.5%;
+    max-width: 1135px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,17 +80,16 @@
 
   &__copyright-link {
     display: block;
-    margin-bottom: 22px;
+    margin-bottom: 14px;
     @media (max-width: 768px) {
       text-align: center;
-      margin-bottom: 15px;
     }
   }
 
   &__pay {
     p {
       text-align: end;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       @media (max-width: 768px) {
         text-align: center;
       }
