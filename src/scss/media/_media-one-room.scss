@@ -27,6 +27,13 @@
 
 @media (max-width: 700px) {
   .one-room-page .one-room__swiper2 {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 425px) {
+  .one-room-page .one-room__swiper2 {
     width: 300px;
     height: 150px;
   }
