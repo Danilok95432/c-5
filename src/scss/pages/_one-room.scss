@@ -43,8 +43,11 @@
         justify-content: center;
 
         img {
-          width: 100%;
           height: 100%;
+          width: 100%;
+          display: block;
+          aspect-ratio: 2/1;
+          object-fit: fill;
         }
       }
     }
@@ -52,13 +55,17 @@
     &__swiper2 {
       height: 610px;
       margin-bottom: 5px;
+      .swiper-slide-active {
+        max-width: 1220px;
+        max-height: 610px;
+      }
     }
 
     &__swiper {
       height: 70px;
 
       .swiper-slide {
-        height: 100%;
+        width: 140px!important;
         box-sizing: border-box;
         cursor: pointer;
         outline: 1px solid #515151;
@@ -85,8 +92,10 @@
 
     &__inside {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      padding-top: 35px;
+      padding-top: 25px;
+      margin-bottom: 62px;
     }
 
     &__item {
@@ -117,14 +126,33 @@
       }
     }
 
-    &__image {
-      margin-bottom: 25px;
-      border: 1px solid #ADB9C7;
+    &__items {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      @media (max-width:768px) {
+        flex-direction: column;
+      }
+    }
 
+    &__image {
+      border: 1px solid #ADB9C7;
       img {
         height: 100%;
         width: 100%;
         display: block;
+        aspect-ratio: 2/1;
+        object-fit: fill;
+      }
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      margin-bottom: 10px;
+      @media (max-width:768px) {
+        flex-direction: column;
       }
     }
   }
@@ -132,6 +160,6 @@
   .text-mark {
     font-size: 13px;
     line-height: 1.1;
-    max-width: 480px;
+    margin-bottom: 35px;
   }
 }

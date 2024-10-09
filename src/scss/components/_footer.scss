@@ -1,6 +1,6 @@
 .footer {
   background-color: $main-blue;
-  padding: 37px 0 22px 0;
+  padding: 42px 0 29px 0;
   color: #FFFFFF;
 
   @media (max-width: 768px) {
@@ -10,7 +10,7 @@
   &__top {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 62px;
     gap: 120px;
     max-width: 1135px;
 
@@ -80,7 +80,7 @@
 
   &__copyright-link {
     display: block;
-    margin-bottom: 14px;
+    margin-bottom: 21px;
     @media (max-width: 768px) {
       text-align: center;
     }
@@ -89,7 +89,7 @@
   &__pay {
     p {
       text-align: end;
-      margin-bottom: 10px;
+      margin-bottom: 13px;
       @media (max-width: 768px) {
         text-align: center;
       }

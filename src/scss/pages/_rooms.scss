@@ -1,7 +1,7 @@
 .rooms-page {
 
   .rooms {
-    padding-bottom: 50px;
+    padding-bottom: 75px;
 
     &__top-bg {
       max-width: 1600px;
@@ -24,6 +24,21 @@
     .section__desc {
       max-width: 805px;
       margin: 0 auto 50px;
+    }
+  }
+
+  .rooms-list {
+    &__image {
+      width: 380px;
+      height: 190px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+    &__title {
+      line-height: 1.2;
     }
   }
 
