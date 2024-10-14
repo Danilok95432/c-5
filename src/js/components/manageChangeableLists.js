@@ -58,7 +58,7 @@ if (addToListBtns) {
       if (initialCounters) {
         initCounters(initialCounters);
       }
-      initAllDates()
+      initAllDates(templateElement)
       initAllMasks()
     });
   });
