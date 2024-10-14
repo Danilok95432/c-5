@@ -1,6 +1,6 @@
 .footer {
   background-color: $main-blue;
-  padding: 42px 0 29px 0;
+  padding: 38px 0 29px 0;
   color: #FFFFFF;
 
   @media (max-width: 768px) {
@@ -10,7 +10,7 @@
   &__top {
     display: flex;
     align-items: center;
-    margin-bottom: 62px;
+    margin-bottom: 50px;
     gap: 120px;
     max-width: 1135px;
 
@@ -80,7 +80,8 @@
 
   &__copyright-link {
     display: block;
-    margin-bottom: 21px;
+    margin-bottom: 13px;
+    line-height: 1.2;
     @media (max-width: 768px) {
       text-align: center;
     }
