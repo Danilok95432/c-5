@@ -2,6 +2,7 @@
   .container {
     display: flex;
     align-items: center;
+    gap: 11px;
     
     flex-wrap: wrap;
     @media (max-width: 1280px) {
@@ -15,7 +16,7 @@
   }
 
   .custom-input {
-    margin-right: 11px;
+    
     
     @media (max-width: 1213px) {
       margin-bottom: 10px;
