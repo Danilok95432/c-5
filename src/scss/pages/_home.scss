@@ -106,8 +106,15 @@
 
     &__inner {
       position: relative;
-      height: 580px;
       padding: 105px 0 0;
+
+      @media (max-width: 2560px) {
+        height: 840px;
+      }
+
+      @media (max-width: 1920px) {
+        height: 580px;
+      }
 
       @media (max-width: 768px) {
         padding: 40px 0 0;
@@ -138,6 +145,9 @@
       width: 100%;
       z-index: -1;
       min-height: 551px;
+      @media (max-width: 1920px) {
+        height: 550px;
+      }
       @media (max-width: 768px) {
         min-height: 720px;
       }
@@ -302,7 +312,9 @@
     }
 
     .rooms-swiper-container {
-      height: 465px;
+      @media (max-width: 1600px) {
+        height: 465px;
+      }
       @media (max-width: 1024px) {
         margin: 0 auto;
         padding: 0 15px;
