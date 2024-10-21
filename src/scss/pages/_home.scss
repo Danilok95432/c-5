@@ -107,7 +107,14 @@
   }
 
   .header {
-
+    @media (max-width: 768px) {
+      .custom-input {
+        width: 260px;
+        input {
+          width: 260px;
+        }
+      }
+    }
     &__inner {
       position: relative;
       padding: 105px 0 0;

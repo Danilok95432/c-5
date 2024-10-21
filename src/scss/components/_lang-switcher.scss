@@ -6,6 +6,9 @@
   margin-right: 16px;
   gap: 5px;
   @include montserrat-medium;
+  @media (max-width: 960px) {
+    display: none;
+  }
 
   label {
     color: #ADB9C7;

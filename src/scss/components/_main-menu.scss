@@ -9,7 +9,7 @@
   left: 0;
   bottom: 0;
   z-index: 1020;
-  @media (max-width: 768px) {
+  @media (max-width: 870px) {
     height: 104px;
   }
 
@@ -19,34 +19,34 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1250px;
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       justify-content: flex-start;
     }
   }
 
   &__logo {
     margin-right: 33px;
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       margin-right: 20px;
     }
   }
 
   &__logo-desktop {
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       display: none;
     }
   }
 
   &__logo-mobile {
     display: none;
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       display: block;
     }
   }
 
   &__burger-btn {
     display: none;
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       width: 22px;
       height: 20px;
       display: block;
@@ -82,7 +82,7 @@
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       position: fixed;
       left: -200%;
       top: 0;
@@ -127,7 +127,7 @@
     position: absolute;
     right: 25px;
     top: 25px;
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       display: block;
     }
   }
@@ -140,7 +140,7 @@
     color: #000000;
     font-size: 14px;
     @include montserrat-medium;
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       width: max-content;
       bottom: -42px;
       left: -100%;
@@ -158,7 +158,7 @@
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       width: 35px;
       height: 35px;
       margin-right: 15px;
@@ -192,7 +192,7 @@
       margin-left: 5px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       position: absolute;
       width: max-content;
       display: none;
@@ -206,7 +206,7 @@
 
   &__phone-icon-mobile {
     display: none;
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       display: block;
     }
   }
@@ -217,7 +217,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       .lang-switcher {
         text-transform: uppercase;
       }
@@ -244,7 +244,7 @@
     @media (max-width: 1280px) {
       margin-left: auto;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       width: 35px;
       height: 35px;
       margin-left: 0;
