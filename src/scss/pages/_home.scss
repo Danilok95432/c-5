@@ -107,7 +107,14 @@
   }
 
   .header {
-
+    @media (max-width: 768px) {
+      .custom-input {
+        width: 260px;
+        input {
+          width: 260px;
+        }
+      }
+    }
     &__inner {
       position: relative;
       padding: 105px 0 0;
@@ -389,10 +396,10 @@
           @include montserrat-regular;
           line-height: 20px;
           max-width: 375px;
+          min-height: 83px;
           @media (max-width: 768px) {
             max-width: 100%;
           }
-          min-height: 83px;
         }
       }
 
