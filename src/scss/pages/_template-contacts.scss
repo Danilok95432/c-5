@@ -8,8 +8,16 @@
 
   .container {
     h2 {
+      margin-bottom: 32px;
+      font-size: 38px;
+      font-family: "Book Antiqua";
+      font-weight: 700;
+    }
+    h3 {
       margin-bottom: 40px;
-      font-size: 27px;
+      font-size: 30px;
+      font-family: "Book Antiqua";
+      font-weight: 700;
     }
   }
 
@@ -46,6 +54,7 @@
 
       h6 {
         margin-bottom: 6px;
+        font-weight: 600;
       }
     }
   }
@@ -60,7 +69,9 @@
       flex-direction: column;
       gap: 20px;
     }
-
+    a {
+      color: #004D9F;
+    }
     li {
       display: flex;
       gap: 12px;
@@ -79,6 +90,7 @@
       }
       h6 {
         margin-bottom: 6px;
+        font-weight: 600;
       }
     }
   }
@@ -95,7 +107,6 @@
     margin-bottom: 120px;
     display: flex;
     gap: 110px;
-
     @media (max-width: 900px) {
       margin-bottom: 40px;
     }
@@ -103,7 +114,6 @@
     @media (max-width: 670px) {
       flex-direction: column;
     }
-
     li {
       flex: 1;
       display: flex;
@@ -113,6 +123,7 @@
       h6 {
         margin-bottom: 14px;
         text-transform: uppercase;
+        font-weight: 600;
       }
       &:nth-child(1) {
         max-width: 291px;
@@ -124,7 +135,7 @@
       gap: 11px;
 
       p {
-        line-height: 1.2;
+        line-height: 1.3;
       }
     }
   }
