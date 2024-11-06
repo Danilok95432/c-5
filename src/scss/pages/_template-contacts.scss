@@ -1,88 +1,142 @@
 .template-contacts {
-    padding-top: 94px;
+  background-color: #fff;
+  padding-top: 94px;
 
+  @media (max-width: 900px) {
+    padding-top: 30px;
+  }
+
+  .container {
+    h2 {
+      margin-bottom: 32px;
+      font-size: 38px;
+      font-family: "Book Antiqua";
+      font-weight: 700;
+    }
+    h3 {
+      margin-bottom: 40px;
+      font-size: 30px;
+      font-family: "Book Antiqua";
+      font-weight: 700;
+    }
+  }
+
+  .section-title {
+    margin-bottom: 35px;
+    @include book-bold;
+    font-size: 38px;
+    font-weight: 700;
+  }
+
+  .section-desc {
+    max-width: 900px;
+    margin-bottom: 45px;
+  }
+
+  .contacts-list {
+    margin-bottom: 45px;
+    display: flex;
+    gap: 90px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 30px;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    li {
+      display: flex;
+      gap: 12px;
+    }
+
+    &__info {
+      padding-top: 5px;
+
+      h6 {
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .additional-contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 63px;
+    margin-bottom: 90px;
+    @media (max-width: 750px) {
+      margin-bottom: 30px;
+      flex-direction: column;
+      gap: 20px;
+    }
+    a {
+      color: #004D9F;
+    }
+    li {
+      display: flex;
+      gap: 12px;
+      h6 {
+        text-transform: uppercase;
+      }
+      svg {
+        margin-top: 8px;
+      }
+    }
+
+    &__info {
+      padding-top: 5px;
+      .contacts-list-email-link {
+        text-decoration: underline;
+      }
+      h6 {
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .map {
+    margin-bottom: 72px;
+
+    iframe {
+      min-height: 400px;
+    }
+  }
+
+  .route-variants {
+    margin-bottom: 120px;
+    display: flex;
+    gap: 110px;
     @media (max-width: 900px) {
-        padding-top: 30px;
+      margin-bottom: 40px;
     }
 
-    .section-title {
-        margin-bottom: 35px;
-        @include book-bold;
-        font-size: 38px;
-        font-weight: 700;
+    @media (max-width: 670px) {
+      flex-direction: column;
+    }
+    li {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 346px;
+      h6 {
+        margin-bottom: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      &:nth-child(1) {
+        max-width: 291px;
+      }
     }
 
-    .section-desc {
-        max-width: 900px;
-        margin-bottom: 45px;
+    &__item {
+      display: flex;
+      gap: 11px;
+
+      p {
+        line-height: 1.3;
+      }
     }
-
-    .contacts-list {
-        margin-bottom: 70px;
-        display: flex;
-        gap: 90px;
-
-        @media (max-width: 750px) {
-            margin-bottom: 30px;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        li {
-            display: flex;
-            gap: 12px;
-        }
-
-        &__info {
-            padding-top: 5px;
-
-            h6 {
-                margin-bottom: 6px;
-            }
-        }
-    }
-
-    .map {
-        margin-bottom: 60px;
-
-        iframe {
-            min-height: 400px;
-        }
-    }
-
-    .route-variants {
-        margin-bottom: 120px;
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-
-        @media (max-width: 900px) {
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 670px) {
-            flex-direction: column;
-        }
-
-        li {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-
-            h6 {
-                margin-bottom: 14px;
-                text-transform: uppercase;
-            }
-        }
-
-        &__item {
-            display: flex;
-            gap: 11px;
-
-            p {
-                line-height: 1.2;
-            }
-        }
-    }
+  }
 }
