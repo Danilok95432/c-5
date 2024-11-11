@@ -1,6 +1,9 @@
 .restaurant-page {
   padding-top: 120px;
   background-color: #FFFFFF;
+  @media (max-width: 870px) {
+    padding-top: 104px;
+  }
 
   main {
     padding-top: 30px;
