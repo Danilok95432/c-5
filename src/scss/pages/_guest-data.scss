@@ -383,36 +383,10 @@
   .payment {
 
     &__desc {
-      margin-bottom: 35px;
-      max-width: 1040px;
-
-    }
-
-    p {
+      max-width: 1128px;
       font-size: 17px;
-      line-height: 25px;
-      @media (max-width: 768px) {
-        font-size: 15px;
-        line-height: 21px;
-      }
-
-      a {
-        color: #3188E4;
-      }
-    }
-
-    .main-radio {
-      margin-bottom: 30px;
-
-      input + label {
-        align-items: flex-start;
-      }
-
       span {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 20px;
-        @include montserrat-semibold;
+        font-weight: 600;
       }
     }
   }
