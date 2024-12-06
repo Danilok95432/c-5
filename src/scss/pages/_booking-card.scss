@@ -113,6 +113,9 @@
             @media (max-width: 768px) {
               grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
             }
+            @media (max-width: 425px) {
+              grid-template-columns: repeat(auto-fill, minmax(200px, max-content));
+            }
             &__label {
               font-size: 17px;
               font-weight: 500;
