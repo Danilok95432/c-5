@@ -97,8 +97,6 @@
 
       .booking-details {
         padding: 0 0 29px 0;
-        min-width: 100%;
-        overflow-x: scroll;
         &__section:not(:first-child) {
           padding: 26px 20px 35px;
         }
@@ -112,6 +110,9 @@
             grid-template-columns:
               minmax(190px, 320px)
               minmax(400px, 400px);
+            @media (max-width: 768px) {
+              grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+            }
             &__label {
               font-size: 17px;
               font-weight: 500;
@@ -135,7 +136,6 @@
           }
         }
         ._grey {
-          min-width: 620px;
           background-color: #f3f7fb;
         }
       }
