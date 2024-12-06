@@ -47,18 +47,11 @@
     }
 
     &__item {
-      padding: 35px 10px 35px;
+      padding: 30px 10px 26px;
       border-top: 1px solid #adb9c7;
 
       span {
         font-weight: 600;
-      }
-
-      b {
-        display: block;
-        margin-bottom: 18px;
-        font-size: 17px;
-        font-weight: 500;
       }
 
       > p {
@@ -70,7 +63,11 @@
       }
 
       p:not(:last-child) {
-        margin-bottom: 25px;
+        margin-bottom: 11px;
+      }
+
+      .disclaimer {
+        padding-left: 10px;
       }
 
       .blue-btn {
@@ -93,24 +90,27 @@
         &__time {
           font-weight: 600;
         }
+        p {
+          font-size: 17px;
+        }
       }
 
       .booking-details {
-        padding: 0 0 40px 0;
+        padding: 0 0 29px 0;
         min-width: 100%;
         overflow-x: scroll;
         &__section:not(:first-child) {
-          padding: 35px 20px;
+          padding: 26px 20px 35px;
         }
         &__section {
-          padding: 0 20px 35px;
+          padding: 0 20px 27px;
           display: flex;
           flex-direction: column;
-          gap: 30px;
+          gap: 16px;
           .row {
             display: grid;
             grid-template-columns:
-              minmax(180px, 310px)
+              minmax(190px, 320px)
               minmax(400px, 400px);
             &__label {
               font-size: 17px;
@@ -118,15 +118,17 @@
             }
 
             &__value {
+              font-size: 17px;
               font-weight: 400;
               display: flex;
-              gap: 20px;
+              gap: 25px;
               .vector {
                 display: flex;
                 align-items: center;
                 gap: 5px;
                 span {
                   font-weight: 400;
+                  font-size: 17px;
                 }
               }
             }
@@ -137,6 +139,15 @@
           background-color: #f3f7fb;
         }
       }
+    }
+
+    ._last {
+      padding-bottom: 40px;
+    }
+
+    ._no-side-padding {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
