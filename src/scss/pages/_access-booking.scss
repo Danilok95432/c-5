@@ -24,11 +24,15 @@
       display: flex;
       flex-direction: column;
       gap: 19px;
-      padding-bottom: 40px;
+      padding-bottom: 30px;
       padding-left: 10px;
       p {
         font-size: 17px;
       }
+      .access-form-text {
+        margin-bottom: 10px;
+      }
+
       .access-form-input-wrapper {
         display: flex;
         flex-direction: column;
@@ -39,6 +43,10 @@
           font-weight: 500;
           font-family: "Montserrat", sans-serif;
         }
+      }
+
+      .blue-btn {
+        max-width: 263px;
       }
     }
 

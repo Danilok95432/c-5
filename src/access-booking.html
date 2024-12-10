@@ -13,28 +13,31 @@
                 Доступ к странице бронирования
               </h1>
               <div class="access-booking__block">
-                <div class="access-booking__form">
+                <form class="access-booking__form">
                   <p>Для того, чтобы получить доступ к странице бронирования, введите, пожалуйста, следующие данные:</p>
                   <div class="access-form-input-wrapper">
-                    <label for="number_booking">Номер бронирования (заказа) *</label>
+                    <label>Номер бронирования (заказа) *</label>
                     <input
                       class="access-form-input simple-input changeable-input"
                       type="number"
                       name="number_booking"
+                      required
                     />
                   </div>
                   <div class="access-form-input-wrapper">
-                    <label for="number_booking">ПИН-код (пароль бронирования) *</label>
+                    <label>ПИН-код (пароль бронирования) *</label>
                     <input
                       class="access-form-input simple-input changeable-input"
                       type="password"
                       maxlength="6"
                       name="pin_code"
+                      required
                     />
                   </div>
-                </div>
+                  <p class="access-form-text">Номер бронирования и ПИН-код были ранее отправлены на указанный Вами при бронировании электронный адрес.</p>
+                  <button type="submit" class="blue-btn">ОТКРЫТЬ БРОНИРОВАНИЕ</button>
+                </form>
                 <div class="access-booking__item">
-                  <p>Номер бронирования ПИН-код были ранее отправлены на указанный Вами при бронировании электронный адрес.</p>
                   <p>
                     Остались вопросы? Задайте их по телефону
                     <span>+7 (888) 222-22-22</span>
