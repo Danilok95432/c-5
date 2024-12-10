@@ -1,0 +1,66 @@
+.access-booking-page {
+  .access-booking {
+    .container {
+      padding-top: 32px;
+      padding-bottom: 200px;
+    }
+
+    .section__title {
+      margin-bottom: 34px;
+      font-size: 35px;
+    }
+
+    &__inner {
+      padding: 37px 20px 48px;
+      background-color: #d6dce3;
+    }
+
+    &__block {
+      padding: 30px 26px 0;
+      background-color: #ffffff;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      padding-bottom: 40px;
+      padding-left: 10px;
+      p {
+        font-size: 17px;
+      }
+      .access-form-input-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        max-width: 700px;
+        label {
+          font-size: 17px;
+          font-weight: 500;
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+    }
+
+    &__item {
+      padding: 30px 10px 29px;
+      border-top: 1px solid #adb9c7;
+
+      span {
+        font-weight: 600;
+      }
+
+      > p {
+        font-size: 17px;
+        a {
+          color: #3188e4;
+          font-weight: 600;
+        }
+      }
+
+      p:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
