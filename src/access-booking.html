@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html', { 'title': 'Подтверждение брони' })
+
+  <body class="page__body access-booking-page">
+    <div class="site-container">
+      <header class="header">@include('partials/main-menu.html')</header>
+      <main class="main">
+        <section class="section access-booking">
+          <div class="container">
+            <div class="access-booking__inner">
+              <h1 class="section__title">
+                Доступ к странице бронирования
+              </h1>
+              <div class="access-booking__block">
+                <form class="access-booking__form">
+                  <p>Для того, чтобы получить доступ к странице бронирования, введите, пожалуйста, следующие данные:</p>
+                  <div class="access-form-input-wrapper">
+                    <label>Номер бронирования (заказа) *</label>
+                    <input
+                      class="access-form-input simple-input changeable-input"
+                      type="number"
+                      name="number_booking"
+                      required
+                    />
+                  </div>
+                  <div class="access-form-input-wrapper">
+                    <label>ПИН-код (пароль бронирования) *</label>
+                    <input
+                      class="access-form-input simple-input changeable-input"
+                      type="password"
+                      maxlength="6"
+                      name="pin_code"
+                      required
+                    />
+                  </div>
+                  <p class="access-form-text">Номер бронирования и ПИН-код были ранее отправлены на указанный Вами при бронировании электронный адрес.</p>
+                  <button type="submit" class="blue-btn">ОТКРЫТЬ БРОНИРОВАНИЕ</button>
+                </form>
+                <div class="access-booking__item">
+                  <p>
+                    Остались вопросы? Задайте их по телефону
+                    <span>+7 (888) 222-22-22</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>
