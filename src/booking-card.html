@@ -283,13 +283,21 @@
                   </p>
                 </div>
                 <div class="booking-card__item _last">
-                  <div class="payZone">
-                    <button class="blue-btn">ОПЛАТИТЬ БРОНИРОВАНИЕ</button>
+                  <form class="payZone" action="/include/ajax/payment_start.php" method="post">
+                    <input type="hidden" name="id_order" value="34322">
+                    <input type="hidden" name="id_order_payment" value="233">
+                    <input type="hidden" name="summ" value="7892">
+                    <input type="hidden" name="return_url" value="booking-completed.html">
+                    <input type="hidden" name="description" value="Заказ №34322">
+                    <input type="hidden" name="full_name" value="Иванов Иван Иванович">
+                    <input type="hidden" name="email" value="ivanovii@yandex.ru">
+                    <button class="blue-btn" type="submit">ОПЛАТИТЬ БРОНИРОВАНИЕ
+                    </button>
                     <p>
                       Перейти на страницу платежной системы. Осталось
                       времени: <span class="payZone__time">15:22</span>
                     </p>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -564,13 +572,21 @@
                   </p>
                 </div>
                 <div class="booking-card__item _last">
-                  <div class="payZone">
-                    <button class="blue-btn">ОПЛАТИТЬ БРОНИРОВАНИЕ</button>
+                  <form class="payZone" action="/include/ajax/payment_start.php" method="post">
+                    <input type="hidden" name="id_order" value="34322">
+                    <input type="hidden" name="id_order_payment" value="233">
+                    <input type="hidden" name="summ" value="7892">
+                    <input type="hidden" name="return_url" value="booking-completed.html">
+                    <input type="hidden" name="description" value="Заказ №34322">
+                    <input type="hidden" name="full_name" value="Иванов Иван Иванович">
+                    <input type="hidden" name="email" value="ivanovii@yandex.ru">
+                    <button class="blue-btn" type="submit">ОПЛАТИТЬ БРОНИРОВАНИЕ
+                    </button>
                     <p>
                       Перейти на страницу платежной системы. Осталось
                       времени: <span class="payZone__time">15:22</span>
                     </p>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -854,6 +870,7 @@
             </div>
           </div>
         </section>
+        @include('partials/info-modal.html')
       </main>
       @include('partials/footer.html')
     </div>
