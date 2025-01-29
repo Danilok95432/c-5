@@ -34,12 +34,14 @@
   }
 
   &__logo-desktop {
+    max-width: 186px;
     @media (max-width: 870px) {
       display: none;
     }
   }
 
   &__logo-mobile {
+    max-width: 68px;
     display: none;
     @media (max-width: 870px) {
       display: block;
