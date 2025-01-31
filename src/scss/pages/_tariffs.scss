@@ -2,6 +2,13 @@
 
   .tariffs {
 
+    &__desc {
+      background: #fff;
+      ._descript {
+        padding: 0 15px 0 20px;
+      }
+    }
+
     .container {
       padding-top: 75px;
       padding-bottom: 200px;
@@ -61,12 +68,17 @@
     }
 
     &__images {
-      min-width: 260px;
-      width: 260px;
-      height: 200px;
+      min-width: 290px;
+      width: 290px;
+      height: 145px;
       position: relative;
       border: 1px solid #ADB9C7;
       border-right: none;
+      img {
+        width: 290px;
+        height: 145px;
+        aspect-ratio: 2 / 1;
+      }
     }
 
     &__images-counter {
@@ -90,19 +102,25 @@
 
     &__information {
       width: 100%;
-      padding: 21px 19px 13px 23px;
+      padding: 0px 15px 20px 0px;
       border: 1px solid #ADB9C7;
       border-left: none;
       background-color: #FFFFFF;
+      display: flex;
+      gap: 12px;
+      .info-tariffs {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+      }
 
       .tariffs__row {
         &:nth-child(1) {
           justify-content: space-between;
-          margin-bottom: 22px;
         }
 
         &:nth-child(2) {
-          margin-bottom: 19px;
+          margin-bottom: 12px;
           align-items: center;
 
           svg {
@@ -110,7 +128,7 @@
           }
 
           p {
-            &:first-of-type {
+            &:not(:last-child) {
               margin-right: 20px;
             }
           }
@@ -165,7 +183,7 @@
     &__filters {
       width: 245px;
       flex-shrink: 0;
-      margin-right: 17px;
+      margin-right: 39px;
 
       p {
         margin-bottom: 10px;
@@ -317,6 +335,7 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 25px;
+      border: 1px solid #ADB9C7;
     }
 
     &__left {

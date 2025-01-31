@@ -22,12 +22,16 @@ const swiperRooms = new Swiper(".rooms-swiper", {
     },
     1600: {
       spaceBetween: 0,
-      slidesPerView: 1.425,
+      slidesPerView: 1.4,
     },
     1920: {
       spaceBetween: 0,
       slidesPerView: 1.71,
-    }
+    },
+    2400: {
+      spaceBetween: 0,
+      slidesPerView: 2.11,
+    },
   },
 });
 
