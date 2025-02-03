@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html', { 'title': 'Спецпредложение' })
+
+  <body class="page__body special-offers-page">
+    <div class="site-container">
+      <header class="header">@include('partials/main-menu.html')</header>
+      <main class="main">
+        <div class="breadcrumbs container">
+          <a href="index.html">Главная</a>&nbsp;/&nbsp;<span
+            >Спецпредложение 1</span
+          >
+        </div>
+        <section class="section offers">
+          <div class="container">
+            <h2 class="section-title">Спецпредложение 1</h2>
+            <div class="places">
+              <div class="place">
+                <h3>«Тамбовский драматический театр»</h3>
+                <p>
+                  Адрес местонахождения: г. Тамбов, ул. Интернациональная, д.15
+                </p>
+                <p>Контактный телефон: (4752) 71-95-80, 72-13-65</p>
+              </div>
+              <div class="place">
+                <h3>«Театр кукол»</h3>
+                <p>Тамбовский кукольный театр.</p>
+                <p>
+                  Адрес местонахождения: г. Тамбов, ул. Интернациональная, д.15
+                </p>
+                <p>Контактный телефон: (4752) 72-11-58</p>
+              </div>
+              <div class="place">
+                <h3>«Учебный театр ТГУ»</h3>
+                <p>
+                  В учебном театре ТГУ проходят концерты, спектакли, музыкальные
+                  фестивали, закрытые показы.
+                </p>
+                <p>Адрес местонахождения: г. Тамбов, ул. Советская , д. 6</p>
+              </div>
+            </div>
+            <div class="voting-block">
+              <p class="voting-block__title">
+                Воспользуетесь ли Вы предложением?
+              </p>
+              <div class="voting-block__options">
+                <label class="voting-block__option">
+                  <input type="radio" name="vote" value="obligatory" />
+                  <span class="voting-block__option-text">Обязательно</span>
+                </label>
+                <label class="voting-block__option">
+                  <input type="radio" name="vote" value="rather_yes" />
+                  <span class="voting-block__option-text"
+                    >Скорее да, чем нет</span
+                  >
+                </label>
+                <label class="voting-block__option">
+                  <input type="radio" name="vote" value="hard_to_say" />
+                  <span class="voting-block__option-text"
+                    >Трудно сказать, и да, и нет</span
+                  >
+                </label>
+                <label class="voting-block__option">
+                  <input type="radio" name="vote" value="rather_no" />
+                  <span class="voting-block__option-text">Скорее нет</span>
+                </label>
+                <label class="voting-block__option">
+                  <input type="radio" name="vote" value="never" />
+                  <span class="voting-block__option-text"
+                    >Ни в коем случае</span
+                  >
+                </label>
+              </div>
+              <button class="voting-block__button">Голосовать</button>
+            </div>
+          </div>
+        </section>
+        <section class="section gallery">
+          <div class="container">
+            <div class="offers__gallery grid-layout main-gallery">
+              <a href="img/restaurant-gall.jpg">
+                <img src="img/restaurant-gall.jpg" />
+              </a>
+              <a href="img/restaurant-gall-1.jpg">
+                <img src="img/restaurant-gall-1.jpg" />
+              </a>
+              <a href="img/restaurant-gall-2.jpg">
+                <img src="img/restaurant-gall-2.jpg" />
+              </a>
+              <a href="img/restaurant-gall-3.jpg">
+                <img src="img/restaurant-gall-3.jpg" />
+              </a>
+              <a href="img/restaurant-gall-4.jpg">
+                <img src="img/restaurant-gall-4.jpg" />
+              </a>
+              <a href="img/restaurant-gall-5.jpg">
+                <img src="img/restaurant-gall-5.jpg" />
+              </a>
+              <a href="img/restaurant-gall-6.jpg">
+                <img src="img/restaurant-gall-6.jpg" />
+              </a>
+              <a href="img/restaurant-gall-7.jpg">
+                <img src="img/restaurant-gall-7.jpg" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>
