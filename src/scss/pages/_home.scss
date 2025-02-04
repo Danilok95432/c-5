@@ -62,9 +62,16 @@
   .find-res-form {
     margin-bottom: 175px;
     transition: all .2s;
+    .custom-input {
+      width: 318px;
+      input {
+        width: 318px;
+      }
+    }
 
     .container {
       padding: 0;
+      gap: 16px;
     }
 
     .custom-input__guests-modal {
@@ -371,7 +378,7 @@
     }
 
     .rooms-list {
-      margin-bottom: 63px;
+      margin-bottom: 10px;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
@@ -390,6 +397,10 @@
   .our-rooms {
     padding: 91px 0 67px;
     background: #D6DCE3;
+
+    .rooms-swiper {
+      min-height: 650px;
+    }
 
     h2 {
       color: #000000;
@@ -414,7 +425,6 @@
       }
 
       .swiper-slide {
-        transition: all .3s;
         a {
           display: block;
         }

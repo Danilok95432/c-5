@@ -129,7 +129,7 @@
 
     &__menu {
       display: flex;
-      gap: 17px;
+      gap: 12px;
       flex-wrap: wrap;
       @media (max-width: 768px) {
        flex-direction: column;
@@ -189,12 +189,9 @@
     }
 
     .rooms-swiper {
+      min-height: 650px;
       .swiper-wrapper {
         margin-bottom: 15px;
-      }
-
-      .swiper-slide {
-        transition: all .3s;
       }
 
       .swiper-slide-active {
