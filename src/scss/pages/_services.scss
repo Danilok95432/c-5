@@ -21,6 +21,12 @@
       padding: 18px 20px 38px;
       background-color: #D6DCE3;
 
+      .top-row__lang {
+        @media (max-width: 768px) {
+          margin-left: 0;
+        }
+      }
+
       .services__row {
         align-items: flex-start;
 

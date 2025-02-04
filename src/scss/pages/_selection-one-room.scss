@@ -19,6 +19,12 @@
       padding: 25px 20px 40px 20px;
       background-color: #D6DCE3;
 
+      .top-row__lang {
+        @media (max-width: 400px) {
+          margin-left: 0;
+        }
+      }
+
       @media (max-width: 1000px) {
         padding-bottom: 20px;
       }
