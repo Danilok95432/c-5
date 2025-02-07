@@ -55,6 +55,10 @@
       @media (max-width: 3840px) {
         height: 600px;
         min-height: 600px;
+        border-radius: 0 0 10px 10px;
+      }
+      @media (max-width: 2400px) {
+        border-radius: 0;
       }
       @media (max-width: 2000px) {
         height: 500px;
