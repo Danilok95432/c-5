@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html', { 'title': 'Письмо подтверждения брони' })
+
+  <body class="page__body">
+    <div class="site-container">
+      <div class="accept-booking-message">
+        <div class="container">
+          <header>
+            <h1 class="message-title">Бронирование №7911339</h1>
+            <div class="message-logo">
+              <a href="">
+                <img src="./img/logo-accept-message.png" alt="Лого" />
+              </a>
+              <p>г. Тамбов, ул. Кавалерийская, д. 18а</p>
+              <p>(4752) 71-02-98, 71-42-20</p>
+            </div>
+          </header>
+          <section class="section-block">
+            <div class="message-text">
+              <h2>Здравствуйте, Иван!</h2>
+              <p>
+                Вы не завершили бронирование номера в гостинице «Славянская».
+              </p>
+              <p>
+                Внесите предоплату в размере <span>2000 ₽</span>, чтобы номер в
+                гостинице «Славянская» был забронирован за Вами с 06.02.2025 по
+                08.02.2025.
+              </p>
+            </div>
+            <div class="message-room-info">
+              <div class="message-room-info__desc">
+                <p>Номер</p>
+                <h2>Студия комфорт с диваном</h2>
+                <div class="dates-block">
+                  <div class="date-block check-in">
+                    <p>Заезд</p>
+                    <p class="date">6 февраля 2025</p>
+                    <p class="time">в 14:00, четверг</p>
+                  </div>
+                  <div class="date-block check-out">
+                    <p>Выезд</p>
+                    <p class="date">8 февраля 2025</p>
+                    <p class="time">в 12:00, суббота</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./img/message-room-img.jpg" alt="Номер" />
+            </div>
+            <div class="details-booking">
+              <h3>Детали бронирования:</h3>
+              <div class="details-booking__table">
+                <div class="row">
+                  <p class="title-row">Всего гостей:</p>
+                  <p>1</p>
+                </div>
+                <div class="row">
+                  <p class="title-row">Гость:</p>
+                  <p>Иван Михайлов</p>
+                </div>
+                <div class="row">
+                  <p class="title-row">Категория номера:</p>
+                  <p>Высокий стандарт</p>
+                </div>
+                <div class="row">
+                  <p class="title-row">Тариф проживания:</p>
+                  <p>Стандарт ++</p>
+                </div>
+                <div class="row">
+                  <p class="title-row">Номер:</p>
+                  <p>223 номер, 2 этаж</p>
+                </div>
+                <div class="row">
+                  <p class="title-row">Дополнительные услуги:</p>
+                  <p>
+                    Завтрак «Шведский стол», размещение с домашними животными
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-block bill">
+            <div class="bill-table">
+              <div class="row">
+                <p class="title-row">Общая стоимость:</p>
+                <p>20 000 ₽</p>
+              </div>
+              <div class="row">
+                <p class="title-row">Всего оплачено:</p>
+                <p>0 ₽</p>
+              </div>
+            </div>
+            <button type="button" class="accept-booking-btn">
+              завершить бронирование
+            </button>
+          </section>
+          <footer>
+            <p>
+              Если у Вас возникли сложности при бронировании или появились
+              вопросы, пожалуйста, <a href="#">свяжитесь с нами.</a>
+            </p>
+            <p>С уважением, отдел бронирования гостиницы «Славянская».</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    .accept-booking-message {
+      background: #ffffff;
+      max-width: 595px;
+    }
+    .accept-booking-message .container {
+      padding: 34px 40px 50px 43px;
+    }
+    .accept-booking-message .container header {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 29px;
+    }
+    .accept-booking-message .container header .message-title {
+      max-width: 203px;
+      font-size: 14.5px;
+      font-weight: 700;
+    }
+    .accept-booking-message .container header .message-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      max-width: 151px;
+      font-size: 8px;
+      font-weight: 600;
+      line-height: 1.2;
+      gap: 7px;
+    }
+    .accept-booking-message .container header .message-logo a {
+      max-width: 97px;
+      height: 20px;
+    }
+    .accept-booking-message .container header .message-logo a img {
+      width: 100%;
+      height: 100%;
+    }
+    .accept-booking-message .container footer {
+      display: flex;
+      flex-direction: column;
+      font-size: 7.5px;
+      gap: 16px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+    .accept-booking-message .container footer a {
+      font-weight: 600;
+      color: #0d77e7;
+    }
+    .accept-booking-message .section-block {
+      padding: 28px 0;
+      border-top: 1px solid #adb9c7;
+    }
+    .accept-booking-message .section-block .message-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      gap: 10px;
+      padding-bottom: 30px;
+    }
+    .accept-booking-message .section-block .message-text h2 {
+      font-size: 12px;
+    }
+    .accept-booking-message .section-block .message-text p {
+      font-size: 7.5px;
+      font-weight: 500;
+    }
+    .accept-booking-message .section-block .message-text p span {
+      font-weight: 700;
+    }
+    .accept-booking-message .section-block .message-room-info {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 44px;
+    }
+    @media (max-width: 518px) {
+      .accept-booking-message .section-block .message-room-info {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    .accept-booking-message .section-block .message-room-info img {
+      width: 190px;
+      height: 95px;
+      border-radius: 5px;
+    }
+    .accept-booking-message .section-block .message-room-info__desc {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      gap: 6px;
+    }
+    .accept-booking-message .section-block .message-room-info__desc p {
+      font-size: 8px;
+      font-weight: 400;
+    }
+    .accept-booking-message .section-block .message-room-info__desc h2 {
+      color: #0d77e7;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .accept-booking-message
+      .section-block
+      .message-room-info__desc
+      .dates-block {
+      display: flex;
+      gap: 32px;
+      padding-top: 10px;
+    }
+    .accept-booking-message
+      .section-block
+      .message-room-info__desc
+      .dates-block
+      .date-block {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .accept-booking-message
+      .section-block
+      .message-room-info__desc
+      .dates-block
+      .date-block
+      p {
+      font-size: 8px;
+      font-weight: 400;
+    }
+    .accept-booking-message
+      .section-block
+      .message-room-info__desc
+      .dates-block
+      .date-block
+      .date {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .accept-booking-message
+      .section-block
+      .message-room-info__desc
+      .dates-block
+      .date-block
+      .time {
+      font-size: 8px;
+      font-weight: 500;
+    }
+    .accept-booking-message .section-block .details-booking {
+      line-height: 1.2;
+    }
+    .accept-booking-message .section-block .details-booking h3 {
+      font-size: 10px;
+      font-weight: 600;
+      padding-bottom: 14px;
+    }
+    .accept-booking-message .section-block .details-booking__table {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .accept-booking-message .section-block .details-booking__table .row {
+      display: flex;
+      gap: 20px;
+      font-size: 8px;
+    }
+    .accept-booking-message
+      .section-block
+      .details-booking__table
+      .row
+      .title-row {
+      min-width: 104px;
+      font-weight: 400;
+    }
+    .accept-booking-message .section-block .details-booking__table .row p {
+      font-weight: 600;
+    }
+    .accept-booking-message .bill {
+      padding: 20px 0 120px 0;
+      line-height: 1.2;
+    }
+    .accept-booking-message .bill .bill-table {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding-bottom: 23px;
+    }
+    .accept-booking-message .bill .bill-table .row {
+      display: flex;
+      gap: 30px;
+      font-size: 9px;
+    }
+    .accept-booking-message .bill .bill-table .row .title-row {
+      min-width: 94px;
+      font-weight: 400;
+    }
+    .accept-booking-message .bill .bill-table .row p {
+      font-weight: 700;
+    }
+    .accept-booking-message .bill .accept-booking-btn {
+      width: 180px;
+      padding: 8px 6px;
+      color: #fff;
+      background: #0d77e7;
+      text-align: center;
+      font-size: 9px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  </style>
+</html>
