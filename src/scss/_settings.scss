@@ -178,6 +178,9 @@ h1 {
   position: absolute;
   left: 0;
   top: 0;
+  @media (max-width: 560px) {
+    width: 100%;
+  }
 }
 
 

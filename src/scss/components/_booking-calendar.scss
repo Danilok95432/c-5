@@ -3,6 +3,11 @@
     width: 493px;
     height: auto;
     padding: 20px 25px 20px 25px;
+    @media (max-width: 560px) {
+      width: 100%;
+      padding: 5px;
+      margin: 0 auto;
+    }
   }
 
   .air-datepicker--navigation {
@@ -36,11 +41,18 @@
   .air-datepicker-body--day-names {
     grid-template-columns: repeat(7, 70px);
     margin: 15px 0 15px;
+    @media (max-width: 560px) {
+      grid-template-columns: repeat(7, 14%);
+    }
   }
 
   .air-datepicker-body--cells.-days- {
     grid-template-columns: repeat(7, 70px);
     grid-auto-rows: 70px;
+    @media (max-width: 560px) {
+      grid-template-columns: repeat(7, 14%);
+      grid-auto-rows: 70px;
+    }
   }
 
   .air-datepicker-nav--action {

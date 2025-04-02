@@ -15,3 +15,4 @@ import "./components/guestsModal";
 import "./components/booking";
 import "./components/bookingDates";
 import "./components/paymentPayzone";
+import "./components/cardHeightHandler";
