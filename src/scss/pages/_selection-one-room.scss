@@ -185,6 +185,9 @@
                   border-right: 1px solid #ADB9C7;
                 }
               }
+              @media (max-width: 440px) {
+                max-width: 100%;
+              }
             }
 
             .tariffs-conditions,
@@ -238,14 +241,8 @@
                   }
 
                   @media (max-width: 600px) {
-                    font-size: 10px;
+                    font-size: 12px;
                     line-height: 10px;
-                  }
-                }
-
-                svg {
-                  @media (max-width: 460px) {
-                    display: none;
                   }
                 }
 
