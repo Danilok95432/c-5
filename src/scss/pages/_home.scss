@@ -98,6 +98,10 @@
       padding-top: 15px;
 
       .custom-input {
+        width: 318px;
+        input {
+          width: auto;
+        }
         border: 1px solid #ADB9C7;
       }
 
