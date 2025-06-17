@@ -16,7 +16,6 @@
 }
 
 .lg-outer .lg-thumb-outer {
-  width: 65%;
   margin: 0 auto;
   float: none;
   background-color: transparent;
@@ -43,11 +42,11 @@
 }
 
 .lg-next {
-  right: 8%;
+  right: 2%;
 }
 
 .lg-prev {
-  left: 8%;
+  left: 2%;
 }
 
 #lg-toolbar-1 {
@@ -63,9 +62,9 @@
 }
 
 .lg-outer .lg-object {
-  max-width: 70%;
-  max-height: 70%;
-  margin-top: 120px;
+  max-width: 90%;
+  max-height: 60%;
+  width: 80%;
 }
 
 

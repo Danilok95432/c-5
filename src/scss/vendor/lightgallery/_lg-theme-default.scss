@@ -96,9 +96,9 @@
 // lg toolbar
 .lg-toolbar {
     z-index: $zindex-toolbar;
-    left: 0;
+    right: 3%;
     position: absolute;
-    top: 0;
+    top: 30px;
     width: 100%;
     .lg-media-overlap & {
         background-image: $lg-toolbar-bg;
@@ -229,6 +229,12 @@ body:not(.lg-from-hash) {
                         transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s,
                         opacity 250ms cubic-bezier(0, 0, 0.25, 1) !important
                     );
+                }
+                .lg-img-wrap {
+                    img {
+                        object-fit: contain;
+                        background: rgb(0 0 0 / 11%);
+                    }
                 }
                 &.lg-complete {
                     .lg-img-wrap,
