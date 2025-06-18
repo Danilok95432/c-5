@@ -56,6 +56,16 @@
     }
   }
 
+  .footer-links {
+      display: flex;
+      gap: 30px;
+      a {
+        color: #ffffff;
+        font-size: 14px;
+        text-decoration: underline;
+      }
+    }
+
   &__bottom {
     color: #ffffff;
     font-size: 14px;
