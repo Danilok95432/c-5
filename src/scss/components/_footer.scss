@@ -64,6 +64,11 @@
         font-size: 14px;
         text-decoration: underline;
       }
+      @media (max-width: 500px) {
+        justify-content: center;
+        gap: 0;
+        flex-wrap: wrap;
+      }
     }
 
   &__bottom {
