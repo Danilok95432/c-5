@@ -35,6 +35,8 @@
 
   &__logo-desktop {
     max-width: 186px;
+    width: 186px;
+    height: max-content;
     @media (max-width: 870px) {
       display: none;
     }
