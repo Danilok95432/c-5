@@ -313,6 +313,9 @@
     padding: 70px 0 70px;
 
     &__gallery {
+      @media (max-width: 768px) {
+        display: none;
+      }
       grid-template-columns: repeat(auto-fit, minmax(288px, 1fr) );
       grid-column-gap: 10px;
       grid-row-gap: 18px;
@@ -320,14 +323,85 @@
 
       a {
         display: inline-block;
-        width: 292px;
-        height: 146px;
         img {
           height: 100%;
-          aspect-ratio: 2 / 1;
+          aspect-ratio: 16 / 9;
         }
       }
     }
+    .mobile-gallery {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      padding: 0 15px;
+    }
+
+    .rooms-swiper-container {
+      @media (max-width: 1024px) {
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+    }
+
+    .rooms-swiper {
+      .swiper-wrapper {
+        margin-bottom: 15px;
+      }
+
+      .swiper-slide {
+        a {
+          display: block;
+        }
+      }
+
+      .swiper-slide-active {
+        img {
+          height: 100%;
+          aspect-ratio: 16 / 9;
+          width: 100%;
+        }
+      }
+
+      .swiper-slide-prev {
+        position: relative;
+        a {
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      .swiper-slide-prev, .swiper-slide-next {
+        img {
+          height: 100%;
+          aspect-ratio: 16 / 9;
+          width: 100%;
+        }
+      }
+
+
+      &__controls {
+        display: flex;
+        justify-content: center;
+        padding: 0 15px;
+        margin: 0 auto;
+        width: 100%;
+        height: 50px;
+        @media (max-width: 768px) {
+          padding: 0;
+          margin-top: 30px;
+        }
+
+        button:first-child {
+          margin-right: 20px;
+        }
+      }
+
+      &__img {
+        position: relative;
+        cursor: pointer;
+      }
+    }
+  }
 
   }
 

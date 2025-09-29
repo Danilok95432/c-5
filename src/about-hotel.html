@@ -1,159 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+  @include('partials/head.html', { 'title': 'О гостинице' })
 
-@include('partials/head.html', {
-'title': 'О гостинице'
-})
+  <body class="page__body about-hotel-page">
+    <div class="site-container">
+      <header class="header">@include('partials/main-menu.html')</header>
 
-<body class="page__body about-hotel-page">
-
-<div class="site-container">
-  <header class="header">
-    @include('partials/main-menu.html')
-  </header>
-
-  <main class="main">
-    <div class="breadcrumbs container">
-      <a href="index.html">Главная</a>&nbsp;/&nbsp;<span>О гостинице</span>
+      <main class="main">
+        <div class="breadcrumbs container">
+          <a href="index.html">Главная</a>&nbsp;/&nbsp;<span>О гостинице</span>
+        </div>
+        <section class="section about">
+          <div class="container">
+            <h2 class="section__title">О гостинице</h2>
+            <div class="about__info-wrapper">
+              <div class="about__img">
+                <img src="./img/about-hotel-head.jpg" alt="Гостиница" />
+              </div>
+              <div class="about__descs">
+                <p>
+                  Sed ut perspiciatis, unde omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium, totam rem
+                  aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
+                  architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam
+                  voluptatem, quia voluptas sit, aspernatur aut odit aut fugit,
+                  sed quia consequuntur magni dolores eos, qui ratione
+                  voluptatem sequi nesciunt, neque porro quisquam est, qui
+                  dolorem ipsum, quia dolor sit, amet, consectetur, adipisci
+                  velit, sed quia non numquam eius modi tempora incidunt, ut
+                  labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+                  minima veniam, quis nostrum exercitationem ullam corporis
+                  suscipit laboriosam, nisi ut aliquid ex ea commodi
+                  consequatur?
+                </p>
+                <p>
+                  Quis autem vel eum iure reprehenderit, qui in ea voluptate
+                  velit esse, quam nihil molestiae consequatur, vel illum, qui
+                  dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos
+                  et accusamus et iusto odio dignissimos ducimus, qui blanditiis
+                  praesentium voluptatum deleniti atque corrupti, quos dolores
+                  et quas molestias excepturi sint, obcaecati cupiditate non
+                  provident, similique sunt in culpa, qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum
+                  quidem rerum facilis est et expedita distinctio.
+                </p>
+                <p>
+                  Nam libero tempore, cum soluta nobis est eligendi optio,
+                  cumque nihil impedit, quo minus id, quod maxime placeat,
+                  facere possimus, omnis voluptas assumenda est, omnis dolor
+                  repellendus. Temporibus autem quibusdam et aut officiis
+                  debitis aut rerum necessitatibus saepe eveniet, ut et
+                  voluptates repudiandae sint et molestiae non recusandae.
+                  Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+                  reiciendis voluptatibus maiores alias consequatur aut
+                  perferendis doloribus asperiores repellat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section cafe">
+          <div class="container">
+            <h2 class="section__title">Фотогалерея</h2>
+            <div
+              class="cafe__gallery grid-layout cafe-gallery-container main-gallery"
+            >
+              <a href="img/rooms-slide1.jpg" class="rooms-swiper__img">
+                <img src="img/rooms-slide1.jpg" alt="rooms-slide" />
+              </a>
+              <a href="img/rooms-slide1.jpg" class="rooms-swiper__img">
+                <img src="img/rooms-slide1.jpg" alt="rooms-slide" />
+              </a>
+              <a href="img/rooms-slide1.jpg" class="rooms-swiper__img">
+                <img src="img/rooms-slide1.jpg" alt="rooms-slide" />
+              </a>
+              <a href="img/rooms-slide1.jpg" class="rooms-swiper__img">
+                <img src="img/rooms-slide1.jpg" alt="rooms-slide" />
+              </a>
+              <a href="img/rooms-slide1.jpg" class="rooms-swiper__img">
+                <img src="img/rooms-slide1.jpg" alt="rooms-slide" />
+              </a>
+            </div>
+          </div>
+          <div class="mobile-gallery rooms-swiper-container main-gallery">
+            <div class="swiper rooms-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a
+                    href="img/rooms-slide1.jpg"
+                    class="rooms-swiper__img"
+                    data-src="img/rooms-slide1.jpg"
+                  >
+                    <img src="img/rooms-slide1.jpg" alt="rooms-slide" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="img/rooms-slide1.jpg"
+                    class="rooms-swiper__img"
+                    data-src="img/rooms-slide1.jpg"
+                  >
+                    <img src="img/rooms-slide1.jpg" alt="rooms-slide" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="img/rooms-slide1.jpg"
+                    class="rooms-swiper__img"
+                    data-src="img/rooms-slide1.jpg"
+                  >
+                    <img src="img/rooms-slide1.jpg" alt="rooms-slide" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="img/rooms-slide1.jpg"
+                    class="rooms-swiper__img"
+                    data-src="img/rooms-slide1.jpg"
+                  >
+                    <img src="img/rooms-slide1.jpg" alt="rooms-slide" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="img/rooms-slide1.jpg"
+                    class="rooms-swiper__img"
+                    data-src="img/rooms-slide1.jpg"
+                  >
+                    <img src="img/rooms-slide1.jpg" alt="rooms-slide" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper__controls rooms-swiper__controls">
+                <button
+                  class="rooms-swiper__swiper-button-prev swiper-btn _prev"
+                >
+                  <svg
+                    width="45"
+                    height="45"
+                    viewBox="0 0 45 45"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.9117 15.4571L22.5964 16.0441L16.3356 22.5982L22.5964 29.1523L21.9117 29.8371L14.9661 22.5982L21.9117 15.4571Z"
+                      fill="#808994"
+                    />
+                    <path
+                      d="M22.4994 0.00117874C34.923 0.00117874 44.9988 10.077 44.9988 22.5006C44.9988 34.9242 34.923 45 22.4994 45C10.0758 45 -1.14441e-05 34.9242 -1.14441e-05 22.5006C-1.14441e-05 10.077 10.1736 0.00117874 22.4994 0.00117874ZM22.4994 44.0218C34.336 44.0218 44.0206 34.3372 44.0206 22.5006C44.0206 10.6639 34.336 0.979416 22.4994 0.979416C10.6628 0.979416 0.978226 10.6639 0.978226 22.5006C0.978226 34.3372 10.6628 44.0218 22.4994 44.0218Z"
+                      fill="#808994"
+                    />
+                    <path
+                      d="M15.555 23.0869H27.783V22.1087H15.555V23.0869Z"
+                      fill="#808994"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="rooms-swiper__swiper-button-next swiper-btn _next"
+                >
+                  <svg
+                    width="46"
+                    height="45"
+                    viewBox="0 0 46 45"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.6283 29.5429L22.9436 28.9559L29.2043 22.4018L22.9436 15.8477L23.6283 15.1629L30.5739 22.4018L23.6283 29.5429Z"
+                      fill="#808994"
+                    />
+                    <path
+                      d="M23.0404 44.9988C10.6168 44.9988 0.541016 34.923 0.541016 22.4994C0.541016 10.0758 10.6168 0 23.0404 0C35.464 0 45.5398 10.0758 45.5398 22.4994C45.5398 34.923 35.3662 44.9988 23.0404 44.9988ZM23.0404 0.978235C11.2038 0.978235 1.51925 10.6628 1.51925 22.4994C1.51925 34.3361 11.2038 44.0206 23.0404 44.0206C34.8771 44.0206 44.5616 34.3361 44.5616 22.4994C44.5616 10.6628 34.8771 0.978235 23.0404 0.978235Z"
+                      fill="#808994"
+                    />
+                    <path
+                      d="M29.9858 21.9131H17.7578V22.8913H29.9858V21.9131Z"
+                      fill="#808994"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include('partials/footer.html')
     </div>
-    <section class="section about">
-      <div class="container">
-        <h2 class="section__title">О гостинице</h2>
-        <div class="about__info-wrapper">
-          <div class="about__img">
-            <img src="./img/about-hotel-head.jpg" alt="Гостиница">
-          </div>
-          <div class="about__descs">
-            <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam eaque ipsa,
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas
-              sit, aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos, qui ratione voluptatem sequi nesciunt, neque porro
-              quisquam est, qui dolorem ipsum, quia dolor sit, amet,
-              consectetur, adipisci velit, sed quia non numquam eius modi
-              tempora incidunt, ut labore et dolore magnam aliquam quaerat
-              voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
-              ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-              consequatur?</p>
-            <p>
-              Quis autem vel eum iure reprehenderit, qui in ea voluptate velit
-              esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum
-              fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et
-              iusto odio dignissimos ducimus, qui blanditiis praesentium
-              voluptatum deleniti atque corrupti, quos dolores et quas molestias
-              excepturi sint, obcaecati cupiditate non provident, similique sunt
-              in culpa, qui officia deserunt mollitia animi, id est laborum et
-              dolorum fuga. Et harum quidem rerum facilis est et expedita
-              distinctio.
-            </p>
-            <p>
-              Nam libero tempore, cum soluta nobis est eligendi optio, cumque
-              nihil impedit, quo minus id, quod maxime placeat, facere possimus,
-              omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
-              autem quibusdam et aut officiis debitis aut rerum necessitatibus
-              saepe eveniet, ut et voluptates repudiandae sint et molestiae non
-              recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut
-              aut reiciendis voluptatibus maiores alias consequatur aut
-              perferendis doloribus asperiores repellat.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section gallery">
-      <div class="container">
-        <h2 class="section__title">Фотогалерея</h2>
-      </div>
-      <div class="rooms-swiper-container main-gallery">
-        <div class="swiper rooms-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="img/rooms-slide1.jpg" class="rooms-swiper__img" data-src="img/rooms-slide1.jpg">
-                <img src="img/rooms-slide1.jpg" alt="rooms-slide"/>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="img/rooms-slide1.jpg" class="rooms-swiper__img" data-src="img/rooms-slide1.jpg">
-                <img src="img/rooms-slide1.jpg" alt="rooms-slide"/>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="img/rooms-slide1.jpg" class="rooms-swiper__img" data-src="img/rooms-slide1.jpg">
-                <img src="img/rooms-slide1.jpg" alt="rooms-slide"/>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="img/rooms-slide1.jpg" class="rooms-swiper__img" data-src="img/rooms-slide1.jpg">
-                <img src="img/rooms-slide1.jpg" alt="rooms-slide"/>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="img/rooms-slide1.jpg" class="rooms-swiper__img" data-src="img/rooms-slide1.jpg">
-                <img src="img/rooms-slide1.jpg" alt="rooms-slide"/>
-              </a>
-            </div>
-          </div>
-          <div class="swiper__controls rooms-swiper__controls">
-            <button
-              class="rooms-swiper__swiper-button-prev swiper-btn _prev"
-            >
-              <svg
-                width="45"
-                height="45"
-                viewBox="0 0 45 45"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21.9117 15.4571L22.5964 16.0441L16.3356 22.5982L22.5964 29.1523L21.9117 29.8371L14.9661 22.5982L21.9117 15.4571Z"
-                  fill="#808994"
-                />
-                <path
-                  d="M22.4994 0.00117874C34.923 0.00117874 44.9988 10.077 44.9988 22.5006C44.9988 34.9242 34.923 45 22.4994 45C10.0758 45 -1.14441e-05 34.9242 -1.14441e-05 22.5006C-1.14441e-05 10.077 10.1736 0.00117874 22.4994 0.00117874ZM22.4994 44.0218C34.336 44.0218 44.0206 34.3372 44.0206 22.5006C44.0206 10.6639 34.336 0.979416 22.4994 0.979416C10.6628 0.979416 0.978226 10.6639 0.978226 22.5006C0.978226 34.3372 10.6628 44.0218 22.4994 44.0218Z"
-                  fill="#808994"
-                />
-                <path
-                  d="M15.555 23.0869H27.783V22.1087H15.555V23.0869Z"
-                  fill="#808994"
-                />
-              </svg>
-            </button>
-            <button
-              class="rooms-swiper__swiper-button-next swiper-btn _next"
-            >
-              <svg
-                width="46"
-                height="45"
-                viewBox="0 0 46 45"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23.6283 29.5429L22.9436 28.9559L29.2043 22.4018L22.9436 15.8477L23.6283 15.1629L30.5739 22.4018L23.6283 29.5429Z"
-                  fill="#808994"
-                />
-                <path
-                  d="M23.0404 44.9988C10.6168 44.9988 0.541016 34.923 0.541016 22.4994C0.541016 10.0758 10.6168 0 23.0404 0C35.464 0 45.5398 10.0758 45.5398 22.4994C45.5398 34.923 35.3662 44.9988 23.0404 44.9988ZM23.0404 0.978235C11.2038 0.978235 1.51925 10.6628 1.51925 22.4994C1.51925 34.3361 11.2038 44.0206 23.0404 44.0206C34.8771 44.0206 44.5616 34.3361 44.5616 22.4994C44.5616 10.6628 34.8771 0.978235 23.0404 0.978235Z"
-                  fill="#808994"
-                />
-                <path
-                  d="M29.9858 21.9131H17.7578V22.8913H29.9858V21.9131Z"
-                  fill="#808994"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-  </main>
-  @include('partials/footer.html')
-</div>
-
-</body>
-
+  </body>
 </html>
