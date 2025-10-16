@@ -58,8 +58,8 @@ const initGalleries = () => {
         closable: true,
         showCloseIcon: true,
         hideBarsDelay: 0,
-        thumbHeight: "171.25px",
-        thumbWidth: 297.5,
+        thumbHeight: "168.75px",
+        thumbWidth: 300,
         thumbMargin: 8,
         prevHtml:
           '<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +

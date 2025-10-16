@@ -183,6 +183,9 @@
       @include book-bold;
       margin-bottom: 35px;
       line-height: 1.2;
+      @media (max-width: 768px) {
+        padding-left: 0;
+      }
     }
 
     .rooms-swiper-container {
@@ -193,16 +196,23 @@
     }
 
     .rooms-swiper {
-      min-height: 650px;
+      min-height: max-content;
+      @media (max-width: 768px) {
+        min-height: max-content;
+      }
       .swiper-wrapper {
         margin-bottom: 15px;
       }
 
       .swiper-slide-active {
-        height: 567px;
         padding-top: 14px;
+        @media (max-width: 768px) {
+          padding-top: 0;
+        }
         img {
-          height: 567px!important;
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 16 / 9;
         }
       }
 
@@ -216,15 +226,30 @@
       }
 
       .swiper-slide-prev, .swiper-slide-next {
-        padding-top: 124px;
+        padding-top: 31px;
+        @media (max-width: 768px) {
+          padding-top: 0;
+        }
         img {
           width: 193px!important;
-          height: 355px;
+          height: 90%;
+          @media (max-width: 768px) {
+            width: max-content!important;
+            height: auto;
+            aspect-ratio: 16 / 9;
+          }
         }
+      }
+
+      .swiper-slide-next {
+        padding-top: 12px;
       }
 
       .swiper-slide:not(.swiper-slide-active) {
         transform: scale(0.913);
+        @media (max-width: 768px) {
+          transform: scale(1);
+        }
 
         img {
           transition: all .3s;
@@ -253,8 +278,9 @@
           left: 0;
         }
         @media (max-width: 768px) {
-          position: static;
-          max-width: 100%;
+          width: 100%;
+          height: max-content;
+          top: 100%;
           padding: 15px 20px 10px 20px;
         }
 
@@ -266,7 +292,7 @@
           display: -webkit-box;
           -webkit-box-orient: vertical;
           @media (max-width: 768px) {
-            max-width: 100%;
+            max-width: 90%;
           }
         }
       }
@@ -285,7 +311,11 @@
         }
         @media (max-width: 768px) {
           padding: 0;
-          margin-top: 30px;
+          margin-top: 160px;
+        }
+        @media (max-width: 440px) {
+          padding: 0;
+          margin-top: 180px;
         }
 
         button:first-child {
@@ -388,7 +418,7 @@
         height: 50px;
         @media (max-width: 768px) {
           padding: 0;
-          margin-top: 30px;
+          margin-top: 0px;
         }
 
         button:first-child {

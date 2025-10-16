@@ -64,16 +64,16 @@
     }
 
     &._fixed {
-      background-color: #ffffff;
-      height: 90px;
-      position: fixed;
-      top: 120px;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      z-index: 1020;
-      box-shadow: 0 15px 10px -15px rgba(0, 0, 0, 0.15);
-      padding-top: 15px;
+      // background-color: #ffffff;
+      // height: 90px;
+      // position: fixed;
+      // top: 120px;
+      // right: 0;
+      // left: 0;
+      // bottom: 0;
+      // z-index: 1020;
+      // box-shadow: 0 15px 10px -15px rgba(0, 0, 0, 0.15);
+      // padding-top: 15px;
 
       .custom-input {
         width: 318px;
@@ -137,16 +137,8 @@
       }
 
       @media (max-width: 768px) {
-        padding: 40px 0 0;
-        height: 715px;
-      }
-
-      @media (max-width: 620px) {
-        min-height: 900px;
-      }
-
-      @media (max-width: 440px) {
-        min-height: 1120px;
+        padding: 40px 0 10px;
+        height: max-content;
       }
 
       h1 {
@@ -170,6 +162,7 @@
       width: 100%;
       z-index: -1;
       min-height: 551px;
+      aspect-ratio: 16 / 9;
       @media (max-width: 3840px) {
         height: 600px;
         min-height: 600px;
@@ -198,15 +191,8 @@
       }
 
       @media (max-width: 768px) {
-        min-height: 720px;
-      }
-
-      @media (max-width: 620px) {
-        min-height: 900px;
-      }
-
-      @media (max-width: 440px) {
-        min-height: 1120px;
+        min-height: max-content;
+        height: 100%;
       }
     }
 
@@ -244,7 +230,7 @@
       display: flex;
       background-color: #fff;
       align-items: center;
-      padding: 28px 75px;
+      padding: 28px 73px;
       position: absolute;
       width: 1220px;
       top: -126px;
@@ -264,7 +250,7 @@
         margin-bottom: 50px;
         transform: none;
         width: 100%;
-        padding: 28px 15px;
+        padding: 28px 15px 0;
       }
 
       @media (max-width: 768px) {
@@ -277,12 +263,10 @@
         @media (max-width: 768px) {
           width: 100%;
           display: flex;
-          justify-content: center;
-
         }
 
         &:not(:last-child) {
-          margin-right: 90px;
+          margin-right: 73px;
           padding-right: 73px;
           border-right: 1px solid #ADB9C7;
 
@@ -303,7 +287,7 @@
 
         &:nth-child(1) {
           margin-right: 110px;
-          padding-right: 78px;
+          padding-right: 73px;
           @media (max-width: 1024px) {
             margin-right: 30px;
             padding-right: 30px;
@@ -320,7 +304,6 @@
         }
 
         &:last-child {
-          margin-right: 13px;
           @media (max-width: 1024px) {
             margin-right: 30px;
             padding-right: 30px;
@@ -331,8 +314,6 @@
             margin-right: 0;
             border-right: none;
             padding-bottom: 20px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ADB9C7;
           }
         }
 
@@ -340,19 +321,29 @@
           display: flex;
           align-items: center;
           text-align: center;
+          gap: 20px;
           color: #000;
           
           font-size: 20px;
           @include book-bold;
           line-height: 27px;
           text-decoration: #ADB9C7 underline;
+          img {
+            display: block;
+            width: 58px;
+          }
           .services-banner-title-link {
-            margin: 8px 0 0 0;
+            margin: 8px 0 0 0px;
+            @media (max-width: 768px) {
+              text-align: left;
+            }
             &._first {
-              margin: 8px 0 0 8px;
+              margin: 8px 0 0 0px;
+              text-align: left;
             }
             &._second {
-              margin: 8px 24px 0 0;
+              margin: 8px 0px 0 0px;
+              text-align: left;
             }
           }
         }
@@ -381,7 +372,10 @@
     background: #D6DCE3;
 
     .rooms-swiper {
-      min-height: 650px;
+      min-height: max-content;
+      @media (max-width: 768px) {
+        min-height: max-content;
+      }
     }
 
     h2 {
@@ -413,10 +407,14 @@
       }
 
       .swiper-slide-active {
-        height: 567px;
         padding-top: 14px;
+        @media (max-width: 768px) {
+          padding-top: 0;
+        }
         img {
-          height: 567px!important;
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 16 / 9;
         }
       }
 
@@ -426,19 +424,39 @@
           position: absolute;
           right: 0;
           width: 193px;
+          @media (max-width: 768px) {
+            width: max-content;
+            height: max-content;
+            aspect-ratio: 16 / 9;
+          }
         }
       }
 
       .swiper-slide-prev, .swiper-slide-next {
-        padding-top: 124px;
+        padding-top: 31px;
+        @media (max-width: 768px) {
+            padding-top: 0px;
+          }
         img {
           width: 193px!important;
           height: 355px;
+          @media (max-width: 768px) {
+            width: max-content!important;
+            height: auto;
+            aspect-ratio: 16 / 9;
+          }
         }
+      }
+
+      .swiper-slide-next {
+        padding-top: 12px;
       }
 
       .swiper-slide:not(.swiper-slide-active) {
         transform: scale(0.913);
+        @media (max-width: 768px) {
+          transform: scale(1);
+        }
         img {
           transition: all .3s;
           filter: brightness(.5)
@@ -460,7 +478,8 @@
           left: 0;
         }
         @media (max-width: 768px) {
-          position: static;
+          top: 100%;
+          bottom: unset;
           max-width: 100%;
           padding: 15px 20px 10px 20px;
         }
@@ -505,7 +524,7 @@
         }
         @media (max-width: 768px) {
           padding: 0;
-          margin-top: 30px;
+          margin-top: 160px;
         }
 
         button:first-child {
@@ -535,12 +554,12 @@
     flex-direction: column;
 
     .section-title {
-      margin: 0 auto 13px auto;
+      margin: 0 auto 25px auto;
     }
 
     .section-desc {
       max-width: 980px;
-      margin: 0 auto 29px auto;
+      margin: 0 auto 55px auto;
     }
 
     &__gallery {
@@ -682,8 +701,9 @@
       gap: 52px;
       @media (max-width: 768px) {
         width: 100%;
-        padding: 0;
+        padding: 20px 0 20px 0;
         align-items: center;
+        gap: 22px;
       }
 
       li {
